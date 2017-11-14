@@ -10,6 +10,9 @@
 
 <!--CSS-->
 <link href='{!! asset('/bootstrap/css/bootstrap.min.css')!!}' rel='stylesheet'>
+<link href='{!! asset('/css/wedding.css')!!}' rel='stylesheet'>
+<link href='{!! asset('/css/banner.css')!!}' rel='stylesheet'>
+<link href='{!! asset('/css/animate.css')!!}' rel='stylesheet'>
 </head>
 <body>
 	@yield('content')
