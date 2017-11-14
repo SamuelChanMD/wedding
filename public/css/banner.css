@@ -1,0 +1,41 @@
+/*
+ * Banner styling
+ */
+#bannerImage {
+  position: relative;
+  opacity: 0.65 !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* The image used */
+
+  height: 100%;
+
+
+  animation: fadeInBg 3.5s;
+}
+
+#bannerTitle {
+  font-size: 48px;
+  color: white;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption-title {
+  background-color: rgba(47,79,79, 1);
+  font-size: 48px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+}
