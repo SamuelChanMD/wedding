@@ -1,64 +1,125 @@
-html, body {
-	height: 100%;
-	font-size: 1.1em;
-	font-family: 'Raleway';
-	cursor: url('../images/ss.png'), auto;
+html,
+body {
+    height: 100%;
+    font-size: 1.1em;
+    font-family: 'Sun Valley - Demo', sans-serif;
+
+    cursor: url('../images/ss.png'), auto;
 }
 
 ::-webkit-scrollbar {
     width: 8px;
 }
 
+
 /* Track */
+
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
- 
+
+
 /* Handle */
+
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: rgba(125,150,100,0.4); 
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background: rgba(125, 150, 100, 0.4);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
+
 ::-webkit-scrollbar-thumb:window-inactive {
-	background: rgba(125,150,100,0.4); 
+    background: rgba(125, 150, 100, 0.4);
 }
 
-.test h1 {
+h1 {
+    font-size: 5em !important;
+    
+}
 
-	font-size: 6em;	
+#rsvp-button {
+	font-size: 4em; 
+	margin: 0 auto;
+	width: auto;
+	color:#f26d7d;
+	text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+    transition: 0.4s ease-in;
+    margin: 30px;
+}
+
+#rsvp-button:hover {
+	text-shadow: 23px 2px 2px rgba(0, 0, 0, 0);
 }
 
 #sam {
-	animation: fadeInRight 0.75s ease-in;
-	transition: 0.25s;
-	border-bottom: 5px solid rgba(0,0,0,0);
+    animation: fadeInRight 0.75s ease-in;
+    transition: 0.25s;
+    border-bottom: 5px solid rgba(0, 0, 0, 0);
 }
 
 #sam:hover {
-	color: #f4efe9;
-	border-bottom: 5px solid #f4efe9;
+    color: #f4efe9;
+    border-bottom: 5px solid #f4efe9;
 }
 
 #sarah {
-	animation: fadeInLeft 0.75s ease-in;
-	transition: 0.25s;
-	border-bottom: 5px solid rgba(0,0,0,0);
+    animation: fadeInLeft 0.75s ease-in;
+    transition: 0.25s;
+    border-bottom: 5px solid rgba(0, 0, 0, 0);
 }
 
 #sarah:hover {
-	color: #f4efe9;
-	border-bottom: 5px solid #f4efe9;
+    color: #f4efe9;
+    border-bottom: 5px solid #f4efe9;
 }
 
 .test {
-	text-align: center;
-	font-family: 'Sun Valley - Demo', sans-serif;
+    text-align: center;
 }
 
 #secondBody {
-	text-align: center;
+    text-align: center;
+}
+
+#third-body {
+	background-color: #f4efe9;
+	margin: 0px;
+	border-bottom: 4px solid #ecd4b6;
+}
+
+#our-story-section>p {
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+
+#details-section h2 {
+    animation: fadeInUp 1.5s;
+}
+
+#details-section h1 {
+    animation: fadeInDown 0.75s;
+}
+
+#fourth-body p {
+    font-family: 'Raleway';
+    font-weight: 400;
+
+}
+
+#fourth-body {
+	background-color: #f2f4f3;
+	border-bottom: 4px solid #d9dada;
+}
+
+#second-body {
+	background-color: #fff;
+	border-bottom: 4px solid #ededed;
+	margin: 0px;
+
+}
+
+.navbar-nav>li>a {
+	font-size: 3em; 
 }
