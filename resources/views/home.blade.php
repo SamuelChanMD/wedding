@@ -1,5 +1,5 @@
 @extends('layout') @section('title', 'Sam & Sarah') @section('content')
-<div id='bannerImage' style='background-image: url(' {!! ( isset($img_banner) ? asset($img_banner) : asset( 'images/home_page.JPG')) !!} ');'>
+<div id='bannerImage' style='background-image: url(" {!! ( isset($img_banner) ? asset($img_banner) : asset( 'images/home_page.JPG')) !!} ");'>
     <div class='caption'>
         <div class='container'>
             <div class='row'>
@@ -30,7 +30,7 @@
                     <h2>StoneFields</h2>
                     <h2>1985 9th Line Carleton Place  ON K7C 3P2</h2>
                     <h2>1500 HR till 2300 HR</h2>
-                    <div id='rsvp-button'>RVSP</div>
+                    <div id='rsvp-button'><a href='{{route("rsvp")}}'> RVSP </a></div>
                 </div>
                 <div class='carousel-caption'>
                 </div>

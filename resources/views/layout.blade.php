@@ -13,6 +13,9 @@
 <link href='{!! asset("/css/wedding.css")!!}' rel='stylesheet'>
 <link href='{!! asset("/css/banner.css")!!}' rel='stylesheet'>
 <link href='{!! asset("/css/animate.css")!!}' rel='stylesheet'>
+
+<!--JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 	@yield('content')
