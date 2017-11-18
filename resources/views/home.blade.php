@@ -1,8 +1,8 @@
 @extends('layout') @section('title', 'Sam & Sarah') @section('content')
-<div id='bannerImage' style='background-image: url("{!! ( isset($img_banner) ? asset($img_banner) : asset("images/home_page.JPG")) !!}");'>
+<div id='bannerImage' style='background-image: url(' {!! ( isset($img_banner) ? asset($img_banner) : asset( 'images/home_page.JPG')) !!} ');'>
     <div class='caption'>
         <div class='container'>
-            <div class="row">
+            <div class='row'>
                 <h1 class='pull-left' id='sarah'>Sarah</h1>
                 <h1 class='pull-right' id='sam'>Sam</h1>
             </div>
@@ -20,13 +20,46 @@
     </div>
 </div>
 <div class='jumbotron test' id='third-body'>
-    <div class='container' id="details-section">
-        <h1>Details</h1>
-        <h2>15th June 2018</h2>
-        <h2>StoneFields</h2>
-        <h2>1985 9th Line Carleton Place  ON K7C 3P2</h2>
-        <h2>1500 HR till 2300 HR</h2>
-        <div id='rsvp-button'>RVSP</div>
+    <div id='carousel-section' class='carousel slide' data-ride='carousel'>
+        
+        <div class='carousel-inner text-center' role='listbox'>
+            <div class='item active'>
+                <div class='container' id='details-section'>
+                    <h1>Details</h1>
+                    <h2>15th June 2018</h2>
+                    <h2>StoneFields</h2>
+                    <h2>1985 9th Line Carleton Place  ON K7C 3P2</h2>
+                    <h2>1500 HR till 2300 HR</h2>
+                    <div id='rsvp-button'>RVSP</div>
+                </div>
+                <div class='carousel-caption'>
+                </div>
+            </div>
+            <div class='item'>
+                <div class='container' id='details-section'>
+                    <h1>Details</h1>
+                    <h2>15th June 2018</h2>
+                    <h2>StoneFields</h2>
+                    <h2>1985 9th Line Carleton Place  ON K7C 3P2</h2>
+                    <h2>1500 HR till 2300 HR</h2>
+                    <div id='rsvp-button'>RVSP</div>
+                </div>
+                <div class='carousel-caption'>
+                </div>
+            </div>
+        </div>
+        <ol class='carousel-indicators'>
+            <li data-target='#carousel-section' data-slide-to='0' class='active'></li>
+            <li data-target='#carousel-section' data-slide-to='1'></li>
+        </ol>
+        <a class='left carousel-control' href='#carousel-section' role='button' data-slide='prev'>
+    <span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span>
+    <span class='sr-only'>Previous</span>
+  </a>
+        <a class='right carousel-control' href='#carousel-section' role='button' data-slide='next'>
+    <span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>
+    <span class='sr-only'>Next</span>
+  </a>
     </div>
 </div>
 <div class='jumbotron' id='fourth-body'>
@@ -44,7 +77,11 @@
         </div>
     </div>
 </div>
-<div class="container text-center">
+<div class='container text-center'>
     <footer> Sam and Sarah 2017 </footer>
 </div>
+<!-- JS -->
+<script type='text/javascript' src='{!! asset("/js/jquery-1.9.1.min.js")!!}'></script>
+<script type='text/javascript' src='{!! asset("/bootstrap/js/bootstrap.min.js")!!}'></script>
+<script type='text/javascript' src='{!! asset("/js/main.js")!!}'></script>
 @stop

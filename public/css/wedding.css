@@ -123,3 +123,19 @@ h1 {
 .navbar-nav>li>a {
 	font-size: 3em; 
 }
+
+.carousel-control.left  {
+	background-image: none;
+}
+
+.carousel-control.right  {
+	background-image: none;
+}
+
+.carousel-indicators .active {
+	background-color: #ed145b;
+}
+
+.carousel-indicators {
+	bottom: 0px !important ;
+}
