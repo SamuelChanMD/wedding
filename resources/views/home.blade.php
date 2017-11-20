@@ -80,8 +80,4 @@
 <div class='container text-center'>
     <footer> Sam and Sarah 2017 </footer>
 </div>
-<!-- JS -->
-<script type='text/javascript' src='{!! asset("/js/jquery-1.9.1.min.js")!!}'></script>
-<script type='text/javascript' src='{!! asset("/bootstrap/js/bootstrap.min.js")!!}'></script>
-<script type='text/javascript' src='{!! asset("/js/main.js")!!}'></script>
 @stop
