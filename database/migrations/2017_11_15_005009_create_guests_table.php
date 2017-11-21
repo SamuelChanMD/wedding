@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateGuestTable extends Migration
+class CreateGuestsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -26,7 +26,6 @@ class CreateGuestTable extends Migration
             $table->string('parentLastName')->nullable();
             $table->integer('invitationMax')->default(0);
             $table->integer('invitationCount')->default(0);
-            $table->boolean('receivedDirectInvitation')->default(false)->nullable();
             $table->string('invitorFirstName')->nullable();
             $table->string('invitorLastName')->nullable();
             $table->timestamps();
