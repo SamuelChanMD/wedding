@@ -33,13 +33,16 @@ class GuestController extends Controller
 	    	$guest->attending = $request->attending;
 	    	$guest->email = $request->email;
 	    	$guest->save();
+
+	    	//If guest is attending, they can invite another, else they can't.
 	    	return response()->json([ 
-	    		'success' => 'Awesome pawesome',
+	    		'success' => 'Your have been updated on the wedding list.',
+	    		'inviteAnother' => $guest->attending,
 	    		'invitorFN' => $firstName,
 	    		'invitorLN' => $lastName ]);
 		}
 
-		return response()->json([ 'error' => 'You are not registered in the database']);
+		return response()->json([ 'error' => 'Sorry, you are not registered in the database. If you received an invitation, please contact us ASAP.']);
 	}
 
 	public function rsvp2(Request $request)
@@ -78,16 +81,12 @@ class GuestController extends Controller
 	    $guest->isKid = $request->isKid;
 	    $guest->save();
 
-    	if($flag){
-	    	return response()->json([ 
-	    		'success' => $firstName.' '.$lastName.' has been added to the wedding list!', 
-	    		'invitorFN' => $guest->invitorFirstName,
-	    		'invitorLS' => $guest->invitorLastName ]);
-		} else {
-			return response()->json([ 
-				'success' => $firstName.' '.$lastName.' has been updated on the wedding list!', 
-				'invitorFN' => $guest->invitorFirstName,
-				'invitorLN' => $guest->invitorLastName ]);
-		}
+	    $responseText = $flag ? $firstName.' '.$lastName.' has been added to the wedding list.' :
+	    						$firstName.' '.$lastName.' has been updated on the wedding list.';
+
+    	return response()->json([ 
+    		'success' => $responseText, 
+    		'invitorFN' => $guest->invitorFirstName,
+    		'invitorLN' => $guest->invitorLastName ]);
 	}
 }
