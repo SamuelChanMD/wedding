@@ -2,14 +2,14 @@ html,
 body {
     height: 100%;
     font-size: 1.1em;
+    /*cursor: url('../images/ss.png'), auto;*/
     font-family: 'Sun Valley - Demo', sans-serif;
-
-    cursor: url('../images/ss.png'), auto;
 }
 
 ::-webkit-scrollbar {
     width: 8px;
 }
+
 
 
 /* Track */
@@ -19,6 +19,7 @@ body {
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
+
 
 
 /* Handle */
@@ -36,21 +37,20 @@ body {
 
 h1 {
     font-size: 5em !important;
-    
 }
 
 #rsvp-button {
-	font-size: 4em; 
-	margin: 0 auto;
-	width: auto;
-	color:#f26d7d;
-	text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+    font-size: 4em;
+    margin: 0 auto;
+    width: auto;
+    color: #f26d7d;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
     transition: 0.4s ease-in;
     margin: 30px;
 }
 
 #rsvp-button:hover {
-	text-shadow: 23px 2px 2px rgba(0, 0, 0, 0);
+    text-shadow: 23px 2px 2px rgba(0, 0, 0, 0);
 }
 
 #sam {
@@ -84,9 +84,9 @@ h1 {
 }
 
 #third-body {
-	background-color: #f4efe9;
-	margin: 0px;
-	border-bottom: 4px solid #ecd4b6;
+    background-color: #f4efe9;
+    margin: 0px;
+    border-bottom: 4px solid #ecd4b6;
 }
 
 #our-story-section>p {
@@ -105,37 +105,35 @@ h1 {
 #fourth-body p {
     font-family: 'Raleway';
     font-weight: 400;
-
 }
 
 #fourth-body {
-	background-color: #f2f4f3;
-	border-bottom: 4px solid #d9dada;
+    background-color: #f2f4f3;
+    border-bottom: 4px solid #d9dada;
 }
 
 #second-body {
-	background-color: #fff;
-	border-bottom: 4px solid #ededed;
-	margin: 0px;
-
+    background-color: #fff;
+    border-bottom: 4px solid #ededed;
+    margin: 0px;
 }
 
 .navbar-nav>li>a {
-	font-size: 3em; 
+    font-size: 3em;
 }
 
-.carousel-control.left  {
-	background-image: none;
+.carousel-control.left {
+    background-image: none;
 }
 
-.carousel-control.right  {
-	background-image: none;
+.carousel-control.right {
+    background-image: none;
 }
 
 .carousel-indicators .active {
-	background-color: #ed145b;
+    background-color: #ed145b;
 }
 
 .carousel-indicators {
-	bottom: 0px !important ;
+    bottom: 0px !important;
 }
