@@ -24,13 +24,107 @@
 <script type='text/javascript' src='{!! asset("/js/main.js")!!}'></script>
 
 <script>
+	var lastResponse;
+	var firstSuccess;
+
 $( document ).ready(function() {
 
-
+	$('.alert').hide();
     $('.hiddenUntilAttending').hide();
-    $('.hiddenUntilChild').hide();
-    $('.hiddenUntilNotChild').hide();
-    $('.hiddenUntilNotDirectInvitation').hide();
+    $('.second-rsvp-form-div').hide();
+
+	$('#rsvpForm').submit(function(event){
+		event.preventDefault();
+		var data = $(this).serialize();
+		var url = $(this).attr('action');
+
+		$.ajax({
+			method: "get",
+			url: url,
+			data: data,
+			error: function( jqXHR, textStatus, errorThrown ){
+				$('.alert').hide();
+
+				var response = JSON.parse(jqXHR.responseText);
+				for(var errorTitle in response.errors){
+					$('#alert-error').append("<li>" + response.errors[errorTitle] + "</li>");
+				}
+				$('#alert-error').show();
+			},
+			success: function(response){
+				$('.alert').hide();
+
+				if(response.error){
+					$('#alert-error').html("<p>" + response.error + "</p>");
+					$('#alert-error').show();
+					return;
+				} 
+
+				if (response.success){
+					$('.first-rsvp-form-div').fadeOut(1000, function(){
+						$(this).hide();
+					});
+
+					$('#invitorFirstName').val(response.invitorFN);
+					$('#invitorLastName').val(response.invitorLN);
+					$('#alert-success').append("<p>" + response.success + "</p>");
+					$('#alert-success').append("<p>You can invite another!</p>");
+
+					$('#alert-success').delay(900).fadeIn(1000, function(){
+						$(this).show();
+					});
+
+
+					$('.second-rsvp-form-div').delay(900).fadeIn(1000, function(){
+						$(this).show();
+					});
+
+				}
+
+			}
+		});
+	});
+
+	$('#rsvpForm2').submit(function(event){
+		event.preventDefault();
+		var data = $(this).serialize();
+		var url = $(this).attr('action');
+
+		$.ajax({
+			method: "get",
+			url: url,
+			data: data,
+			error: function( jqXHR, textStatus, errorThrown ){
+				$('.alert').hide();
+
+				var response = JSON.parse(jqXHR.responseText);
+				for(var errorTitle in response.errors){
+					$('#alert-error').append("<li>" + response.errors[errorTitle] + "</li>");
+				}
+				$('#alert-error').show();
+			},
+			success: function(response){
+				$('.alert').hide();
+
+				if(response.error){
+					$('#alert-error').html("<p>" + response.error + "</p>");
+					$('#alert-error').show();
+					return;
+				} 
+
+				if (response.success){
+					$('#invitorFirstName').val(response.invitorFN);
+					$('#invitorLastName').val(response.invitorLN);
+
+					$('#alert-success').empty();
+					$('#alert-success').append("<p>" + response.success + "</p>");
+					$('#alert-success').append("<p>You can invite another again!</p>");
+					$('#alert-success').show();
+				}
+
+			}
+		});
+	});
 
     $('input[name="attending"]').click(function(eventObj){
         var obj = eventObj.target;
@@ -41,33 +135,8 @@ $( document ).ready(function() {
             $('.hiddenUntilAttending').hide();
         }
     });
-
-    $('input[name="isKid"]').click(function(eventObj){
-        var obj = eventObj.target;
-
-        if(obj.id === 'isKid1'){
-            $('.hiddenUntilChild').show();
-            $('.hiddenUntilNotChild').hide();
-        } else {
-            $('.hiddenUntilChild').hide();
-            $('.hiddenUntilNotChild').show();
-        }
-    });
-
-    $('input[name="receivedDirectInvitation"]').click(function(eventObj){
-        var obj = eventObj.target;
-
-        if(obj.id === 'receivedDirectInvitation1'){
-            $('.hiddenUntilNotDirectInvitation').hide();
-        } else {
-            $('.hiddenUntilNotDirectInvitation').show();
-        }
-    });
 });
 </script>
 
-
 </body>
-
-
 </html>

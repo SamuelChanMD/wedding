@@ -19,6 +19,12 @@ Route::get('/home', function() {
 	return view('home');
 })->name('home');
 
-Route::get('/rsvp', function() {
-	return view('rsvp');
-})->name('rsvp');
+Route::get('/guest/rsvp', 'GuestController@rsvp')->name('guest.rsvp');
+
+Route::get('/guest/rsvp2', 'GuestController@rsvp2')->name('guest.rsvp2');
+
+
+/* list to do
+| Implement email reminder
+| Implement transferring money to bank account?
+*/
