@@ -43,9 +43,10 @@
                     <h2>StoneFields</h2>
                     <h2>1985 9th Line Carleton Place  ON K7C 3P2</h2>
                     <h2>1500 HR till 2300 HR</h2>
-                    <button type="button" class="btn btn-lg" id='rsvp-button' data-toggle="modal" data-target="#myModal">
+                    <!--<button type="button" class="btn btn-lg" id='rsvp-button' data-toggle="modal" data-target="#myModal">
                         RVSP
-                    </button>
+                    </button> -->
+                    <div>RSVP</div>
                 </div>
                 <div class='carousel-caption'>
                 </div>
