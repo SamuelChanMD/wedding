@@ -1,5 +1,7 @@
 @extends('layout') @section('title', 'Sam & Sarah') @section('content')
-<div id='first-body' style='background-image: url(" {!! ( isset($img_banner) ? asset($img_banner) : asset( "images/home_page.JPG")) !!} ");'>
+<link href='{!! asset("/css/home.css")!!}' rel='stylesheet'>
+<!-- <div id='first-body' style='background-image: url(" {!! ( isset($img_banner) ? asset($img_banner) : asset( "images/home_page.JPG")) !!} ");'> -->
+<div id='first-body'>
     <div class='caption'>
         <div class='container'>
             <div class='row'>
@@ -11,7 +13,6 @@
                 </div>
                 <div role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" id="our-story-btn" aria-controls="collapseOne">
                     <h2>Our Story</h2>
-                    <!-- <h2><span class="glyphicon glyphicon-triangle-bottom"></span></h2> -->
                     <img class="our-story-btn-svg" src='{!!asset( "images/chevron.png")!!}'>
                 </div>
             </div>
@@ -51,20 +52,6 @@
                 <div class='carousel-caption'>
                 </div>
             </div>
-            <!-- <div class='item'>
-                <div class='container' id='details-section'>
-                    <h1>Details</h1>
-                    <h2>15th June 2018</h2>
-                    <h2>StoneFields</h2>
-                    <h2>1985 9th Line Carleton Place  ON K7C 3P2</h2>
-                    <h2>1500 HR till 2300 HR</h2>
-                    <button type="button" class="btn btn-lg" id='rsvp-button' data-toggle="modal" data-target="#myModal">
-                        RVSP
-                    </button>
-                </div>
-                <div class='carousel-caption'>
-                </div>
-            </div> -->
         </div>
         <ol class='carousel-indicators'>
             <li data-target='#carousel-section' data-slide-to='0' class='active'></li>

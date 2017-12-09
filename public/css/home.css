@@ -1,0 +1,173 @@
+/* Home Styling */
+#first-body {
+    position: relative;
+    opacity: 0.9;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+    height: 100%;
+}
+
+.name-heading {
+    transition: 0.25s;
+}
+
+.name-heading:hover {
+    color: #f4efe9;
+}
+
+#sam {
+    animation: fadeInRight 0.75s ease-in;
+}
+
+#sarah {
+    animation: fadeInLeft 0.75s ease-in;   
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-family: 'BaseFont', sans-serif;
+}
+
+.caption-title {
+    background-color: rgba(47, 79, 79, 1);
+    font-size: 48px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+.caption h1 {
+    font-size: 3em;
+    text-shadow: 7px 7px 3px rgba(0, 0, 0, 0.65);
+}
+
+
+.caption h2 {
+    font-size: 1.5em;
+    text-shadow: 7px 7px 3px rgba(0, 0, 0, 0.65);
+}
+
+#our-story-btn {
+    margin-top: 40%;
+}
+
+.our-story-btn-svg {
+    z-index: 1001;
+    transition: 0.5s;
+    transform: rotate(0deg);
+}
+
+.rotate-anim {
+    transform: rotate(180deg);
+}
+
+#second-body {
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 4px solid #ededed;
+    margin: 0px;
+    padding: 0px;
+    z-index: 999;
+}
+
+#third-body {
+    background-color: #f4efe9;
+    margin: 0px;
+    border-bottom: 4px solid #ecd4b6;
+}
+
+#rsvp-button {
+    font-size: 4em;
+    margin: 0 auto;
+    width: auto;
+    color: #f26d7d;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+    transition: 0.4s ease-in;
+    margin: 30px;
+    background-color: transparent;
+}
+
+#rsvp-button:hover {
+    text-shadow: 23px 2px 2px rgba(0, 0, 0, 0);
+    outline: none;
+}
+
+#rsvp-button:focus,
+#rsvp-button:active {
+    outline: none;
+}
+
+#details-section h2 {
+    animation: fadeInUp 1.5s;
+}
+
+#details-section h1 {
+    animation: fadeInDown 0.75s;
+}
+
+#fourth-body {
+    background-color: #f2f4f3;
+    border-bottom: 4px solid #d9dada;
+}
+
+/* Carousel Overrides */
+
+.carousel-control.left {
+    background-image: none;
+}
+
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-indicators .active {
+    background-color: #ed145b;
+}
+
+.carousel-indicators {
+    bottom: 0px !important;
+}
+
+/* Responsive Styling */
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .caption h1 {
+        font-size: 3em;
+    }
+
+    .caption h2 {
+        font-size: 1.5em;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .caption h1 {
+        font-size: 4em;
+    }
+
+    .caption h2 {
+        font-size: 2.5em;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .caption h1 {
+        font-size: 6em;
+    }
+
+    .caption h2 {
+        font-size: 4em;
+    }
+}
