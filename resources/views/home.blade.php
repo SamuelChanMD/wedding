@@ -29,7 +29,7 @@
                     <h2>StoneFields</h2>
                     <h2>1985 9th Line Carleton Place  ON K7C 3P2</h2>
                     <h2>1500 HR till 2300 HR</h2>
-                    <div id='rsvp-button'>RSVP</div>
+                    <div>RSVP</div>
                 </div>
                 <div class='carousel-caption'>
                 </div>
