@@ -1,5 +1,12 @@
-$(document).ready(function(){
+$(document).ready(function() {
     $('.carousel').carousel({
-      interval: 5000
+        interval: 5000
     })
-  }); 
+
+    $('.our-story-btn-svg').click(
+	    function(){
+	    	$('.our-story-btn-svg').toggleClass('rotate-anim');
+		}
+	);
+
+});
