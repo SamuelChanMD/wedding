@@ -98,121 +98,128 @@
     <footer> Sam and Sarah 2017 </footer>
 </div>
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal animated bounceInDown" id="rsvpModal" tabindex="-1" role="dialog" aria-labelledby="rsvpModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                <h4 class="modal-title" id="rsvpModalLabel">Modal title</h4>
             </div>
             <div class="modal-body">
-                <div class='panel-body' id='rsvp-section'>
+                <div class='panel-body'>
                     <h1 class='text-center'>RSVP</h1>
-                    <form class='form-horizontal'>
-                        <div class="form-group row">
-                            <label for="firstName" class="col-sm-6 control-label">First Name</label>
-                            <div class="col-sm-4">
-                                <input type="textbox" class="form-control" id="firstName" name="firstName" placeholder="First Name">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="lastName" class="col-sm-6 control-label">Last Name</label>
-                            <div class="col-sm-4">
-                                <input type="textbox" class="form-control" id="lastName" name="lastName" placeholder="Last Name">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="attending" class="col-sm-6 control-label">Attending?</label>
-                            <div class="col-sm-4">
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="attending" id="attending1" value="yes"> Yes!
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="attending" id="attending2" value="no"> No (sadface)
-                                    </label>
+                    <div id='alert-success' class='alert alert-success' role='alert'></div>
+                    <div id='alert-info' class='alert alert-info' role='alert'></div>
+                    <div id='alert-error' class='alert alert-danger' role='alert'>
+                        <h4>Error</h4>
+                        <ul></ul>
+                    </div>
+                    <div class='first-rsvp-form-div'>
+                        <form id='rsvpForm' class='form-horizontal' action='{{route("guest.rsvp")}}'>
+                            {{ csrf_field() }}
+                            <div class="form-group row">
+                                <label for="firstName" class="col-sm-6 control-label">First Name</label>
+                                <div class="col-sm-4">
+                                    <input type="textbox" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
                                 </div>
                             </div>
-                        </div>
-                        <div class='hiddenUntilAttending'>
+                            <div class="form-group row">
+                                <label for="lastName" class="col-sm-6 control-label">Last Name</label>
+                                <div class="col-sm-4">
+                                    <input type="textbox" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
+                                </div>
+                            </div>
                             <div class="form-group">
-                                <label for="isKid" class="col-sm-6 control-label">Are you under the age of 12?</label>
+                                <label for="attending" class="col-sm-6 control-label">Attending?</label>
                                 <div class="col-sm-4">
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" name="isKid" id="isKid1" value="yes"> Straight outta the womb
+                                            <input type="radio" name="attending" id="attending1" value="1"> Yes!
                                         </label>
                                     </div>
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" name="isKid" id="isKid2" value="no"> No
+                                            <input type="radio" name="attending" id="attending2" value="0"> No (sadface)
                                         </label>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class='hiddenUntilChild'>
+                            <div class='hiddenUntilAttending'>
+                                <p>Want a reminder? Fill out your electronic-mail below and we will give you an update a month beforehand!</p>
+                                <div class='form-group'>
+                                    <label for="email" class="col-sm-6 control-label">E-Mail</label>
+                                    <div class="col-sm-4">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail">
+                                    </div>
+                                </div>
+                            </div>
+                            <button type='submit' id='submit1' class='btn btn-primary'>Submit RSVP</button>
+                        </form>
+                    </div>
+                    <div class='second-rsvp-form-div'>
+                        <form id='rsvpForm2' class='form-horizontal' action='{{route("guest.rsvp2")}}'>
+                            {{csrf_field()}}
+                            <input type="hidden" id="invitorFirstName" name="invitorFirstName" />
+                            <input type="hidden" id="invitorLastName" name="invitorLastName" />
                             <div class="form-group row">
-                                <label for="parentFirstName" class="col-sm-6 control-label"> Parent First Name</label>
+                                <label for="firstName" class="col-sm-6 control-label">First Name</label>
                                 <div class="col-sm-4">
-                                    <input type="textbox" class="form-control" id="parentFirstName" name="parentFirstName" placeholder="Parent First Name">
+                                    <input type="textbox" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="parentLastName" class="col-sm-6 control-label">Parent Last Name</label>
+                                <label for="lastName" class="col-sm-6 control-label">Last Name</label>
                                 <div class="col-sm-4">
-                                    <input type="textbox" class="form-control" id="parentLastName" name="parentLastName" placeholder="Parent Last Name">
+                                    <input type="textbox" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
                                 </div>
                             </div>
-                        </div>
-                        <div class='hiddenUntilNotChild'>
                             <div class="form-group">
-                                <label for="receivedDirectInvitation" class="col-sm-6 control-label">Did you receive a direct invitation?</label>
+                                <label for="attending" class="col-sm-6 control-label">Attending?</label>
                                 <div class="col-sm-4">
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" name="receivedDirectInvitation" id="receivedDirectInvitation1" value="yes"> Yes
+                                            <input type="radio" name="attending" id="attending1" value="1"> Yes!
                                         </label>
                                     </div>
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" name="receivedDirectInvitation" id="receivedDirectInvitation2" value="no"> No
+                                            <input type="radio" name="attending" id="attending2" value="0"> No (sadface)
                                         </label>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class='hiddenUntilNotDirectInvitation'>
-                            <div class="form-group row">
-                                <label for="invitorFirstName" class="col-sm-6 control-label">Who are you going with?</label>
-                                <div class="col-sm-4">
-                                    <input type="textbox" class="form-control" id="invitorFirstName" name="invitorFirstName" placeholder="Invitor First Name">
+                            <div class='hiddenUntilAttending'>
+                                <div class="form-group">
+                                    <label for="isKid" class="col-sm-6 control-label">Are you under the age of 12?</label>
+                                    <div class="col-sm-4">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="isKid" id="isKid1" value="1"> Straight outta the womb
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="isKid" id="isKid2" value="0"> No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Want a reminder? Fill out your electronic-mail below and we will give you an update a month beforehand!</p>
+                                <div class='form-group'>
+                                    <label for="email" class="col-sm-6 control-label">E-Mail</label>
+                                    <div class="col-sm-4">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-group row">
-                                <label for="invitorLastName" class="col-sm-6 control-label">Who are you going with?</label>
-                                <div class="col-sm-4">
-                                    <input type="textbox" class="form-control" id="invitorLastName" name="invitorLastName" placeholder="Invitor Last Name">
-                                </div>
-                            </div>
-                        </div>
-                        <div class='hiddenUntilAttending'>
-                            <p>Want a reminder? Fill out your electronic-mail below and we will give you an update a month beforehand!</p>
-                            <div class='form-group'>
-                                <label for="email" class="col-sm-6 control-label">E-Mail</label>
-                                <div class="col-sm-4">
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail">
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                            <button type='submit' id='submit2' class='btn btn-primary'>Submit RSVP</button>
+                        </form>
+                    </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-default" id="close-modal" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="save-modal">Save changes</button>
             </div>
         </div>
     </div>
