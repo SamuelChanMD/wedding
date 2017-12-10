@@ -1,42 +1,85 @@
 /* 
     Base Styling
 */
-
 @font-face {
-  font-family: 'BaseFont';
-  src: url('../fonts/base.ttf'); 
+    /* Text */
+    font-family: 'BaseFont';
+    src: url('../fonts/base.ttf'); 
 }
 
 
 html,
 body {
+    /* Display & Box Model */
     height: 100%;
+
+    /* Text */
     font-size: 1.1em;
     font-family: 'BaseFont', sans-serif;
 }
 
 p {
+    /* Text */
     font-family: 'Raleway';
     font-weight: 500;
 }
 
 ::-webkit-scrollbar {
+    /* Display & Box Model */
     width: 8px;
 }
 
 ::-webkit-scrollbar-track {
+    /* Display & Box Model */
+    border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     -webkit-border-radius: 10px;
-    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
+    /* Display & Box Model */
     border-radius: 10px;
     background: rgba(125, 150, 100, 0.4);
+    -webkit-border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
+    /* Display & Box Model */
     background: rgba(125, 150, 100, 0.4);
+}
+
+.custom-btn {
+    /* Display & Box Model */
+    background-color: #fff;
+    border-bottom: 3px solid #f26d7d;
+    border-top: 3px solid transparent;
+    border-right: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-radius: 0px;
+    outline: none;
+    padding: 8px;
+    transition: 0.75s ease-in-out;
+    
+    /* Color */
+    color: #f26d7d;
+
+    /* Text */
+    font-family: "BaseFont";
+    font-size: 2em;
+}
+
+.custom-btn:hover,
+.custom-btn:active,
+.custom-btn:focus {
+    /* Display & Box Model */
+    background-color: #fff;
+    border-top: 3px double #f26d7d;
+    border-bottom: 3px double #f26d7d;
+    border-right: 2px solid transparent;
+    border-left: 2px solid transparent;
+    transition: 0.75s ease-in-out;
+
+    /* Color */
+    color: #f26d7d;
 }
