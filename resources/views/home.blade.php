@@ -43,10 +43,11 @@
             <div class='item active'>
                 <div class='container' id='details-section'>
                     <h1>Details</h1>
-                    <h2>15th June 2018</h2>
+                    <h2>10th June 2018</h2>
                     <h2>StoneFields</h2>
                     <h2>1985 9th Line Carleton Place  ON K7C 3P2</h2>
-                    <h2>1500 HR till 2300 HR</h2>
+                    <h2>Ceremony at 330 PM</h2>
+                    <h2>Reception at 600 PM</h2>
                     <button type="button" class="btn btn-lg" id="rsvp-button" data-toggle="modal" data-target="#rsvpModal">
                         RVSP
                     </button>

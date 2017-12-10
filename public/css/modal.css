@@ -11,6 +11,10 @@
 	padding: 0px;
 }
 
+.modal-content {
+	border-radius: 0px;
+}
+
 .modal-title {
 	/* Display & Box Model */
 	background-color: #f26d7d;
@@ -25,4 +29,8 @@
 	/* Text */
 	font-family: "BaseFont";
 	text-align: center;
+}
+
+.alert {
+	border-radius: 0px;
 }
