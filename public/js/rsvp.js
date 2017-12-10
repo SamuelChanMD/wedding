@@ -2,6 +2,7 @@ $( document ).ready(function() {
 
 	/* Default whenever modal pops up */
 	$('#rsvp-button').click(function(){
+		console.log("Regsitered Click Event");
 		$('.alert').hide();
 	    $('.hiddenUntilAttending').hide();
 	    $('.second-rsvp-form-div').hide();
@@ -28,8 +29,10 @@ $( document ).ready(function() {
 				} 
 
 				if (response.success){
-					var success = "<p>" + response.success + "</p>";
 
+					var success = "<ul>";
+					success += "<li>" + response.success + "</li>";
+					
 					if(response.inviteAnother === '1'){
 						$('.first-rsvp-form-div').fadeOut(1000, function(){
 							$(this).hide();
@@ -38,7 +41,8 @@ $( document ).ready(function() {
 						$('#invitorFirstName').val(response.invitorFN);
 						$('#invitorLastName').val(response.invitorLN);
 
-						success += "<p>You can invite another.</p>";
+						success += "<li>You can invite another again.</li>";
+						success += "</ul>";
 
 						$('.second-rsvp-form-div').delay(900).fadeIn(1000, function(){
 							$(this).show();
@@ -84,9 +88,10 @@ $( document ).ready(function() {
 					$('.second-rsvp-form-div').delay(900).fadeIn(1000, function(){
 						$(this).show();
 					});
-
-					var success = "<p>" + response.success + "</p>";
-					success += "<p>You can invite another again.</p>";
+					var success = "<ul>";
+					success += "<li>" + response.success + "</li>";
+					success += "<li>You can invite another again.</li>";
+					success += "</ul>";
 					displayAlert(success, "success", 900);
 				}
 
@@ -122,12 +127,12 @@ $( document ).ready(function() {
     	var header = '';
 
 		if(alertType === "error"){
-			header = "<h3>Error!</h3>"
+			header = "<h4 class='text-center'>Error!</h4>"
 			$('#alert-error').html(header+alertMsg).delay(delayTime).fadeIn(1000, function(){
 				$(this).show();
 			});
 		} else {
-			header = "<h3>Success!</h3>";
+			header = "<h4 class='text-center'>Success!</h4>";
 			$('#alert-success').html(header+alertMsg).delay(delayTime).fadeIn(1000, function(){
 				$(this).show();
 			});

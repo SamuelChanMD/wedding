@@ -1,0 +1,293 @@
+/* Home Styling */
+
+#first-body {
+    /* Positioning */
+    position: relative;
+
+    /* Display & Box Model */
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    opacity: 0.9;
+}
+
+#sam {
+    /* Display & Box Model */
+    transition: 0.25s;
+    animation: fadeInRight 0.75s ease-in;
+}
+
+#sam:hover {
+    /* Color */
+    color: #80b1bc;
+}
+
+#sarah {
+    /* Display & Box Model */
+    animation: fadeInLeft 0.75s ease-in;   
+    transition: 0.25s;
+}
+
+#sarah:hover {
+    /* Color */
+    color: #f26d7d;
+}
+
+.caption {
+    /* Positioning */
+    left: 0;
+    position: absolute;
+    top: 45%;
+    width: 100%;
+
+    /* Color */
+    color: #fff;
+
+    /* Text */
+    font-family: 'BaseFont', sans-serif;
+    text-align: center;
+}
+
+.caption-title {
+    /* Display & Box Model */
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+
+    /* Color */
+    background-color: rgba(47, 79, 79, 1);
+
+    /* Text */
+    font-size: 48px;
+    color: #fff;
+}
+
+.caption h1 {
+    /* Text */
+    font-size: 3em;
+    text-shadow: 7px 7px 3px rgba(0, 0, 0, 0.65);
+}
+
+
+.caption h2 {
+    /* Text */
+    font-size: 1.5em;
+    text-shadow: 7px 7px 3px rgba(0, 0, 0, 0.65);
+}
+
+#our-story-btn {
+    /* Positioning */
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+
+    /* Display & Box Model */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.our-story-btn-svg {
+    /* Display & Box Model */
+    z-index: 1001;
+    transition: 0.5s ease-in-out;
+    transform: rotate(0deg);
+}
+.our-story-heading-text {
+    /* Display & Box Model */
+    text-shadow: 7px 7px 3px rgba(0, 0, 0, 0.65);
+    padding: 10px;
+
+    /* Color */
+    color: #fff;
+
+    /* Text */
+    font-size: 2em;
+}
+
+#our-heading-text {
+    /* Display & Box Model */
+    transition: 0.75s ease-in-out;
+}
+
+.our-highlight-text {
+    /* Color */
+    color: #80b1bc;
+}
+
+#story-heading-text {
+    /* Display & Box Model */
+    transition: 0.75s ease-in-out;
+}
+
+.story-highlight-text {
+    /* Color */
+    color: #f26d7d;
+}
+
+.rotate-anim {
+    /* Display & Box Model */
+    transform: rotate(180deg);
+}
+
+#second-body {
+    /* Display & Box Model */
+    background-color: #fff;
+    border-bottom: 4px solid #ededed;
+    margin: 0px;
+    padding: 0px;
+    z-index: 999;
+
+    /* Text */
+    text-align: center;
+}
+
+#third-body {
+    /* Display & Box Model */
+    background-color: #f4efe9;
+    border-bottom: 4px solid #ecd4b6;
+    margin: 0px;
+}
+
+#rsvp-button {
+    /* Display & Box Model */
+    background-color: transparent;
+    margin: 0 auto;
+    margin: 30px;
+    transition: 0.4s ease-in;
+    width: auto;
+
+    /* Color */
+    color: #f26d7d;
+
+    /* Text */
+    font-size: 2em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+#rsvp-button:hover {
+    /* Display & Box Model */
+    outline: none;
+
+    /* Text */
+    text-shadow: 23px 2px 2px rgba(0, 0, 0, 0);
+}
+
+#rsvp-button:focus,
+#rsvp-button:active {
+    /* Display & Box Model */
+    outline: none;
+}
+
+#details-section h2 {
+    /* Display & Box Model */
+    animation: fadeInUp 1.5s;
+}
+
+#details-section h1 {
+    /* Display & Box Model */
+    animation: fadeInDown 0.75s;
+}
+
+#fourth-body {
+    /* Display & Box Model */
+    background-color: #f2f4f3;
+    border-bottom: 4px solid #d9dada;
+}
+
+/* Carousel Overrides */
+
+.carousel-control.left {
+    /* Display & Box Model */
+    background-image: none;
+}
+
+.carousel-control.right {
+    /* Display & Box Model */
+    background-image: none;
+}
+
+.carousel-indicators .active {
+    /* Display & Box Model */
+    background-color: #ed145b;
+}
+
+.carousel-indicators {
+    /* Display & Box Model */
+    bottom: 0px !important;
+}
+
+/* RSVP Modal*/
+#rsvpModal {
+    /* Text */
+    font-family: "Raleway", sans-serif;
+}
+
+/* Responsive Styling */
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .caption h1 {
+        /* Text */
+        font-size: 3em;
+    }
+
+    .caption h2 {
+        /* Text */
+        font-size: 1.5em;
+    }
+
+    .our-story-heading-text {
+        /* Text */
+        font-size: 3em;
+    }
+
+    #rsvp-button {
+        /* Text */
+        font-size: 3em;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .caption h1 {
+        /* Text */
+        font-size: 4em;
+    }
+
+    .caption h2 {
+        /* Text */
+        font-size: 2.5em;
+    }
+
+    .our-story-heading-text {
+        /* Text */
+        font-size: 4em;
+    }
+
+    #rsvp-button {
+        /* Text */
+        font-size: 4em;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .caption h1 {
+        /* Text */
+        font-size: 6em;
+    }
+
+    .caption h2 {
+        /* Text */
+        font-size: 4em;
+    }
+
+    .our-story-heading-text {
+        /* Text */
+        font-size: 6em;
+    }
+}

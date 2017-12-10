@@ -1,5 +1,6 @@
 @extends('layout') @section('title', 'Sam & Sarah') @section('content')
-<div id='first-body' style='background-image: url(" {!! ( isset($img_banner) ? asset($img_banner) : asset( "images/home_page.JPG")) !!} ");'>
+<link href='{!! asset("/css/home.css")!!}' rel='stylesheet'>
+<div id='first-body' style='background-image: url(" {!! ( isset($img_banner) ? asset($img_banner) : asset( "images/home_page.JPG")) !!} ");' class="text-center">
     <div class='caption'>
         <div class='container'>
             <div class='row'>
@@ -9,12 +10,15 @@
                 <div class="col-md-6">
                     <h1 class='pull-right name-heading' id="sam">Sam</h1>
                 </div>
-                <div role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" id="our-story-btn" aria-controls="collapseOne">
-                    <h2>Our Story</h2>
-                    <!-- <h2><span class="glyphicon glyphicon-triangle-bottom"></span></h2> -->
-                    <img class="our-story-btn-svg" src='{!!asset( "images/chevron.png")!!}'>
-                </div>
             </div>
+        </div>
+    </div>
+    <div class="row">
+        <div role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" id="our-story-btn" aria-controls="collapseOne">
+            <h2 class="our-story-heading-text">
+                <span id="our-heading-text">Our</span><span id="story-heading-text"> Story</span>
+            </h2>
+            <img class="our-story-btn-svg" src='{!!asset( "images/chevron.png")!!}'>
         </div>
     </div>
 </div>
@@ -43,28 +47,13 @@
                     <h2>StoneFields</h2>
                     <h2>1985 9th Line Carleton Place  ON K7C 3P2</h2>
                     <h2>1500 HR till 2300 HR</h2>
-                    <!--<button type="button" class="btn btn-lg" id='rsvp-button' data-toggle="modal" data-target="#myModal">
-                        RVSP
-                    </button> -->
-                    <div>RSVP</div>
-                </div>
-                <div class='carousel-caption'>
-                </div>
-            </div>
-            <!-- <div class='item'>
-                <div class='container' id='details-section'>
-                    <h1>Details</h1>
-                    <h2>15th June 2018</h2>
-                    <h2>StoneFields</h2>
-                    <h2>1985 9th Line Carleton Place  ON K7C 3P2</h2>
-                    <h2>1500 HR till 2300 HR</h2>
-                    <button type="button" class="btn btn-lg" id='rsvp-button' data-toggle="modal" data-target="#myModal">
+                    <button type="button" class="btn btn-lg" id="rsvp-button" data-toggle="modal" data-target="#rsvpModal">
                         RVSP
                     </button>
                 </div>
                 <div class='carousel-caption'>
                 </div>
-            </div> -->
+            </div>
         </div>
         <ol class='carousel-indicators'>
             <li data-target='#carousel-section' data-slide-to='0' class='active'></li>
@@ -98,131 +87,4 @@
 <div class='container text-center'>
     <footer> Sam and Sarah 2017 </footer>
 </div>
-<!-- Modal -->
-<div class="modal animated bounceInDown" id="rsvpModal" tabindex="-1" role="dialog" aria-labelledby="rsvpModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="rsvpModalLabel">Modal title</h4>
-            </div>
-            <div class="modal-body">
-                <div class='panel-body'>
-                    <h1 class='text-center'>RSVP</h1>
-                    <div id='alert-success' class='alert alert-success' role='alert'></div>
-                    <div id='alert-info' class='alert alert-info' role='alert'></div>
-                    <div id='alert-error' class='alert alert-danger' role='alert'>
-                        <h4>Error</h4>
-                        <ul></ul>
-                    </div>
-                    <div class='first-rsvp-form-div'>
-                        <form id='rsvpForm' class='form-horizontal' action='{{route("guest.rsvp")}}'>
-                            {{ csrf_field() }}
-                            <div class="form-group row">
-                                <label for="firstName" class="col-sm-6 control-label">First Name</label>
-                                <div class="col-sm-4">
-                                    <input type="textbox" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="lastName" class="col-sm-6 control-label">Last Name</label>
-                                <div class="col-sm-4">
-                                    <input type="textbox" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="attending" class="col-sm-6 control-label">Attending?</label>
-                                <div class="col-sm-4">
-                                    <div class="radio">
-                                        <label>
-                                            <input type="radio" name="attending" id="attending1" value="1"> Yes!
-                                        </label>
-                                    </div>
-                                    <div class="radio">
-                                        <label>
-                                            <input type="radio" name="attending" id="attending2" value="0"> No (sadface)
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class='hiddenUntilAttending'>
-                                <p>Want a reminder? Fill out your electronic-mail below and we will give you an update a month beforehand!</p>
-                                <div class='form-group'>
-                                    <label for="email" class="col-sm-6 control-label">E-Mail</label>
-                                    <div class="col-sm-4">
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail">
-                                    </div>
-                                </div>
-                            </div>
-                            <button type='submit' id='submit1' class='btn btn-primary'>Submit RSVP</button>
-                        </form>
-                    </div>
-                    <div class='second-rsvp-form-div'>
-                        <form id='rsvpForm2' class='form-horizontal' action='{{route("guest.rsvp2")}}'>
-                            {{csrf_field()}}
-                            <input type="hidden" id="invitorFirstName" name="invitorFirstName" />
-                            <input type="hidden" id="invitorLastName" name="invitorLastName" />
-                            <div class="form-group row">
-                                <label for="firstName" class="col-sm-6 control-label">First Name</label>
-                                <div class="col-sm-4">
-                                    <input type="textbox" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="lastName" class="col-sm-6 control-label">Last Name</label>
-                                <div class="col-sm-4">
-                                    <input type="textbox" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="attending" class="col-sm-6 control-label">Attending?</label>
-                                <div class="col-sm-4">
-                                    <div class="radio">
-                                        <label>
-                                            <input type="radio" name="attending" id="attending1" value="1"> Yes!
-                                        </label>
-                                    </div>
-                                    <div class="radio">
-                                        <label>
-                                            <input type="radio" name="attending" id="attending2" value="0"> No (sadface)
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class='hiddenUntilAttending'>
-                                <div class="form-group">
-                                    <label for="isKid" class="col-sm-6 control-label">Are you under the age of 12?</label>
-                                    <div class="col-sm-4">
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" name="isKid" id="isKid1" value="1"> Straight outta the womb
-                                            </label>
-                                        </div>
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" name="isKid" id="isKid2" value="0"> No
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Want a reminder? Fill out your electronic-mail below and we will give you an update a month beforehand!</p>
-                                <div class='form-group'>
-                                    <label for="email" class="col-sm-6 control-label">E-Mail</label>
-                                    <div class="col-sm-4">
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail">
-                                    </div>
-                                </div>
-                            </div>
-                            <button type='submit' id='submit2' class='btn btn-primary'>Submit RSVP</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" id="close-modal" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" id="save-modal">Save changes</button>
-            </div>
-        </div>
-    </div>
-</div>
-@stop
+@component('modal') @endcomponent @stop

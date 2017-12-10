@@ -1,0 +1,28 @@
+/* 
+    Modal Styling
+*/
+#rsvpModal {
+	/* Text */
+	font-size: 0.8em;
+}
+
+.modal-header {
+	/* Display & Box Model */
+	padding: 0px;
+}
+
+.modal-title {
+	/* Display & Box Model */
+	background-color: #f26d7d;
+	padding: 10px;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.65);
+
+	/* Color */
+	color: #fff;
+}
+
+.rsvp-modal-heading {
+	/* Text */
+	font-family: "BaseFont";
+	text-align: center;
+}
