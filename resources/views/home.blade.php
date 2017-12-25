@@ -38,39 +38,73 @@
     </div>
 </div>
 <div class='jumbotron' id='third-body'>
-    <div id='carousel-section' class='carousel slide' data-ride='carousel'>
-        <div class='carousel-inner text-center' role='listbox'>
-            <div class='item active'>
-                <div class='container' id='details-section'>
-                    <h1>Details</h1>
-                    <h2>10th June 2018</h2>
-                    <h2>StoneFields</h2>
-                    <h2>1985 9th Line Carleton Place  ON K7C 3P2</h2>
-                    <h2>Ceremony at 330 PM</h2>
-                    <h2>Reception at 600 PM</h2>
-                    <button type="button" class="btn btn-lg" id="rsvp-button" data-toggle="modal" data-target="#rsvpModal">
-                        RVSP
-                    </button>
-                </div>
-                <div class='carousel-caption'>
-                </div>
-            </div>
-        </div>
-        <ol class='carousel-indicators'>
-            <li data-target='#carousel-section' data-slide-to='0' class='active'></li>
-            <li data-target='#carousel-section' data-slide-to='1'></li>
-        </ol>
-        <a class='left carousel-control' href='#carousel-section' role='button' data-slide='prev'>
-    <span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span>
-    <span class='sr-only'>Previous</span>
-  </a>
-        <a class='right carousel-control' href='#carousel-section' role='button' data-slide='next'>
-    <span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>
-    <span class='sr-only'>Next</span>
-  </a>
+    <div class='container text-center' id='details-section'>
+        <h1>Details</h1>
+        <h2>10th June 2018</h2>
+        <h2>StoneFields</h2>
+        <h2>1985 9th Line Carleton Place  ON K7C 3P2</h2>
+        <h2>Ceremony at 330 PM</h2>
+        <h2>Reception at 600 PM</h2>
+        <button type="button" class="btn btn-lg" id="rsvp-button" data-toggle="modal" data-target="#rsvpModal">
+            RVSP
+        </button>
     </div>
 </div>
 <div class='jumbotron' id='fourth-body'>
+    <div class='container text-center'>
+        <h1>Todo in Ottawa</h1>
+        <div class='col-md-10 col-md-offset-1'>
+        <div id='carousel-section' class='carousel slide' data-ride='carousel'>
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+
+            <!-- Wrapper for slides -->
+            <!--Actual content to be added, removed, or modified-->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src='{!!asset( "images/byward_market.jpg")!!}' alt='image of byward market'>
+                    <div class="carousel-caption">
+                        <h2>Byward Market</h2>
+                        <p>Street performers. Lively public. Lots of places to eat.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src='{!!asset( "images/dows_lake.jpg")!!}' alt='image of dows lake'>
+                    <div class="carousel-caption">
+                        <h2>Dows Lake Pavillion</h2>                    
+                        <p>Take a stroll around Dows Lake and along the Rideau Canal.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src='{!!asset( "images/uji_cafe.jpg")!!}' alt='image of cafe uji'>
+                    <div class="carousel-caption">
+                        <h2>Cafe Uji</h2>                    
+                        <p>Try some Japanese cheesecake.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Control -->
+            <a class='left carousel-control' href='#carousel-section' role='button' data-slide='prev'>
+                <span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span>
+                <span class='sr-only'>Previous</span>
+            </a>
+            <a class='right carousel-control' href='#carousel-section' role='button' data-slide='next'>
+                <span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>
+                <span class='sr-only'>Next</span>
+            </a>
+        </div>
+        </div>
+    </div>
+</div>
+<div class='jumbotron' id='fifth-body'>
     <div class='container'>
         <div class='col-md-12 text-center'>
             <h1>Wedding Party</h1>
