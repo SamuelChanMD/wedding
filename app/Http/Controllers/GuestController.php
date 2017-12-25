@@ -36,13 +36,13 @@ class GuestController extends Controller
 
 	    	//If guest is attending, they can invite another, else they can't.
 	    	return response()->json([ 
-	    		'success' => 'Your record has been updated on the wedding list.',
+	    		'success' => 'Your RSVP information has been updated on the wedding list.',
 	    		'attending' => $guest->attending,
 	    		'invitorFN' => $firstName,
 	    		'invitorLN' => $lastName ]);
 		}
 
-		return response()->json([ 'error' => 'Sorry, we could not find a record of you in the database. If you received an invitation, please contact us ASAP.']);
+		return response()->json([ 'error' => 'Sorry, we could not find a record of your invitation. If you received an invitation through mail, please contact us ASAP.']);
 	}
 
 	public function rsvp2(Request $request)
