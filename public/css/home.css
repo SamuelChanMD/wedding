@@ -249,6 +249,12 @@
     border: 2px solid black;
 }
 
+.wedding-party-token {
+    height: 50px; 
+    width: 50px;
+    border: 2px solid black;
+}
+
 .current-guy {
     z-index: 3;
 }
@@ -263,7 +269,7 @@
 
 .wedding-party-list {
     list-style-type: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     overflow: hidden;
     background-color: #333;
@@ -275,6 +281,7 @@
 
 .wedding-party-list li {
     float: left;
+    width: 16.5%;
 }
 
 .wedding-party-list li a {
@@ -297,11 +304,13 @@
 #list-guys a:hover {
     background-color: #2d2de5;
     color: white;
+    text-decoration: underline;
 }
 
 #list-girls a:hover {
     background-color: #b44457;
     color: white;
+    text-decoration: underline;
 }
 
 /* Responsive Styling */

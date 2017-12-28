@@ -110,7 +110,8 @@
                 <h2>Girls</h2>
                 <h3 class='huge'>Grace Kim</h3>
                 <div class='wedding-image-holder'>
-                    <img class='img-responsive img-circle wedding-party-image current-girl' src='{!!asset( "images/daniel_chan.jpg")!!}' alt='image of Paul Loh'>
+                    <img class='img-responsive img-circle wedding-party-image current-girl' src='{!!asset( "images/grace_kim.jpg")!!}' alt='image of Grace Kim'>
+                    <img class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/daniel_chan.jpg")!!}' alt='image of Paul Loh'>
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
             </div>
@@ -120,28 +121,73 @@
                 <div id='imagesOfGuys' class='wedding-image-holder'>
                     <img id='paul_loh_img' class='img-responsive img-circle wedding-party-image current-guy' src='{!!asset( "images/paul_loh.jpg")!!}' alt='image of Paul Loh'>
                     <img id='daniel_chan_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/daniel_chan.jpg")!!}' alt='image of Daniel Chan'>
+                    <img id='ezekiel_chan_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/ezekiel_chan.jpg")!!}' alt='image of Ezekiel Chan'>
                     <img id='jonathan_chan_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/jonathan_chan.jpg")!!}' alt='image of Jonathan Chan'>
                 </div>
                 <p id='guy_description'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
             </div>
         </div>
     </div>
-    <ul id='list-girls' class='wedding-party-list'>
-        <li><a href='#girl_name' name='girl' value='grace_kim'>Grace Kim</a></li>
-        <li><a href='#girl_name' name='girl' value='chelsea_anne'>Chelsea Anne</a></li>
-        <li><a href='#girl_name' name='girl' value='puja_lastname'>Puja Lastname</a></li>
-        <li><a href='#girl_name' name='girl' value='jessica_lee'>Jessica Lee</a></li>
-        <li><a href='#girl_name' name='girl' value='vikki_moon'>Vikki Moon</a></li>
-        <li><a href='#girl_name' name='girl' value='randylee'>Randylee?</a></li>
-    </ul>
-    <ul id='list-guys' class='wedding-party-list'>
-        <li><a href='#guy_name' name='guy' value='paul_loh'>Paul Loh</a></li>
-        <li><a href='#guy_name' name='guy' value='paul_beckmann'>Paul Beckmann</a></li>
-        <li><a href='#guy_name' name='guy' value='aaron_wong'>Aaron Wong</a></li>
-        <li><a href='#guy_name' name='guy' value='daniel_chan'>Daniel Chan</a></li>
-        <li><a href='#guy_name' name='guy' value='ezekiel_chan'>Ezekiel Chan</a></li>
-        <li><a href='#guy_name' name='guy' value='jonathan_chan'>Jonathan Chan</li>
-    </ul>
+    <div class='container'>
+<!--         <div class='col-md-12'>
+            <ul id='list-girls' class='wedding-party-list'>
+                <li><a href='#girl_name' name='girl' value='grace_kim'>Grace<br>Kim</a></li>
+                <li><a href='#girl_name' name='girl' value='chelsea_anne'>Chelsea<br>Anne</a></li>
+                <li><a href='#girl_name' name='girl' value='puja_lastname'>Puja<br>Lastname</a></li>
+                <li><a href='#girl_name' name='girl' value='jessica_lee'>Jessica<br>Lee</a></li>
+                <li><a href='#girl_name' name='girl' value='vikki_moon'>Vikki<br>Moon</a></li>
+                <li><a href='#girl_name' name='girl' value='randylee'>Randylee<br>LastName</a></li>
+            </ul>
+            <ul id='list-guys' class='wedding-party-list'>
+                <li><a href='#guy_name' name='guy' value='paul_loh'>Paul<br>Loh</a></li>
+                <li><a href='#guy_name' name='guy' value='paul_beckmann'>Paul<br>Beckmann</a></li>
+                <li><a href='#guy_name' name='guy' value='aaron_wong'>Aaron<br>Wong</a></li>
+                <li><a href='#guy_name' name='guy' value='daniel_chan'>Daniel<br>Chan</a></li>
+                <li><a href='#guy_name' name='guy' value='ezekiel_chan'>Ezekiel<br>Chan</a></li>
+                <li><a href='#guy_name' name='guy' value='jonathan_chan'>Jonathan<br>Chan</a></li>
+            </ul>
+        </div> -->
+        <ul id='list-girls' class='wedding-party-list'>
+            <li><a href='#girl_name' name='girl' value='grace_kim'>
+                <img id='grace_kim_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/grace_kim.jpg")!!}' alt='image of Grace Kim'>
+            </a></li>
+            <li><a href='#girl_name' name='girl' value='chelsea_anne'>
+                <img id='chelsea_anne_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/paul_loh.jpg")!!}' alt='image of Chelsea Anne'>
+            </a></li>
+            <li><a href='#girl_name' name='girl' value='puja_ahluwalia'>
+                <img id='puja_ahluwalia_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/paul_loh.jpg")!!}' alt='image of Puja Ahluwalia'>
+            </a></li>
+            <li><a href='#girl_name' name='girl' value='jessica_lee'>
+                <img id='jessica_lee_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/paul_loh.jpg")!!}' alt='image of Jessica Lee'>
+            </a></li>
+            <li><a href='#girl_name' name='girl' value='vikki_moon'>
+                <img id='vikki_moon_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/paul_loh.jpg")!!}' alt='image of Vikki Moon'>
+            </a></li>
+            <li><a href='#girl_name' name='girl' value='randelee_macdonald'>
+                <img id='randelee_macdonald_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/paul_loh.jpg")!!}' alt='image of Randelee Macdonald'>
+            </a></li>
+        </ul>
+        <ul id='list-guys' class='wedding-party-list'>
+            <li><a href='#guy_name' name='guy' value='paul_loh'>
+                <img id='paul_loh_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/paul_loh.jpg")!!}' alt='image of Paul Loh'>
+            </a></li>
+            <li><a href='#guy_name' name='guy' value='paul_beckmann'>
+                <img id='paul_beckmann_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/paul_loh.jpg")!!}' alt='image of Paul Beckmann'>
+            </a></li>
+            <li><a href='#guy_name' name='guy' value='aaron_wong'>
+                <img id='aaron_wong_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/paul_loh.jpg")!!}' alt='image of Aaron Wong'>
+            </a></li>
+            <li><a href='#guy_name' name='guy' value='daniel_chan'>
+                <img id='daniel_chan_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/daniel_chan.jpg")!!}' alt='image of Daniel Chan'>
+            </a></li>
+            <li><a href='#guy_name' name='guy' value='ezekiel_chan'>
+                <img id='ezekiel_chan_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/ezekiel_chan.jpg")!!}' alt='image of Ezekiel Chan'>
+            </a></li>
+            <li><a href='#guy_name' name='guy' value='jonathan_chan'>
+                <img id='jonathan_chan_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/jonathan_chan.jpg")!!}' alt='image of Jonathan Chan'>
+            </a></li>
+        </ul>
+    </div>
 </div>
 <div class='container text-center'>
     <footer> Sam and Sarah 2017 </footer>

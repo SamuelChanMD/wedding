@@ -18,11 +18,38 @@ $(document).ready(function() {
 			'description': 'Daniel is my second brother. yoyo.aeefase asefesaf asefea esf g boij ijl.'
 		},
 		'ezekiel_chan': {
-			'name': 'Ezekiel Chan',
-			'description': 'Ezekiel makes a lot of money. aeefase asefesaf asefea esf g boij ijl.'
+			'name': 'Jedi Master Ezekiel Chan',
+			'description': 'At a young age, he became permanently blind from a fire. Now he travels around the world, searching for revenge.'
 		},
 		'jonathan_chan': {
 			'name': 'Jonathan Chan',
+			'description': 'Jonathan sings like Pavarotti aeefase asefesaf asefea esf g boij ijl.'
+		}
+	};
+
+	var girls = {
+		'grace_kim': {
+			'name': 'Grace Kim',
+			'description': 'aeefase asefesaf asefea esf g boij ijl.'
+		},
+		'puja_ahluwalia': {
+			'name': 'Puja Ahluwali',
+			'description': 'bxbae saefesf asefea esf g boij iesafasefjl.'
+		},
+		'chelsea_anne': {
+			'name': 'Chelsea Anne',
+			'description': 'aeefase asefesaf.'
+		},
+		'jessica_lee': {
+			'name': 'Jessica Lee',
+			'description': 'Daniel is my second brother. yoyo.aeefase asefesaf asefea esf g boij ijl.'
+		},
+		'vikki_moon': {
+			'name': 'Vikki Moon',
+			'description': 'At a young age, he became permanently blind from a fire. Now he travels around the world, searching for revenge.'
+		},
+		'randelee_macdonald': {
+			'name': 'Randelee MacDonald',
 			'description': 'Jonathan sings like Pavarotti aeefase asefesaf asefea esf g boij ijl.'
 		}
 	};
