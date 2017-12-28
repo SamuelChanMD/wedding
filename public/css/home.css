@@ -233,6 +233,77 @@
     font-family: "Raleway", sans-serif;
 }
 
+.wedding-image-holder { 
+    height: 150px; 
+    width: 150px; 
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.wedding-party-image {
+    position: absolute;
+    z-index: 1;
+    height: 150px; 
+    width: 150px;
+    border: 2px solid black;
+}
+
+.current-guy {
+    z-index: 3;
+}
+
+.current-girl {
+    z-index: 3;
+}
+
+.huge {
+    font-size: 46px;
+}
+
+.wedding-party-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-size: 14px;
+    width: 50%;
+    position: inline;
+    float: left;
+}
+
+.wedding-party-list li {
+    float: left;
+}
+
+.wedding-party-list li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#list-guys {
+    background-color: #3232FF;
+}
+
+#list-girls {
+    background-color: #c84c61;
+
+}
+
+#list-guys a:hover {
+    background-color: #2d2de5;
+    color: white;
+}
+
+#list-girls a:hover {
+    background-color: #b44457;
+    color: white;
+}
+
 /* Responsive Styling */
 
 /* Small devices (tablets, 768px and up) */
@@ -256,6 +327,7 @@
         /* Text */
         font-size: 3em;
     }
+
 }
 
 /* Medium devices (desktops, 992px and up) */

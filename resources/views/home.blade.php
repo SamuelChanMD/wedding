@@ -107,15 +107,41 @@
         <div class='col-md-12 text-center'>
             <h1>Wedding Party</h1>
             <div class='col-md-6'>
-                <h2>Guys</h2>
+                <h2>Girls</h2>
+                <h3 class='huge'>Grace Kim</h3>
+                <div class='wedding-image-holder'>
+                    <img class='img-responsive img-circle wedding-party-image current-girl' src='{!!asset( "images/daniel_chan.jpg")!!}' alt='image of Paul Loh'>
+                </div>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
             </div>
             <div class='col-md-6'>
-                <h2>Girls</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                <h2>Guys</h2>
+                <h3 id='guy_name' class='huge'>Paul Loh</h3>
+                <div id='imagesOfGuys' class='wedding-image-holder'>
+                    <img id='paul_loh_img' class='img-responsive img-circle wedding-party-image current-guy' src='{!!asset( "images/paul_loh.jpg")!!}' alt='image of Paul Loh'>
+                    <img id='daniel_chan_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/daniel_chan.jpg")!!}' alt='image of Daniel Chan'>
+                    <img id='jonathan_chan_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/jonathan_chan.jpg")!!}' alt='image of Jonathan Chan'>
+                </div>
+                <p id='guy_description'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
             </div>
         </div>
     </div>
+    <ul id='list-girls' class='wedding-party-list'>
+        <li><a href='#girl_name' name='girl' value='grace_kim'>Grace Kim</a></li>
+        <li><a href='#girl_name' name='girl' value='chelsea_anne'>Chelsea Anne</a></li>
+        <li><a href='#girl_name' name='girl' value='puja_lastname'>Puja Lastname</a></li>
+        <li><a href='#girl_name' name='girl' value='jessica_lee'>Jessica Lee</a></li>
+        <li><a href='#girl_name' name='girl' value='vikki_moon'>Vikki Moon</a></li>
+        <li><a href='#girl_name' name='girl' value='randylee'>Randylee?</a></li>
+    </ul>
+    <ul id='list-guys' class='wedding-party-list'>
+        <li><a href='#guy_name' name='guy' value='paul_loh'>Paul Loh</a></li>
+        <li><a href='#guy_name' name='guy' value='paul_beckmann'>Paul Beckmann</a></li>
+        <li><a href='#guy_name' name='guy' value='aaron_wong'>Aaron Wong</a></li>
+        <li><a href='#guy_name' name='guy' value='daniel_chan'>Daniel Chan</a></li>
+        <li><a href='#guy_name' name='guy' value='ezekiel_chan'>Ezekiel Chan</a></li>
+        <li><a href='#guy_name' name='guy' value='jonathan_chan'>Jonathan Chan</li>
+    </ul>
 </div>
 <div class='container text-center'>
     <footer> Sam and Sarah 2017 </footer>
