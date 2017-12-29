@@ -13,7 +13,7 @@
                 <div class='panel-body'>
                     <div class="text-center">
                         <p>
-                            Please enter your RSVP information in the form below
+                            Please enter your RSVP information in the form below for the reception
                         </p>
                     </div>
                     <div id='alert-success' class='alert alert-success' role='alert'>
@@ -100,22 +100,22 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class='hiddenUntilAttending'>
-                                <div class="form-group">
-                                    <label for="isKid" class="col-sm-4 control-label">Are you under the age of 12?</label>
-                                    <div class="col-sm-6">
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" name="isKid" id="isKid1" value="1"> Straight outta the womb
-                                            </label>
-                                        </div>
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" name="isKid" id="isKid2" value="0"> No
-                                            </label>
-                                        </div>
+                            <div class="form-group">
+                                <label for="isKid" class="col-sm-4 control-label">Are you under the age of 12?</label>
+                                <div class="col-sm-6">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="isKid" id="isKid1" value="1"> Yes
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="isKid" id="isKid2" value="0"> No
+                                        </label>
                                     </div>
                                 </div>
+                            </div>
+                            <div class='hiddenUntilAttending'>
                                 <div class="text-center">
                                     <p>Want a reminder? Fill out your electronic-mail below and we will give you an update a month beforehand!</p>
                                 </div>

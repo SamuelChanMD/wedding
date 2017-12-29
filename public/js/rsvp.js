@@ -30,10 +30,15 @@ $( document ).ready(function() {
 
 				if (response.success){
 
+					var glyphicon = 'glyphicon glyphicon-ok';
+
 					var success = "<ul>";
 					success += "<li>" + response.success + "</li>";
 					
-					if(response.inviteAnother === '1'){
+					if(response.attending === '1'){
+
+						glyphicon = 'glyphicon glyphicon-heart';
+
 						$('.first-rsvp-form-div').fadeOut(1000, function(){
 							$(this).hide();
 						});
@@ -49,7 +54,7 @@ $( document ).ready(function() {
 						});
 					}
 
-					displayAlert(success, "success", 900);
+					displayAlert(success, "success", glyphicon, 900);
 				}
 
 			}
@@ -92,7 +97,7 @@ $( document ).ready(function() {
 					success += "<li>" + response.success + "</li>";
 					success += "<li>You can invite another again.</li>";
 					success += "</ul>";
-					displayAlert(success, "success", 900);
+					displayAlert(success, "success", 'glyphicon glyphicon-heart', 900);
 				}
 
 			}
@@ -122,7 +127,7 @@ $( document ).ready(function() {
     }
 
     /* Display Alert */
-    function displayAlert(alertMsg, alertType, delayTime = 0){
+    function displayAlert(alertMsg, alertType, glyphicon, delayTime = 0){
     	$('.alert').empty().hide();
     	var header = '';
 
@@ -132,7 +137,7 @@ $( document ).ready(function() {
 				$(this).show();
 			});
 		} else {
-			header = "<h4 class='text-center'>Success!</h4>";
+			header = "<h4 class='text-center'>Success! <span class='" + glyphicon + "'></span></h4>";
 			$('#alert-success').html(header+alertMsg).delay(delayTime).fadeIn(1000, function(){
 				$(this).show();
 			});
