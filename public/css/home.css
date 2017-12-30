@@ -147,6 +147,9 @@
 
 #third-body {
     /* Display & Box Model */
+    background-image: url("../images/leaves.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: #f4efe9;
     border-bottom: 4px solid #ecd4b6;
     margin: 0px;
@@ -154,13 +157,13 @@
 
 #rsvp-button {
     /* Display & Box Model */
-    background-color: transparent;
     margin: 0 auto;
     margin: 30px;
     transition: 0.4s ease-in;
     width: auto;
 
     /* Color */
+    background-color: transparent;
     color: #f26d7d;
 
     /* Text */
@@ -193,15 +196,20 @@
 }
 
 #fourth-body {
+    /* Color */
+    /*background-color: #f4efe9;*/
+    background-color: #fff;
+    
     /* Display & Box Model */
-    background-color: #f4efe9;
     border-bottom: 4px solid #ecd4b6;
     margin: 0px;
 }
 
 #fifth-body {
-    /* Display & Box Model */
+    /* Color */
     background-color: #f2f4f3;
+
+    /* Display & Box Model */
     border-bottom: 4px solid #d9dada;
 }
 
@@ -218,7 +226,7 @@
 }
 
 .carousel-indicators .active {
-    /* Display & Box Model */
+    /* Color */
     background-color: #ed145b;
 }
 
@@ -227,87 +235,112 @@
     bottom: 0px !important;
 }
 
-/* RSVP Modal*/
+/* RSVP Modal */
 #rsvpModal {
     /* Text */
     font-family: "Raleway", sans-serif;
 }
 
+/* Wedding Party */
+
 .wedding-image-holder { 
-    height: 150px; 
-    width: 150px; 
+    /* Display & Box Model */
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
+    height: 150px;
+    width: 150px; 
 }
 
 .wedding-party-image {
-    position: absolute;
-    z-index: 1;
+    /* Display & Box Model */
+    border: 2px solid black;
     height: 150px; 
     width: 150px;
-    border: 2px solid black;
+
+    /* Positioning */
+    position: absolute;
+    z-index: 1;
 }
 
 .wedding-party-token {
+    /* Display & Box Model */
+    border: 2px solid black;
     height: 50px; 
     width: 50px;
-    border: 2px solid black;
 }
 
 .current-guy {
+    /* Positioning */
     z-index: 3;
 }
 
 .current-girl {
+    /* Positioning */
     z-index: 3;
 }
 
 .huge {
+    /* Text */
     font-size: 46px;
 }
 
 .wedding-party-list {
+    /* Text */
+    font-size: 14px;
+    
+    /* Display & Box Model */
+    float: left;
     list-style-type: none;
     margin: 0 auto;
-    padding: 0;
     overflow: hidden;
-    background-color: #333;
-    font-size: 14px;
+    padding: 0;
     width: 50%;
+
+    /* Positioning */
     position: inline;
-    float: left;
 }
 
 .wedding-party-list li {
+    /* Display & Box Model */
     float: left;
     width: 16.5%;
 }
 
 .wedding-party-list li a {
-    display: block;
+    /* Color */
     color: white;
-    text-align: center;
+
+    /* Display & Box Model */
+    display: block;
     padding: 14px 16px;
+    text-align: center;
     text-decoration: none;
+    transition: background-color 0.5s ease;
 }
 
 #list-guys {
-    background-color: #3232FF;
+    /* Color */
+    border-bottom: 10px solid #3232FF;
 }
 
 #list-girls {
-    background-color: #c84c61;
+    /* Color */
+    border-bottom: 10px solid #c84c61;
 
 }
 
 #list-guys a:hover {
+    /* Color */
     background-color: #2d2de5;
     color: white;
+
+    /* Display & Box Model */
     text-decoration: underline;
 }
 
 #list-girls a:hover {
+    /* Display & Box Model */
     background-color: #b44457;
     color: white;
     text-decoration: underline;
