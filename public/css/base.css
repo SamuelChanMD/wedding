@@ -24,6 +24,10 @@ p {
     font-weight: 500;
 }
 
+.jumbotron p {
+    font-size: 0.85em;
+}
+
 ::-webkit-scrollbar {
     /* Display & Box Model */
     width: 8px;
@@ -82,4 +86,8 @@ p {
 
     /* Color */
     color: #f26d7d;
+}
+
+footer {
+    padding-bottom: 20px;
 }
