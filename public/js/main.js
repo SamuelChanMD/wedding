@@ -73,7 +73,7 @@ $(document).ready(function() {
 
 		$('#girl_name').html(girls[name_key]['name']);
 		$('#girl_description').html(girls[name_key]['description']);
-		$('#imagesOfGuys').children().removeClass('current-girl');
+		$('#imagesOfGirls').children().removeClass('current-girl');
 		$(img_id).addClass('current-girl');
 	});
 

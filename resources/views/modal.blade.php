@@ -54,6 +54,31 @@
                                     </div>
                                 </div>
                                 <div class='hiddenUntilAttending animated fadeInUp text-center'>
+                                    <div class='form-group'>
+                                        <label class="col-sm-4 control-label">Dietary Restrictions</label>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox pull-left">
+                                              <label>
+                                                <input type="checkbox" name="vegetarian" value="1">
+                                                Vegetarian
+                                              </label>
+                                            </div>
+                                            <div class='clearfix'></div>
+                                            <div class="checkbox pull-left">
+                                              <label>
+                                                <input type="checkbox" name="glutenFree" value="1">
+                                                Gluten Free
+                                              </label>
+                                            </div>
+                                            <div class='clearfix'></div>
+                                            <div class="checkbox pull-left">
+                                              <label>
+                                                <input type="checkbox" name="lactoseIntolerant" value="1">
+                                                Lactose Intolerant
+                                              </label>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <p>Want a reminder? Fill out your electronic-mail below and we will give you an update a month beforehand!</p>
                                     <div class='form-group'>
                                         <label for="email" class="col-sm-4 control-label">E-Mail</label>
@@ -97,6 +122,31 @@
                                         <label>
                                             <input type="radio" name="attending" id="attending2" value="0"> No
                                         </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='form-group'>
+                                <label class="col-sm-4 control-label">Dietary Restrictions</label>
+                                <div class="col-sm-6">
+                                    <div class="checkbox pull-left">
+                                      <label>
+                                        <input type="checkbox" name="vegetarian" value="1">
+                                        Vegetarian
+                                      </label>
+                                    </div>
+                                    <div class='clearfix'></div>
+                                    <div class="checkbox pull-left">
+                                      <label>
+                                        <input type="checkbox" name="glutenFree" value="1">
+                                        Gluten Free
+                                      </label>
+                                    </div>
+                                    <div class='clearfix'></div>
+                                    <div class="checkbox pull-left">
+                                      <label>
+                                        <input type="checkbox" name="lactoseIntolerant" value="1">
+                                        Lactose Intolerant
+                                      </label>
                                     </div>
                                 </div>
                             </div>
