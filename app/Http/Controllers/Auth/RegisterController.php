@@ -27,7 +27,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = 'login';
 
     /**
      * Create a new controller instance.
@@ -38,6 +38,17 @@ class RegisterController extends Controller
     {
         $this->middleware('guest');
     }
+
+    /**
+     * Override showRegistrationForm from RegistersUsers
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function showRegistrationForm()
+    {
+        return redirect()->route('login');
+    }
+
 
     /**
      * Get a validator for an incoming registration request.

@@ -18,6 +18,9 @@ class GuestController extends Controller
 	        'firstName' => 'required|max:50',
 	        'lastName' => 'required|max:50',
 	        'attending' => 'required',
+	        'vegatarian' => 'nullable',
+	        'glutenFree' => 'nullable',
+	        'lactoseIntolerant'=> 'nullable',
 	        'email' => 'nullable|email'
 	        ]);
 
@@ -31,6 +34,9 @@ class GuestController extends Controller
 
     	if($guest != null){
 	    	$guest->attending = $request->attending;
+	    	$guest->vegetarian = ($request->vegetarian) ? $request->vegetarian : 0;
+	    	$guest->glutenFree = ($request->glutenFree) ? $request->glutenFree : 0;
+	    	$guest->lactoseIntolerant = ($request->lactoseIntolerant) ? $request->lactoseIntolerant : 0;
 	    	$guest->email = $request->email;
 	    	$guest->save();
 
@@ -52,6 +58,9 @@ class GuestController extends Controller
 	        'firstName' => 'required|max:50',
 	        'lastName' => 'required|max:50',
 	        'attending' => 'required',
+	        'vegatarian' => 'nullable',
+	        'glutenFree' => 'nullable',
+	        'lactoseIntolerant'=> 'nullable',
 	        'email' => 'nullable|email',
 	        'invitorFirstName' => 'required|max:50',
 	        'invitorLastName' => 'required|max:50',
@@ -74,8 +83,12 @@ class GuestController extends Controller
 	    	$flag = true;
     	}
     	
+
     	$guest->attending = $request->attending;
 	    $guest->email = $request->email;
+	    $guest->vegetarian = ($request->vegetarian) ? $request->vegetarian : 0;
+	    $guest->glutenFree = ($request->glutenFree) ? $request->glutenFree : 0;
+	    $guest->lactoseIntolerant = ($request->lactoseIntolerant) ? $request->lactoseIntolerant : 0;
 	    $guest->invitorFirstName = strtolower($request->invitorFirstName);
 	    $guest->invitorLastName = strtolower($request->invitorLastName);
 	    $guest->isKid = $request->isKid;
@@ -88,5 +101,22 @@ class GuestController extends Controller
     		'success' => $responseText, 
     		'invitorFN' => $guest->invitorFirstName,
     		'invitorLN' => $guest->invitorLastName ]);
+	}
+
+
+	/**
+	 * Display a listing of the resource.
+	 *
+	 * @return \Illuminate\Http\Response
+	 */
+	public function index()
+	{
+		$this->middleware('auth');
+	    $guests = Guest::all();
+	    $guestAttendingCount = Guest::where('attending', 1)->count();
+	    $childAttendingCount = Guest::where('attending', 1)->where('isKid', 1)->count();
+	    return view('guest.index')->with('guests', $guests)
+	    						  ->with('guestAttendingCount', $guestAttendingCount)
+	    						  ->with('childAttendingCount', $childAttendingCount);
 	}
 }
