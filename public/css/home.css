@@ -1,5 +1,36 @@
 /* Home Styling */
 
+.navbar-default {
+    background-color: transparent;
+    border: none;   
+    font-size: 2em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.65);
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #f26d7d;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+
 #first-body {
     /* Positioning */
     position: relative;
@@ -197,9 +228,11 @@
 
 #fourth-body {
     /* Color */
-    /*background-color: #f4efe9;*/
     background-color: #fff;
-    
+    background-image: linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url("../images/ottawa.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
     /* Display & Box Model */
     border-bottom: 4px solid #ecd4b6;
     margin: 0px;
@@ -344,6 +377,25 @@
     background-color: #b44457;
     color: white;
     text-decoration: underline;
+}
+
+#scrollTopBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #555; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+}
+
+#scrollTopBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
 }
 
 /* Responsive Styling */

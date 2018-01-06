@@ -13,6 +13,32 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-default text-center">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active" id="wedding-nav"><a href="#">Wedding Details<span class="sr-only">(current)</span></a></li>
+                            <li><a href="#" id="things-nav">Things To Do</a></li>
+                            <li><a href="#" id="wedding-party-nav">Wedding Party</a></li>
+                            <li><a href="#" id="registry-nav">Registry</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+    </div>
     <div class="row">
         <div role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" id="our-story-btn" aria-controls="collapseOne" class="wow fadeInDown" data-wow-offset="200">
             <h2 class="our-story-heading-text">
@@ -167,9 +193,15 @@
         </ul>
     </div>
 </div>
+<div class='jumbotron wow slideInUp' id='sixth-body' data-wow-offset="300">
+    <div class='container text-center'>
+        <h1>Registry</h1>
+    </div>
+</div>
 <div class='container text-center'>
     <footer>
         <h3>Sam and Sarah 2017</h3>
     </footer>
 </div>
+<button id="scrollTopBtn">Back To Top</button>
 @component('modal') @endcomponent @stop

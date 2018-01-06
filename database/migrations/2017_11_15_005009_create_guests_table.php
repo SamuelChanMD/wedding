@@ -19,9 +19,9 @@ class CreateGuestsTable extends Migration
             $table->string('lastName', 50);
             $table->boolean('attending')->nullable($value = true);
             $table->string('email', 50)->nullable();
-            $table->boolean('vegetarian')->nullabe();
-            $table->boolean('glutenFree')->nullabe();
-            $table->boolean('lactoseIntolerant')->nullabe();
+            $table->boolean('vegetarian')->default(false)->nullabe();
+            $table->boolean('glutenFree')->default(false)->nullabe();
+            $table->boolean('lactoseIntolerant')->default(false)->nullabe();
             $table->boolean('isKid')->default(false)->nullable();
             $table->string('invitorFirstName')->nullable();
             $table->string('invitorLastName')->nullable();
