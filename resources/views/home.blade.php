@@ -68,7 +68,6 @@
         <h2>StoneFields</h2>
         <h2>1985 9th Line Carleton Place  ON K7C 3P2</h2>
         <h2>Ceremony at 330 PM Reception at 600 PM</h2>
-        <!-- <h2></h2> -->
         <button type="button" class="btn btn-lg" id="rsvp-button" data-toggle="modal" data-target="#rsvpModal">
             RSVP
         </button>
@@ -85,6 +84,8 @@
                     <li data-target="#carousel-section" data-slide-to="0" class="active"></li>
                     <li data-target="#carousel-section" data-slide-to="1"></li>
                     <li data-target="#carousel-section" data-slide-to="2"></li>
+                    <li data-target="#carousel-section" data-slide-to="3"></li>
+                    <li data-target="#carousel-section" data-slide-to="4"></li>
                 </ol>
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
@@ -92,14 +93,28 @@
                         <img src='{!!asset( "images/byward_market.jpg")!!}' alt='image of byward market'>
                         <div class="carousel-caption">
                             <h2>Byward Market</h2>
-                            <p>Street performers. Lively public. Lots of places to eat.</p>
+                            <p>Street performers. Lively public. Local farmer's market.</p>
                         </div>
                     </div>
                     <div class="item">
-                        <img src='{!!asset( "images/dows_lake.jpg")!!}' alt='image of dows lake'>
+                        <img src='{!!asset( "images/nature_museum.jpg")!!}' alt='image of nature museum'>
                         <div class="carousel-caption">
-                            <h2>Dows Lake Pavillion</h2>
-                            <p>Take a stroll around Dows Lake and along the Rideau Canal.</p>
+                            <h2>Nature Museum</h2>
+                            <p>Fun for adults and kids!</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src='{!!asset( "images/dominion_arboretum.jpg")!!}' alt='image of dominion arboretum'>
+                        <div class="carousel-caption">
+                            <h2>Dominion Arboretum</h2>
+                            <p>Take a stroll or go for a picnic, Sam and Sarah did.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src='{!!asset( "images/national_gallery_of_canada.jpg")!!}' alt='image of national gallery of canada'>
+                        <div class="carousel-caption">
+                            <h2>National Gallery of Canada</h2>
+                            <p>Fan of art? We will know where to find you if you're late to the wedding.</p>
                         </div>
                     </div>
                     <div class="item">
@@ -129,24 +144,26 @@
             <h1>Wedding Party</h1>
             <div class='col-md-6 wow fadeInLeft' data-wow-duration="1.25s">
                 <h2>Girls</h2>
-                <h3 id='girl_name' class='huge'>Grace Kim</h3>
+                <h3 id='girl_name' class='huge'></h3>
                 <div id='imagesOfGirls' class='wedding-image-holder'>
                     <img id='grace_kim_img' class='img-responsive img-circle wedding-party-image current-girl' src='{!!asset( "images/grace_kim.jpg")!!}' alt='image of Grace Kim'>
                     <img id='chelsea_anne_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/chelsea_anne.jpg")!!}' alt='image of Chelsea Anne'>
+                    <img id='puja_ahluwalia_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/puja_ahluwalia.jpg")!!}' alt='image of Puja Ahluwalia'>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                <p id='girl_description'></p>
             </div>
             <div class='col-md-6 wow fadeInRight' data-wow-duration="1.25s">
                 <h2>Guys</h2>
-                <h3 id='guy_name' class='huge'>Paul Loh</h3>
+                <h3 id='guy_name' class='huge'></h3>
                 <div id='imagesOfGuys' class='wedding-image-holder'>
                     <img id='paul_loh_img' class='img-responsive img-circle wedding-party-image current-guy' src='{!!asset( "images/paul_loh.jpg")!!}' alt='image of Paul Loh'>
+                    <img id='paul_beckmann_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/paul_beckmann.jpg")!!}' alt='image of Paul Beckmann'>
                     <img id='aaron_wong_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/aaron_wong.jpg")!!}' alt='image of Aaron Wong'>
                     <img id='daniel_chan_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/daniel_chan.jpg")!!}' alt='image of Daniel Chan'>
                     <img id='ezekiel_chan_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/ezekiel_chan.jpg")!!}' alt='image of Ezekiel Chan'>
                     <img id='jonathan_chan_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/jonathan_chan.jpg")!!}' alt='image of Jonathan Chan'>
                 </div>
-                <p id='guy_description'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                <p id='guy_description'></p>
             </div>
         </div>
     </div>
@@ -159,7 +176,7 @@
                 <img id='chelsea_anne_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/chelsea_anne.jpg")!!}' alt='image of Chelsea Anne'>
             </a></li>
             <li><a href='#girl_name' name='girl' value='puja_ahluwalia'>
-                <img id='puja_ahluwalia_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/paul_loh.jpg")!!}' alt='image of Puja Ahluwalia'>
+                <img id='puja_ahluwalia_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/puja_ahluwalia.jpg")!!}' alt='image of Puja Ahluwalia'>
             </a></li>
             <li><a href='#girl_name' name='girl' value='jessica_lee'>
                 <img id='jessica_lee_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/paul_loh.jpg")!!}' alt='image of Jessica Lee'>
@@ -176,7 +193,7 @@
                 <img id='paul_loh_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/paul_loh.jpg")!!}' alt='image of Paul Loh'>
             </a></li>
             <li><a href='#guy_name' name='guy' value='paul_beckmann'>
-                <img id='paul_beckmann_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/paul_loh.jpg")!!}' alt='image of Paul Beckmann'>
+                <img id='paul_beckmann_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/paul_beckmann.jpg")!!}' alt='image of Paul Beckmann'>
             </a></li>
             <li><a href='#guy_name' name='guy' value='aaron_wong'>
                 <img id='aaron_wong_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/aaron_wong.jpg")!!}' alt='image of Aaron Wong'>

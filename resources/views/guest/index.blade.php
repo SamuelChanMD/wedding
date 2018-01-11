@@ -3,7 +3,7 @@
 @section('title', 'List of Guests')
 
 @section('content')
-<div class='container'>
+<div class='container' style='font-family: "Raleway";'>
 	<h1>All Guests</h1>
 	<div class='row'>
 		<div class='col-md-12'>
@@ -22,12 +22,12 @@
 					@foreach($guests as $guest)
 						<tr>
 							<td>{{$guest->firstName}} {{$guest->lastName}}</td>
-							<td>{{$guest->attending}}</td>
+							<td>@if($guest->attending) Yes @else No @endif</td>
 							<td>{{$guest->email}}</td>
-							<td>{{$guest->vegetarian}}</td>
-							<td>{{$guest->glutenFree}}</td>
-							<td>{{$guest->lactoseIntolerant}}</td>			
-							<td>{{$guest->isKid}}</td>
+							<td>@if($guest->vegetarian) Yes @else No @endif</td>
+							<td>@if($guest->glutenFree) Yes @else No @endif</td>
+							<td>@if($guest->lactoseIntolerant) Yes @else No @endif</td>			
+							<td>@if($guest->isKid) Yes @else No @endif</td>
 							<td>{{$guest->invitorFirstName}} {{$guest->invitorLastName}}</td>
 						</tr>
 					@endforeach
@@ -40,15 +40,11 @@
 		<div class='col-md-12'>
 			<p>Number of guests attending: {{$guestAttendingCount}}</p>
 			<p>Number of kids attending: {{$childAttendingCount}}</p>
+			<p>Number of vegetarians attending: {{$vegetarianAttendingCount}}</p>
+			<p>Number of gluten frees attending: {{$glutenFreeAttendingCount}}</p>
+			<p>Number of lactose intolerants attending: {{$lactoseIntolerantAttendingCount}}</p>
 			<p>Note: Number of guests includes children, wedding party, and bride and groom</p>
 		</div>
 	</div>	
-    <a href="{{ url('/logout') }}" onclick="event.preventDefault();
-        document.getElementById('logout-form').submit();">
-        Logout
-    </a>
-    <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
-        {{ csrf_field() }}
-    </form>
 </div>
 @stop

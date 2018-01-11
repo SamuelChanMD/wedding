@@ -28,9 +28,7 @@ Route::get('/guest', 'GuestController@index')->name('guest.index');
 //User routes
 Auth::routes();
 
-
-/* list to do
-| Implement email reminder
-| Implement transferring money to bank account?
+/*
+*sam: registry section, menubar, photo gallery
 */
 
