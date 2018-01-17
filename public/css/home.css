@@ -244,6 +244,7 @@
 
     /* Display & Box Model */
     border-bottom: 4px solid #d9dada;
+    margin: 0;
 }
 
 /* Carousel Overrides */
@@ -398,7 +399,67 @@
     background-color: #555; /* Add a dark-grey background on hover */
 }
 
+
+/*
+ * Registry Styling
+ */
+ #sixth-body {
+     /* Color */
+     color: white;
+
+     /* Display & Box Model */
+     border-bottom: 4px solid #d9dada;
+
+     /* Display & Box Model */
+     background-color: #000;
+     background-image: url("../images/registry_background.jpeg");
+     /*background-position: center; */
+     background-size: cover;
+     background-repeat: no-repeat;
+     /*opacity: 0.9;*/
+     /*margin: 0px;*/
+ }
+
+ .registryRow {
+    background-color:#AE0D46; 
+    height:170px;
+    padding-left:35px; 
+    padding-right:35px;
+ }
+
+ .registryOption {
+    background-color: white;
+    height: 140%;
+    margin-top: -2% !important;
+    width: 22%;
+    margin: 0 auto;
+    border: 10px solid #C62C58;
+    box-shadow: 5px 8px rgba(0, 0, 0, 0.55);;
+ }
+
+ .registryOptionTitle {
+    vertical-align: middle;
+    font-family: 'Raleway';
+ }
+
+
 /* Responsive Styling */
+
+@media only screen and (max-width: 992px){
+    .registryRow {
+        background-color: transparent;
+        height: auto;
+        padding: 0;
+    }
+
+    .registryOption {
+        margin-top: 0 !important;
+        width: 85%;
+        margin-left: 7.5% !important;
+        margin-bottom: 7.5%;
+    }
+
+}
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {

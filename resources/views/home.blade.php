@@ -67,7 +67,7 @@
         <h2>10th June 2018</h2>
         <h2>StoneFields</h2>
         <h2>1985 9th Line Carleton Place  ON K7C 3P2</h2>
-        <h2>Ceremony at 330 PM Reception at 600 PM</h2>
+        <h2>Ceremony at 400 PM Reception at 600 PM</h2>
         <button type="button" class="btn btn-lg" id="rsvp-button" data-toggle="modal" data-target="#rsvpModal">
             RSVP
         </button>
@@ -211,13 +211,42 @@
     </div>
 </div>
 <div class='jumbotron wow slideInUp' id='sixth-body' data-wow-offset="300">
+    <!-- What needs to be done in REGISTRY section
+            1. Simple animation for when someone hovers over a registry option.
+            2. Content
+            3. Link to zola once we open it
+            4. Clean up css
+    -->
     <div class='container text-center'>
-        <h1>Registry</h1>
+        <h1 style='margin-bottom: 50px'>Registry</h1>
+        <p style='margin-bottom: 50px'>We are the champions</p>
+        <div class='row registryRow' style='margin-bottom: 200px'>
+            <div class='col-md-4 registryOption' style=''>
+                <img class='img-responsive' src='{!!asset( "images/zola.png" )!!}'>
+                <div style='background-color:#C62C58; position: absolute; bottom: 0; width: 100%; margin-left: -15px'>
+                    <span class='registryOptionTitle'><strong>ZOLA REGISTRY</strong></span>
+                </div>
+            </div>
+            <div class='col-md-4 registryOption' style='margin-left:17%'>
+                <img class='img-responsive' src='{!!asset( "images/piggy_bank.png" )!!}'>
+                <div style='background-color:#C62C58; position: absolute; bottom: 0; width: 100%; margin-left: -15px'>
+                    <span class='registryOptionTitle'><strong>CASH FUND</strong></span>
+                </div>
+            </div>
+            <div class='col-md-4 registryOption' style='margin-left:17%'>
+                <div style='width:100%; padding: 15px'>
+                <img class='img-responsive' src='{!!asset( "images/gift.png" )!!}'>
+                </div>
+                <div style='background-color:#C62C58; position: absolute; bottom: 0; width: 100%; margin-left: -15px'>
+                    <span class='registryOptionTitle'><strong>PERSONAL GIFT</strong></span>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <div class='container text-center'>
     <footer>
-        <h3>Sam and Sarah 2017</h3>
+        <h3>Sam and Sarah 2018</h3>
     </footer>
 </div>
 <button id="scrollTopBtn">Back To Top</button>
