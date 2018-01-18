@@ -226,6 +226,12 @@
     animation: fadeInDown 0.75s;
 }
 
+
+
+/*
+ * WHAT TO DO STYLING
+ */
+
 #fourth-body {
     /* Color */
     background-color: #fff;
@@ -236,15 +242,6 @@
     /* Display & Box Model */
     border-bottom: 4px solid #ecd4b6;
     margin: 0px;
-}
-
-#fifth-body {
-    /* Color */
-    background-color: #f2f4f3;
-
-    /* Display & Box Model */
-    border-bottom: 4px solid #d9dada;
-    margin: 0;
 }
 
 /* Carousel Overrides */
@@ -275,7 +272,20 @@
     font-family: "Raleway", sans-serif;
 }
 
-/* Wedding Party */
+
+
+/*
+ * WEDDING PARTY STYLING
+ */
+
+ #fifth-body {
+     /* Color */
+     background-color: #f2f4f3;
+
+     /* Display & Box Model */
+     border-bottom: 4px solid #d9dada;
+     margin: 0;
+ }
 
 .wedding-image-holder { 
     /* Display & Box Model */
@@ -400,24 +410,22 @@
 }
 
 
+
 /*
- * Registry Styling
+ * REGISTRY STYLING
  */
  #sixth-body {
      /* Color */
      color: white;
 
      /* Display & Box Model */
-     border-bottom: 4px solid #d9dada;
-
-     /* Display & Box Model */
      background-color: #000;
      background-image: url("../images/registry_background.jpeg");
-     /*background-position: center; */
      background-size: cover;
      background-repeat: no-repeat;
-     /*opacity: 0.9;*/
-     /*margin: 0px;*/
+     /*opacity: 0.75;*/
+     margin: 0px;
+     border-bottom: 4px solid #d9dada;
  }
 
  .registryRow {
@@ -437,13 +445,64 @@
     box-shadow: 5px 8px rgba(0, 0, 0, 0.55);;
  }
 
- .registryOptionTitle {
+ .registryOptionHeader {
+    background-color:#C62C58; 
+    position: absolute; 
+    bottom: 0; 
+    width: 100%; 
+    margin-left: -15px
+ }
+
+ .registryOptionText {
     vertical-align: middle;
     font-family: 'Raleway';
  }
 
+.registryOptionContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+    background-color: black;
+    opacity: 0;
+}
 
-/* Responsive Styling */
+.registryOption:hover .registryOptionContent {
+    visibility: visible;
+    opacity: 0.75;
+    animation: fadeInTwo 0.75s;
+}
+
+@keyframes fadeInTwo {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.75;
+  }
+}
+
+/*
+ * PHOTOS STYLING
+ */
+
+ #seventh-body {
+     /* Color */
+     background-color: #f2f4f3;
+
+     /* Display & Box Model */
+     border-bottom: 4px solid #d9dada;
+     margin: 0;
+ }
+
+ 
+
+/* 
+ * RESPONSIVE STYLING
+ */
 
 @media only screen and (max-width: 992px){
     .registryRow {

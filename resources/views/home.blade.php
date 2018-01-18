@@ -76,7 +76,9 @@
 <div class='jumbotron wow fadeInUp' id='fourth-body' data-wow-offset="300">
     <div class='container text-center'>
         <h1>Things Todo in Ottawa</h1>
-        <p>If you're coming to Ottawa for the first time, we've compiled a list of things that you should do while you're here!</p>
+        <span class='registryOptionText'>
+            If you're coming to Ottawa for the first time, we
+        'vspan compiled a list of things that you should do while you're here!</p>
         <div class='col-md-10 col-md-offset-1'>
             <div id='carousel-section' class='carousel slide' data-ride='carousel'>
                 <!-- Indicators -->
@@ -212,34 +214,93 @@
 </div>
 <div class='jumbotron wow slideInUp' id='sixth-body' data-wow-offset="300">
     <!-- What needs to be done in REGISTRY section
-            1. Simple animation for when someone hovers over a registry option.
-            2. Content
+            1. Center registryOptionText
+            2. Content Review
             3. Link to zola once we open it
-            4. Clean up css
     -->
     <div class='container text-center'>
         <h1 style='margin-bottom: 50px'>Registry</h1>
-        <p style='margin-bottom: 50px'>We are the champions</p>
+        <p style='margin-bottom: 50px'>There are three different ways you can help us financially.
+            Hover over the one of your choice! For any gift you want to send before the day of the wedding,
+            the delivery address is 86 Blackburn Avenue, Ottawa, ON, K1N 8A5.
+         </p>
         <div class='row registryRow' style='margin-bottom: 200px'>
-            <div class='col-md-4 registryOption' style=''>
+            <div class='col-md-4 registryOption'>
                 <img class='img-responsive' src='{!!asset( "images/zola.png" )!!}'>
-                <div style='background-color:#C62C58; position: absolute; bottom: 0; width: 100%; margin-left: -15px'>
-                    <span class='registryOptionTitle'><strong>ZOLA REGISTRY</strong></span>
+                <div class='registryOptionContent'>
+                    <span class='registryOptionText'>
+                        Help us build a lovely home by purchasing a household item on Zola!
+                    </span>
+                </div>
+                <div class='registryOptionHeader'>
+                    <span class='registryOptionText'><strong>ZOLA REGISTRY</strong></span>
                 </div>
             </div>
             <div class='col-md-4 registryOption' style='margin-left:17%'>
                 <img class='img-responsive' src='{!!asset( "images/piggy_bank.png" )!!}'>
-                <div style='background-color:#C62C58; position: absolute; bottom: 0; width: 100%; margin-left: -15px'>
-                    <span class='registryOptionTitle'><strong>CASH FUND</strong></span>
+                <div class='registryOptionContent'>
+                    <span class='registryOptionText'>
+                        Make a monetary donation to help us with the big stuff!
+                    </span>
+                </div>
+                <div class='registryOptionHeader'>
+                    <span class='registryOptionText'><strong>CASH FUND</strong></span>
                 </div>
             </div>
             <div class='col-md-4 registryOption' style='margin-left:17%'>
                 <div style='width:100%; padding: 15px'>
                 <img class='img-responsive' src='{!!asset( "images/gift.png" )!!}'>
                 </div>
-                <div style='background-color:#C62C58; position: absolute; bottom: 0; width: 100%; margin-left: -15px'>
-                    <span class='registryOptionTitle'><strong>PERSONAL GIFT</strong></span>
+                <div class='registryOptionContent'>
+                    <span class='registryOptionText'>
+                        Already have a gift in mind? Send to the address above or wait until the wedding day!
+                    </span>
                 </div>
+                <div class='registryOptionHeader'>
+                    <span class='registryOptionText'><strong>PERSONAL GIFT</strong></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class='jumbotron wow slideInUp' id='seventh-body' data-wow-offset="300">
+    <!-- WHAT NEEDS TO BE DONE IN ENAGEMENT PHOTO SECTION
+            1. Need photos from Josh
+            2. Implement modal
+    -->
+    <div class='container text-center'>
+        <h1 style='margin-bottom: 50px'>Engagement Photos</h1>
+        <div class='row' style='margin-bottom: 20px'>
+            <div class='col-md-4'>
+                <img class='img-responsive img-thumbnail' src='{!!asset( "images/engagement_photo_1.JPG" )!!}'>
+            </div>
+            <div class='col-md-4'>
+                <img class='img-responsive img-thumbnail' src='{!!asset( "images/engagement_photo_2.jpg" )!!}'>
+            </div>
+            <div class='col-md-4'>
+                <img class='img-responsive img-thumbnail' src='{!!asset( "images/engagement_photo_3.jpg" )!!}'>
+            </div>
+        </div>
+        <div class='row' style='margin-bottom: 20px'>
+            <div class='col-md-4'>
+                <img class='img-responsive' src='{!!asset( "images/gift.png" )!!}'>
+            </div>
+            <div class='col-md-4'>
+                <img class='img-responsive' src='{!!asset( "images/gift.png" )!!}'>
+            </div>
+            <div class='col-md-4'>
+                <img class='img-responsive' src='{!!asset( "images/gift.png" )!!}'>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-md-4'>
+                <img class='img-responsive' src='{!!asset( "images/gift.png" )!!}'>
+            </div>
+            <div class='col-md-4'>
+                <img class='img-responsive' src='{!!asset( "images/gift.png" )!!}'>
+            </div>
+            <div class='col-md-4'>
+                <img class='img-responsive' src='{!!asset( "images/gift.png" )!!}'>
             </div>
         </div>
     </div>
