@@ -141,29 +141,38 @@
     </div>
 </div>
 <div class='jumbotron' id='fifth-body' data-wow-offset="300">
+<!-- What needs to be done in wedding party section
+    1. align brushes and pictures properly.
+    2. create the other things into cards
+    3. Sarah's content of girls needs review
+-->
     <div class='container'>
         <div class='col-md-12 text-center'>
             <h1>Wedding Party</h1>
             <div class='col-md-6 wow fadeInLeft' data-wow-duration="1.25s">
-                <h2>Girls</h2>
+                <h2>Bridesmaids</h2>
                 <h3 id='girl_name' class='huge'></h3>
-                <div id='imagesOfGirls' class='wedding-image-holder'>
-                    <img id='grace_kim_img' class='img-responsive img-circle wedding-party-image current-girl' src='{!!asset( "images/grace_kim.jpg")!!}' alt='image of Grace Kim'>
-                    <img id='chelsea_anne_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/chelsea_anne.jpg")!!}' alt='image of Chelsea Anne'>
-                    <img id='puja_ahluwalia_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/puja_ahluwalia.jpg")!!}' alt='image of Puja Ahluwalia'>
+                <div class='bridesmaids-temp'>
+                    <div id='imagesOfGirls' class='wedding-image-holder'>
+                        <img id='grace_kim_img' class='img-responsive img-circle wedding-party-image current-girl' src='{!!asset( "images/grace_kim.jpg")!!}' alt='image of Grace Kim'>
+                        <img id='chelsea_anne_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/chelsea_anne.jpg")!!}' alt='image of Chelsea Anne'>
+                        <img id='puja_ahluwalia_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/puja_ahluwalia.jpg")!!}' alt='image of Puja Ahluwalia'>
+                    </div>
                 </div>
                 <p id='girl_description'></p>
             </div>
             <div class='col-md-6 wow fadeInRight' data-wow-duration="1.25s">
-                <h2>Guys</h2>
+                <h2>Groomsmen</h2>
                 <h3 id='guy_name' class='huge'></h3>
-                <div id='imagesOfGuys' class='wedding-image-holder'>
-                    <img id='paul_loh_img' class='img-responsive img-circle wedding-party-image current-guy' src='{!!asset( "images/paul_loh.jpg")!!}' alt='image of Paul Loh'>
-                    <img id='paul_beckmann_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/paul_beckmann.jpg")!!}' alt='image of Paul Beckmann'>
-                    <img id='aaron_wong_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/aaron_wong.jpg")!!}' alt='image of Aaron Wong'>
-                    <img id='daniel_chan_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/daniel_chan.jpg")!!}' alt='image of Daniel Chan'>
-                    <img id='ezekiel_chan_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/ezekiel_chan.jpg")!!}' alt='image of Ezekiel Chan'>
-                    <img id='jonathan_chan_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/jonathan_chan.jpg")!!}' alt='image of Jonathan Chan'>
+                <div class='groomsmen-temp'>
+                    <div id='imagesOfGuys' class='wedding-image-holder'>
+                        <img id='paul_loh_img' class='img-responsive img-circle wedding-party-image current-guy' src='{!!asset( "images/paul_loh.jpg")!!}' alt='image of Paul Loh'>
+                        <img id='paul_beckmann_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/paul_beckmann.jpg")!!}' alt='image of Paul Beckmann'>
+                        <img id='aaron_wong_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/aaron_wong.jpg")!!}' alt='image of Aaron Wong'>
+                        <img id='daniel_chan_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/daniel_chan.jpg")!!}' alt='image of Daniel Chan'>
+                        <img id='ezekiel_chan_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/ezekiel_chan.jpg")!!}' alt='image of Ezekiel Chan'>
+                        <img id='jonathan_chan_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/jonathan_chan.jpg")!!}' alt='image of Jonathan Chan'>
+                    </div>
                 </div>
                 <p id='guy_description'></p>
             </div>
@@ -266,24 +275,23 @@
 <div class='jumbotron wow slideInUp' id='seventh-body' data-wow-offset="300">
     <!-- WHAT NEEDS TO BE DONE IN ENAGEMENT PHOTO SECTION
             1. Need photos from Josh
-            2. Implement modal
     -->
     <div class='container text-center'>
         <h1 style='margin-bottom: 50px'>Engagement Photos</h1>
         <div class='row' style='margin-bottom: 20px'>
             <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail' src='{!!asset( "images/engagement_photo_1.JPG" )!!}'>
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_1.JPG" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
             <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail' src='{!!asset( "images/engagement_photo_2.jpg" )!!}'>
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_2.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
             <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail' src='{!!asset( "images/engagement_photo_3.jpg" )!!}'>
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_3.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
         </div>
         <div class='row' style='margin-bottom: 20px'>
             <div class='col-md-4'>
-                <img class='img-responsive' src='{!!asset( "images/gift.png" )!!}'>
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_4.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
             <div class='col-md-4'>
                 <img class='img-responsive' src='{!!asset( "images/gift.png" )!!}'>
@@ -302,6 +310,13 @@
             <div class='col-md-4'>
                 <img class='img-responsive' src='{!!asset( "images/gift.png" )!!}'>
             </div>
+        </div>
+    </div>
+</div>
+<div class="modal animated bounceInDown" id="engagementPhotoModal" tabindex="-1" role="dialog" aria-labelledby="whatIsThis">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="border-radius: 4px">
+            <img id='imageModal' class='img-responsive img-thumbnail' src=''>
         </div>
     </div>
 </div>

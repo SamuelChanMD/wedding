@@ -132,3 +132,12 @@ function scrollFunction() {
         document.getElementById("scrollTopBtn").style.display = "none";
     }
 }
+
+/*
+ * Photo Section
+ */
+
+$('.engagementPhoto').click(function(event){
+    var pic = event.currentTarget.attributes.src.value;
+    $('#imageModal').attr('src', pic);
+});
