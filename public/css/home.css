@@ -280,10 +280,9 @@
 
  #fifth-body {
      /* Color */
-     background-color: #FBF2E1;
+     background-color: #fcf4e3;
 
      /* Display & Box Model */
-     border-bottom: 4px solid #d9dada;
      margin: 0;
  }
 
@@ -330,8 +329,9 @@
 .wedding-party-token {
     /* Display & Box Model */
     border: 2px solid black;
-    height: 50px; 
-    width: 50px;
+    height: 60px; 
+    width: 60px;
+    margin: 0 auto;
 }
 
 .current-guy {
@@ -366,12 +366,6 @@
     position: inline;
 }
 
-.wedding-party-list li {
-    /* Display & Box Model */
-    float: left;
-    width: 16.5%;
-}
-
 .wedding-party-list li a {
     /* Color */
     color: white;
@@ -386,12 +380,12 @@
 
 #list-guys {
     /* Color */
-    border-bottom: 10px solid #3232FF;
+    border-bottom: 10px solid #b7cdb8;
 }
 
 #list-girls {
     /* Color */
-    border-bottom: 10px solid #c84c61;
+    border-bottom: 10px solid #d2dbec;
 
 }
 
@@ -418,6 +412,10 @@
     background-repeat: no-repeat;
 }
 
+.wedding-party-description {
+    min-height: 160px;
+    margin: 0 40px 0 40px;
+}
 
 
 /*
@@ -429,7 +427,7 @@
 
      /* Display & Box Model */
      background-color: #000;
-     background-image: url("../images/registry_background.jpeg");
+     background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/registry_background.jpeg");
      background-size: cover;
      background-repeat: no-repeat;
      /*opacity: 0.75;*/
