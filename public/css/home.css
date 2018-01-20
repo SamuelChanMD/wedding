@@ -36,7 +36,7 @@
     position: relative;
 
     /* Display & Box Model */
-    background-color: #000;
+    background-color: #f4efe9;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -112,7 +112,7 @@
 #our-story-btn {
     /* Positioning */
     position: absolute;
-    bottom: -30px;
+    bottom: -10px;
     left: 0;
     right: 0;
 
@@ -166,8 +166,9 @@
 
 #second-body {
     /* Display & Box Model */
-    background-color: #fff;
-    border-bottom: 4px solid #ededed;
+    background-image: url("../images/leaves-repeat.jpg");
+    background-size: cover;
+    background-color: #f4efe9;
     margin: 0px;
     padding: 0px;
     z-index: 999;
@@ -175,6 +176,8 @@
     /* Text */
     text-align: center;
 }
+
+
 
 #third-body {
     /* Display & Box Model */
@@ -231,6 +234,9 @@
 /*
  * WHAT TO DO STYLING
  */
+#details-section-divider {
+    border-right: 7px ridge #000;
+}
 
 #fourth-body {
     /* Color */
@@ -242,6 +248,19 @@
     /* Display & Box Model */
     border-bottom: 4px solid #ecd4b6;
     margin: 0px;
+}
+
+#fifth-body {
+    /* Color */
+    background-color: #f2f4f3;
+
+    /* Display & Box Model */
+    border-bottom: 4px solid #d9dada;
+}
+
+#sixth-body {
+    /* Color */
+    background-color: #f4efe9;
 }
 
 /* Carousel Overrides */
@@ -531,6 +550,9 @@
         margin-bottom: 7.5%;
     }
 
+}
+.featurette-divider {
+    border-color: #cdcdcd;
 }
 
 /* Small devices (tablets, 768px and up) */

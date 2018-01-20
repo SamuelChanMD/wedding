@@ -94,7 +94,7 @@ $(document).ready(function() {
         }
     );
 
-    $("#wedding-nav").click(function() {
+    $("#event-nav").click(function() {
         $('html, body').animate({
             scrollTop: $("#third-body").offset().top
         }, 2000);

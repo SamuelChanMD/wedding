@@ -1,6 +1,6 @@
 @extends('layout') @section('title', 'Sam & Sarah') @section('content')
 <link href='{!! asset("/css/home.css")!!}' rel='stylesheet'>
-<div id='first-body' style='background-image: url(" {!! ( isset($img_banner) ? asset($img_banner) : asset( "images/home_page.JPG")) !!} ");' class="text-center">
+<div id='first-body' style='background-image: url(" {!! ( isset($img_banner) ? asset($img_banner) : asset( "images/background.png")) !!} ");' class="text-center">
     <div class='caption'>
         <div class='container'>
             <div class='row'>
@@ -10,6 +10,9 @@
                 <div class="col-md-6">
                     <h1 class='pull-right name-heading' id="sam">Sam</h1>
                 </div>
+                <!-- <div class="col-md-12"> -->
+                <!-- <h1 class='name-heading' id="sam">Sam and Sarah</h1> -->
+                <!-- </div> -->
             </div>
         </div>
     </div>
@@ -27,24 +30,23 @@
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="active" id="wedding-nav"><a href="#">Wedding Details<span class="sr-only">(current)</span></a></li>
+                            <li class="active" id="event-nav"><a href="#">Event Details<span class="sr-only">(current)</span></a></li>
                             <li><a href="#" id="things-nav">Things To Do</a></li>
                             <li><a href="#" id="wedding-party-nav">Wedding Party</a></li>
+                            <li><a href="#" id="registry-nav">RSVP</a></li>
                             <li><a href="#" id="registry-nav">Registry</a></li>
                         </ul>
                     </div>
-                    <!-- /.navbar-collapse -->
                 </div>
-                <!-- /.container-fluid -->
             </nav>
         </div>
     </div>
     <div class="row">
-        <div role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" id="our-story-btn" aria-controls="collapseOne" class="wow fadeInDown" data-wow-offset="200">
+        <div class="wow fadeInDown" id="our-story-btn">
             <h2 class="our-story-heading-text">
                 <span id="our-heading-text">Our</span><span id="story-heading-text"> Story</span>
             </h2>
-            <img class="our-story-btn-svg" src='{!!asset( "images/chevron.png")!!}'>
+            <img role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" data-wow-offset="200" class="our-story-btn-svg" src='{!!asset( "images/chevron.png")!!}'>
         </div>
     </div>
 </div>
@@ -63,11 +65,21 @@
 </div>
 <div class='jumbotron wow slideInUp' id='third-body' data-wow-offset="300">
     <div class='container text-center' id='details-section'>
-        <h1>Wedding Details</h1>
-        <h2>10th June 2018</h2>
-        <h2>StoneFields</h2>
-        <h2>1985 9th Line Carleton Place  ON K7C 3P2</h2>
-        <h2>Ceremony at 400 PM Reception at 600 PM</h2>
+        <h1>Event Details</h1>
+        <hr>
+        <div class="row">
+            <div class="col-md-5 text-right" id="details-section-divider" style="padding-right: 3%">
+                <h1 style="font-size: 40px">10th June</h1>
+                <h1 style="font-size: 90px; letter-spacing: -0.05em">2018</h1>
+            </div>
+            <div class="col-md-7 text-left" style="padding-left: 3%">
+                <h1 style="font-size: 90px; letter-spacing: -0.05em">StoneFields</h1>
+                <h2 style="font-size: 40px">1985 9th Line Carleton Place  ON K7C 3P2</h2>
+            </div>
+        </div>
+        <div class="row">
+            <h2 style="font-size: 40px">Ceremony at 400PM Reception at 600PM </h2>
+        </div>
         <button type="button" class="btn btn-lg" id="rsvp-button" data-toggle="modal" data-target="#rsvpModal">
             RSVP
         </button>
@@ -77,8 +89,7 @@
     <div class='container text-center'>
         <h1>Things Todo in Ottawa</h1>
         <span class='registryOptionText'>
-            If you're coming to Ottawa for the first time, we
-        'vspan compiled a list of things that you should do while you're here!</p>
+            If you're coming to Ottawa for the first time, we've compiled a list of things that you should do while you're here!</span>
         <div class='col-md-10 col-md-offset-1'>
             <div id='carousel-section' class='carousel slide' data-ride='carousel'>
                 <!-- Indicators -->
@@ -129,16 +140,15 @@
                 </div>
                 <!-- Carousel Control -->
                 <a class='left carousel-control' href='#carousel-section' role='button' data-slide='prev'>
-                <span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span>
-        <span class='sr-only'>Previous</span>
-        </a>
-        <a class='right carousel-control' href='#carousel-section' role='button' data-slide='next'>
-                <span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>
-                <span class='sr-only'>Next</span>
-            </a>
+                    <span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span><span class='sr-only'>Previous</span>
+                </a>
+                <a class='right carousel-control' href='#carousel-section' role='button' data-slide='next'>
+                    <span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>
+                    <span class='sr-only'>Next</span>
+                </a>
+            </div>
+        </div>
     </div>
-</div>
-</div>
 </div>
 <div class='jumbotron' id='fifth-body' data-wow-offset="300">
     <!-- What needs to be done in wedding party section
@@ -168,38 +178,38 @@
                     <div class="panel-body" style='background-color: #7C918C; color: white;'>
                         <p class='wedding-party-description text-center' id="girl_description"></p>
                         <div class="row">
-                        <ul id='list-girls' class='wedding-party-list'>
-                            <div class="col-md-2">
-                            <li><a href='#' name='girl' value='grace_kim'>
+                            <ul id='list-girls' class='wedding-party-list'>
+                                <div class="col-md-2">
+                                    <li><a href='#' name='girl' value='grace_kim'>
                             <img id='grace_kim_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/grace_kim.jpg")!!}' alt='image of Grace Kim'>
                         </a></li>
-                        </div>
+                                </div>
                                 <div class="col-md-2">
-                            <li><a href='#' name='girl' value='chelsea_anne'>
+                                    <li><a href='#' name='girl' value='chelsea_anne'>
                             <img id='chelsea_anne_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/chelsea_anne.jpg")!!}' alt='image of Chelsea Anne'>
                         </a></li>
-                        </div>
+                                </div>
                                 <div class="col-md-2">
-                            <li><a href='#' name='girl' value='puja_ahluwalia'>
+                                    <li><a href='#' name='girl' value='puja_ahluwalia'>
                             <img id='puja_ahluwalia_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/puja_ahluwalia.jpg")!!}' alt='image of Puja Ahluwalia'>
                         </a></li>
-                        </div>
+                                </div>
                                 <div class="col-md-2">
-                            <li><a href='#' name='girl' value='vikki_moon'>
+                                    <li><a href='#' name='girl' value='vikki_moon'>
                             <img id='vikki_moon_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/vikki_moon.jpg")!!}' alt='image of Vikki Moon'>
                         </a></li>
-                        </div>
+                                </div>
                                 <div class="col-md-2">
-                            <li><a href='#' name='girl' value='randelee_macdonald'>
+                                    <li><a href='#' name='girl' value='randelee_macdonald'>
                             <img id='randelee_macdonald_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/randelee_macdonald.jpg")!!}' alt='image of Randelee Macdonald'>
                         </a></li>
-                        </div>
+                                </div>
                                 <div class="col-md-2">
-                            <li><a href='#' name='girl' value='jessica_lee'>
+                                    <li><a href='#' name='girl' value='jessica_lee'>
                             <img id='jessica_lee_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/jessica_lee.jpg")!!}' alt='image of Jessica Lee'>
                         </a></li>
-                        </div>
-                        </ul>
+                                </div>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -360,5 +370,5 @@
         <h3>Sam and Sarah 2018</h3>
     </footer>
 </div>
-<button id="scrollTopBtn">Back To Top</button>
+<button id="scrollTopBtn"><span class="glyphicon glyphicon-menu-up"></span> Back To Top</button>
 @component('modal') @endcomponent @stop
