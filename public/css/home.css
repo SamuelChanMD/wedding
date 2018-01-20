@@ -226,6 +226,12 @@
     animation: fadeInDown 0.75s;
 }
 
+
+
+/*
+ * WHAT TO DO STYLING
+ */
+
 #fourth-body {
     /* Color */
     background-color: #fff;
@@ -236,14 +242,6 @@
     /* Display & Box Model */
     border-bottom: 4px solid #ecd4b6;
     margin: 0px;
-}
-
-#fifth-body {
-    /* Color */
-    background-color: #f2f4f3;
-
-    /* Display & Box Model */
-    border-bottom: 4px solid #d9dada;
 }
 
 /* Carousel Overrides */
@@ -274,13 +272,46 @@
     font-family: "Raleway", sans-serif;
 }
 
-/* Wedding Party */
+
+
+/*
+ * WEDDING PARTY STYLING
+ */
+
+ #fifth-body {
+     /* Color */
+     background-color: #f2f4f3;
+
+     /* Display & Box Model */
+     border-bottom: 4px solid #d9dada;
+     margin: 0;
+ }
+
+ .groomsmen-temp {
+     background-image: url('../images/groomsmen_brush.png');
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     width: 80%;
+     height: 200px;
+     margin: 0 auto;
+     margin-top: 30px;
+     margin-bottom: 30px;
+ }
+
+ .bridesmaids-temp {
+     background-image: url('../images/bridesmaid_brush.png');
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     width: 80%;
+     height: 200px;
+     margin: 0 auto;
+     margin-top: 30px;
+     margin-bottom: 30px;
+ }
 
 .wedding-image-holder { 
     /* Display & Box Model */
     margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
     height: 150px;
     width: 150px; 
 }
@@ -379,26 +410,129 @@
     text-decoration: underline;
 }
 
-#scrollTopBtn {
-    display: none; 
-    position: fixed; 
-    bottom: 20px; 
-    right: 30px; 
-    z-index: 99; 
-    border: none; 
-    outline: none; 
-    background-color: #555; 
-    color: white; 
-    cursor: pointer; 
-    padding: 15px; 
-    border-radius: 10px; 
+
+.bridesmaids-section {
+    background-image: url('../images/bridesmaid_brush.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-#scrollTopBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+
+
+/*
+ * REGISTRY STYLING
+ */
+ #sixth-body {
+     /* Color */
+     color: white;
+
+     /* Display & Box Model */
+     background-color: #000;
+     background-image: url("../images/registry_background.jpeg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     /*opacity: 0.75;*/
+     margin: 0px;
+     border-bottom: 4px solid #d9dada;
+ }
+
+ .registryRow {
+    background-color:#AE0D46; 
+    height:170px;
+    padding-left:35px; 
+    padding-right:35px;
+ }
+
+ .registryOption {
+    background-color: white;
+    height: 140%;
+    margin-top: -2% !important;
+    width: 22%;
+    margin: 0 auto;
+    border: 10px solid #C62C58;
+    box-shadow: 5px 8px rgba(0, 0, 0, 0.55);;
+ }
+
+ .registryOptionHeader {
+    background-color:#C62C58; 
+    position: absolute; 
+    bottom: 0; 
+    width: 100%; 
+    margin-left: -15px
+ }
+
+ .registryOptionText {
+    vertical-align: middle;
+    font-family: 'Raleway';
+ }
+
+.registryOptionContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+    background-color: black;
+    opacity: 0;
 }
 
-/* Responsive Styling */
+.registryOption:hover .registryOptionContent {
+    visibility: visible;
+    opacity: 0.75;
+    animation: fadeInTwo 0.75s;
+}
+
+@keyframes fadeInTwo {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.75;
+  }
+}
+
+
+
+/*
+ * ENGAGEMENT PHOTOS STYLING
+ */
+
+ #seventh-body {
+     /* Color */
+     background-color: #f2f4f3;
+
+     /* Display & Box Model */
+     border-bottom: 4px solid #d9dada;
+     margin: 0;
+ }
+
+ .engagementPhoto {
+    cursor: pointer;
+ }
+
+
+
+/* 
+ * RESPONSIVE STYLING
+ */
+
+@media only screen and (max-width: 992px){
+    .registryRow {
+        background-color: transparent;
+        height: auto;
+        padding: 0;
+    }
+
+    .registryOption {
+        margin-top: 0 !important;
+        width: 85%;
+        margin-left: 7.5% !important;
+        margin-bottom: 7.5%;
+    }
+
+}
 
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -463,4 +597,23 @@
         /* Text */
         font-size: 6em;
     }
+}
+
+#scrollTopBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #555; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+}
+
+#scrollTopBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
 }

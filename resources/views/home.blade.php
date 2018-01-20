@@ -67,7 +67,7 @@
         <h2>10th June 2018</h2>
         <h2>StoneFields</h2>
         <h2>1985 9th Line Carleton Place  ON K7C 3P2</h2>
-        <h2>Ceremony at 330 PM Reception at 600 PM</h2>
+        <h2>Ceremony at 400 PM Reception at 600 PM</h2>
         <button type="button" class="btn btn-lg" id="rsvp-button" data-toggle="modal" data-target="#rsvpModal">
             RSVP
         </button>
@@ -76,7 +76,9 @@
 <div class='jumbotron wow fadeInUp' id='fourth-body' data-wow-offset="300">
     <div class='container text-center'>
         <h1>Things Todo in Ottawa</h1>
-        <p>If you're coming to Ottawa for the first time, we've compiled a list of things that you should do while you're here!</p>
+        <span class='registryOptionText'>
+            If you're coming to Ottawa for the first time, we
+        'vspan compiled a list of things that you should do while you're here!</p>
         <div class='col-md-10 col-md-offset-1'>
             <div id='carousel-section' class='carousel slide' data-ride='carousel'>
                 <!-- Indicators -->
@@ -139,29 +141,38 @@
     </div>
 </div>
 <div class='jumbotron' id='fifth-body' data-wow-offset="300">
+<!-- What needs to be done in wedding party section
+    1. align brushes and pictures properly.
+    2. create the other things into cards
+    3. Sarah's content of girls needs review
+-->
     <div class='container'>
         <div class='col-md-12 text-center'>
             <h1>Wedding Party</h1>
             <div class='col-md-6 wow fadeInLeft' data-wow-duration="1.25s">
-                <h2>Girls</h2>
+                <h2>Bridesmaids</h2>
                 <h3 id='girl_name' class='huge'></h3>
-                <div id='imagesOfGirls' class='wedding-image-holder'>
-                    <img id='grace_kim_img' class='img-responsive img-circle wedding-party-image current-girl' src='{!!asset( "images/grace_kim.jpg")!!}' alt='image of Grace Kim'>
-                    <img id='chelsea_anne_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/chelsea_anne.jpg")!!}' alt='image of Chelsea Anne'>
-                    <img id='puja_ahluwalia_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/puja_ahluwalia.jpg")!!}' alt='image of Puja Ahluwalia'>
+                <div class='bridesmaids-temp'>
+                    <div id='imagesOfGirls' class='wedding-image-holder'>
+                        <img id='grace_kim_img' class='img-responsive img-circle wedding-party-image current-girl' src='{!!asset( "images/grace_kim.jpg")!!}' alt='image of Grace Kim'>
+                        <img id='chelsea_anne_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/chelsea_anne.jpg")!!}' alt='image of Chelsea Anne'>
+                        <img id='puja_ahluwalia_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/puja_ahluwalia.jpg")!!}' alt='image of Puja Ahluwalia'>
+                    </div>
                 </div>
                 <p id='girl_description'></p>
             </div>
             <div class='col-md-6 wow fadeInRight' data-wow-duration="1.25s">
-                <h2>Guys</h2>
+                <h2>Groomsmen</h2>
                 <h3 id='guy_name' class='huge'></h3>
-                <div id='imagesOfGuys' class='wedding-image-holder'>
-                    <img id='paul_loh_img' class='img-responsive img-circle wedding-party-image current-guy' src='{!!asset( "images/paul_loh.jpg")!!}' alt='image of Paul Loh'>
-                    <img id='paul_beckmann_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/paul_beckmann.jpg")!!}' alt='image of Paul Beckmann'>
-                    <img id='aaron_wong_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/aaron_wong.jpg")!!}' alt='image of Aaron Wong'>
-                    <img id='daniel_chan_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/daniel_chan.jpg")!!}' alt='image of Daniel Chan'>
-                    <img id='ezekiel_chan_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/ezekiel_chan.jpg")!!}' alt='image of Ezekiel Chan'>
-                    <img id='jonathan_chan_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/jonathan_chan.jpg")!!}' alt='image of Jonathan Chan'>
+                <div class='groomsmen-temp'>
+                    <div id='imagesOfGuys' class='wedding-image-holder'>
+                        <img id='paul_loh_img' class='img-responsive img-circle wedding-party-image current-guy' src='{!!asset( "images/paul_loh.jpg")!!}' alt='image of Paul Loh'>
+                        <img id='paul_beckmann_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/paul_beckmann.jpg")!!}' alt='image of Paul Beckmann'>
+                        <img id='aaron_wong_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/aaron_wong.jpg")!!}' alt='image of Aaron Wong'>
+                        <img id='daniel_chan_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/daniel_chan.jpg")!!}' alt='image of Daniel Chan'>
+                        <img id='ezekiel_chan_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/ezekiel_chan.jpg")!!}' alt='image of Ezekiel Chan'>
+                        <img id='jonathan_chan_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/jonathan_chan.jpg")!!}' alt='image of Jonathan Chan'>
+                    </div>
                 </div>
                 <p id='guy_description'></p>
             </div>
@@ -211,13 +222,104 @@
     </div>
 </div>
 <div class='jumbotron wow slideInUp' id='sixth-body' data-wow-offset="300">
+    <!-- What needs to be done in REGISTRY section
+            1. Center registryOptionText
+            2. Content Review
+            3. Link to zola once we open it
+    -->
     <div class='container text-center'>
-        <h1>Registry</h1>
+        <h1 style='margin-bottom: 50px'>Registry</h1>
+        <p style='margin-bottom: 50px'>There are three different ways you can help us financially.
+            Hover over the one of your choice! For any gift you want to send before the day of the wedding,
+            the delivery address is 86 Blackburn Avenue, Ottawa, ON, K1N 8A5.
+         </p>
+        <div class='row registryRow' style='margin-bottom: 200px'>
+            <div class='col-md-4 registryOption'>
+                <img class='img-responsive' src='{!!asset( "images/zola.png" )!!}'>
+                <div class='registryOptionContent'>
+                    <span class='registryOptionText'>
+                        Help us build a lovely home by purchasing a household item on Zola!
+                    </span>
+                </div>
+                <div class='registryOptionHeader'>
+                    <span class='registryOptionText'><strong>ZOLA REGISTRY</strong></span>
+                </div>
+            </div>
+            <div class='col-md-4 registryOption' style='margin-left:17%'>
+                <img class='img-responsive' src='{!!asset( "images/piggy_bank.png" )!!}'>
+                <div class='registryOptionContent'>
+                    <span class='registryOptionText'>
+                        Make a monetary donation to help us with the big stuff!
+                    </span>
+                </div>
+                <div class='registryOptionHeader'>
+                    <span class='registryOptionText'><strong>CASH FUND</strong></span>
+                </div>
+            </div>
+            <div class='col-md-4 registryOption' style='margin-left:17%'>
+                <div style='width:100%; padding: 15px'>
+                <img class='img-responsive' src='{!!asset( "images/gift.png" )!!}'>
+                </div>
+                <div class='registryOptionContent'>
+                    <span class='registryOptionText'>
+                        Already have a gift in mind? Send to the address above or wait until the wedding day!
+                    </span>
+                </div>
+                <div class='registryOptionHeader'>
+                    <span class='registryOptionText'><strong>PERSONAL GIFT</strong></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class='jumbotron wow slideInUp' id='seventh-body' data-wow-offset="300">
+    <!-- Needs to be responsive. Also long photo needs to be cut short -->
+    <div class='container text-center'>
+        <h1 style='margin-bottom: 50px'>Engagement Photos</h1>
+        <div class='row' style='margin-bottom: 20px'>
+            <div class='col-md-4'>
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_1.JPG" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
+            </div>
+            <div class='col-md-4'>
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_2.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
+            </div>
+            <div class='col-md-4'>
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_3.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
+            </div>
+        </div>
+        <div class='row' style='margin-bottom: 20px'>
+            <div class='col-md-4'>
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_4.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
+            </div>
+            <div class='col-md-4'>
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_5.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
+            </div>
+            <div class='col-md-4'>
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_6.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-md-4'>
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_7.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">            
+            </div>
+            <div class='col-md-4'>
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_8.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
+            </div>
+            <div class='col-md-4'>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal animated bounceInDown" id="engagementPhotoModal" tabindex="-1" role="dialog" aria-labelledby="whatIsThis">
+    <div class="modal-dialog" role="document" style="max-width: 65% !important; width: auto !important; max-height: 600px !important;">
+        <div class="modal-content" style="border-radius: 4px">
+            <img id='imageModal' class='img-responsive img-thumbnail' src=''>
+        </div>
     </div>
 </div>
 <div class='container text-center'>
     <footer>
-        <h3>Sam and Sarah 2017</h3>
+        <h3>Sam and Sarah 2018</h3>
     </footer>
 </div>
 <button id="scrollTopBtn">Back To Top</button>
