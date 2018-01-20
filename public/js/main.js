@@ -30,27 +30,27 @@ $(document).ready(function() {
     var girls = {
         'grace_kim': {
             'name': 'Grace Kim',
-            'description': 'aeefase asefesaf asefea esf g boij ijl.'
+            'description': 'Sister of the bride with a child at her side. From worst-of-worst enemies to two halves of one person, we’ve been through it all. Tragically loves the bed more than food, her apathetic life finds small hope in decorating her home.'
         },
         'puja_ahluwalia': {
             'name': 'Puja Ahluwali',
-            'description': 'bxbae saefesf asefea esf g boij iesafasefjl.'
+            'description': 'The youngest amiga from the Ladouceur Losers (our old house name) and the most dumb points gained (don’t worry, you can laugh). Adult lifestyle; child at heart. Aspiring chef, no compass, but a big heart! Also a crucial planner behind our proposal story <3'
         },
         'chelsea_anne': {
             'name': 'Chelsea Anne',
-            'description': 'aeefase asefesaf.'
+            'description': 'The eldest amiga from the Ladouceur Losers (our old house name) and the most smart points gained. Fond of food, politics, and traveling. Catch her on her blog @ seasidesandsidestreats.com!'
         },
         'jessica_lee': {
             'name': 'Jessica Lee',
-            'description': 'Daniel is my second brother. yoyo.aeefase asefesaf asefea esf g boij ijl.'
+            'description': 'This small-bodied lady can out-eat a full grown man. A young and wise owl who peers gently into your soul. Mighty with words, and humble as a mouse. Give her 5 minutes and she will give you her life. That’s what makes her Maid of Honor!'
         },
         'vikki_moon': {
             'name': 'Vikki Moon',
-            'description': 'At a young age, he became permanently blind from a fire. Now he travels around the world, searching for revenge.'
+            'description': 'If you become her friend you will immediately notice two things: gifts and emojis galore! This young fashionista is consumed by writing letters to her friends, going on coffee dates, and brightening people’s days! Our friendship began in East Asia and blossomed at home in Canada. Separated by provinces, she is a very fun pen pal to have!'
         },
         'randelee_macdonald': {
             'name': 'Randelee MacDonald',
-            'description': 'Jonathan sings like Pavarotti aeefase asefesaf asefea esf g boij ijl.'
+            'description': 'Life is never boring nor balanced for this chica! A nomad and a hidden talent for training dogs, she loves chill times around campfires and epic adventures with friends. Who knows what’s next for this lady!'
         }
     };
 
@@ -58,6 +58,7 @@ $(document).ready(function() {
      * or at least combine most of their logic into another funciton
      */
     $('a[name="guy"]').click(function(eventObj) {
+        eventObj.preventDefault();
         var name_key = $(this).attr('value');
         var img_id = '#' + name_key + '_img';
 
@@ -68,6 +69,7 @@ $(document).ready(function() {
     });
 
     $('a[name="girl"]').click(function(eventObj) {
+        eventObj.preventDefault();
         var name_key = $(this).attr('value');
         var img_id = '#' + name_key + '_img';
 
@@ -140,4 +142,11 @@ function scrollFunction() {
 $('.engagementPhoto').click(function(event){
     var pic = event.currentTarget.attributes.src.value;
     $('#imageModal').attr('src', pic);
+    $('#photoModalDialog').addClass('modalWidth');
+});
+
+$('.engagementPhotoLong').click(function(event){
+    var pic = event.currentTarget.attributes.src.value;
+    $('#imageModal').attr('src', pic);
+    $('#photoModalDialog').removeClass('modalWidth');
 });
