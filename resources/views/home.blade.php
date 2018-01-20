@@ -273,9 +273,7 @@
     </div>
 </div>
 <div class='jumbotron wow slideInUp' id='seventh-body' data-wow-offset="300">
-    <!-- WHAT NEEDS TO BE DONE IN ENAGEMENT PHOTO SECTION
-            1. Need photos from Josh
-    -->
+    <!-- Needs to be responsive. Also long photo needs to be cut short -->
     <div class='container text-center'>
         <h1 style='margin-bottom: 50px'>Engagement Photos</h1>
         <div class='row' style='margin-bottom: 20px'>
@@ -294,27 +292,26 @@
                 <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_4.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
             <div class='col-md-4'>
-                <img class='img-responsive' src='{!!asset( "images/gift.png" )!!}'>
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_5.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
             <div class='col-md-4'>
-                <img class='img-responsive' src='{!!asset( "images/gift.png" )!!}'>
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_6.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
         </div>
         <div class='row'>
             <div class='col-md-4'>
-                <img class='img-responsive' src='{!!asset( "images/gift.png" )!!}'>
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_7.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">            
             </div>
             <div class='col-md-4'>
-                <img class='img-responsive' src='{!!asset( "images/gift.png" )!!}'>
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_8.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
             <div class='col-md-4'>
-                <img class='img-responsive' src='{!!asset( "images/gift.png" )!!}'>
             </div>
         </div>
     </div>
 </div>
 <div class="modal animated bounceInDown" id="engagementPhotoModal" tabindex="-1" role="dialog" aria-labelledby="whatIsThis">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog" role="document" style="max-width: 65% !important; width: auto !important; max-height: 600px !important;">
         <div class="modal-content" style="border-radius: 4px">
             <img id='imageModal' class='img-responsive img-thumbnail' src=''>
         </div>
