@@ -1,6 +1,6 @@
 @extends('layout') @section('title', 'Sam & Sarah') @section('content')
 <link href='{!! asset("/css/home.css")!!}' rel='stylesheet'>
-<div id='first-body' style='background-image: url(" {!! ( isset($img_banner) ? asset($img_banner) : asset( "images/background.png")) !!} ");' class="text-center">
+<div id='first-body' style='background-image: url(" {!! ( isset($img_banner) ? asset($img_banner) : asset( "images/home_page.JPG")) !!} ");' class="text-center">
     <div class='caption'>
         <div class='container'>
             <div class='row'>
