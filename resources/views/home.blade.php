@@ -292,29 +292,29 @@
                 <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_1.JPG" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
             <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_2.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
-            </div>
-            <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_3.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
-            </div>
-        </div>
-        <div class='row' style='margin-bottom: 20px'>
-            <div class='col-md-4'>
                 <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_4.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
             <div class='col-md-4'>
                 <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_5.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
+        </div>
+        <div class='row' style='margin-bottom: 20px'>
             <div class='col-md-4'>
                 <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_6.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
-        </div>
-        <div class='row'>
             <div class='col-md-4'>
                 <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_7.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">            
             </div>
             <div class='col-md-4'>
                 <img class='img-responsive img-thumbnail engagementPhotoLong' src='{!!asset( "images/engagement_photo_8.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-md-4'>
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_2.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
+            </div>
+            <div class='col-md-4'>
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_3.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
             <div class='col-md-4'>
             </div>
