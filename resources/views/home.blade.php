@@ -64,91 +64,87 @@
     </div>
 </div>
 <div class='jumbotron wow slideInUp' id='third-body' data-wow-offset="300">
-    <div class='container text-center' id='details-section'>
-        <h1>Event Details</h1>
-        <hr>
-        <div class="row">
-            <div class="col-md-5 text-right" id="details-section-divider" style="padding-right: 3%">
-                <h1 style="font-size: 40px">10th June</h1>
-                <h1 style="font-size: 90px; letter-spacing: -0.05em">2018</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="details-left-holder">
+                <div class="details-left">
+                    <img src='{!! asset("/images/details_rings_bg.jpg")!!}'>
+                </div>
             </div>
-            <div class="col-md-7 text-left" style="padding-left: 3%">
-                <h1 style="font-size: 90px; letter-spacing: -0.05em">StoneFields</h1>
+        </div>
+        <div class="col-md-6 text-center">
+            <h1>Event Details</h1>
+            <div class="row">
+                <h1 class="details-location" style="font-size: 90px; letter-spacing: -0.05em; color: #c7b299">StoneFields</h1>
                 <h2 style="font-size: 40px">1985 9th Line Carleton Place  ON K7C 3P2</h2>
             </div>
+            <div class="row">
+                <h2 style="font-size: 40px">Ceremony at 400PM Reception at 600PM </h2>
+            </div>
         </div>
-        <div class="row">
-            <h2 style="font-size: 40px">Ceremony at 400PM Reception at 600PM </h2>
-        </div>
-        <button type="button" class="btn btn-lg" id="rsvp-button" data-toggle="modal" data-target="#rsvpModal">
-            RSVP
-        </button>
     </div>
 </div>
-<div class='jumbotron wow fadeInUp' id='fourth-body' data-wow-offset="300">
-    <div class='container text-center'>
-        <h1>Things Todo in Ottawa</h1>
-        <span class='registryOptionText'>
-            If you're coming to Ottawa for the first time, we've compiled a list of things that you should do while you're here!</span>
-        <div class='col-md-10 col-md-offset-1'>
-            <div id='carousel-section' class='carousel slide' data-ride='carousel'>
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-section" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-section" data-slide-to="1"></li>
-                    <li data-target="#carousel-section" data-slide-to="2"></li>
-                    <li data-target="#carousel-section" data-slide-to="3"></li>
-                    <li data-target="#carousel-section" data-slide-to="4"></li>
-                </ol>
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src='{!!asset( "images/byward_market.jpg")!!}' alt='image of byward market'>
-                        <div class="carousel-caption">
-                            <h2>Byward Market</h2>
-                            <p>Street performers. Lively public. Local farmer's market.</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src='{!!asset( "images/nature_museum.jpg")!!}' alt='image of nature museum'>
-                        <div class="carousel-caption">
-                            <h2>Nature Museum</h2>
-                            <p>Fun for adults and kids!</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src='{!!asset( "images/dominion_arboretum.jpg")!!}' alt='image of dominion arboretum'>
-                        <div class="carousel-caption">
-                            <h2>Dominion Arboretum</h2>
-                            <p>Take a stroll or go for a picnic, Sam and Sarah did.</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src='{!!asset( "images/national_gallery_of_canada.jpg")!!}' alt='image of national gallery of canada'>
-                        <div class="carousel-caption">
-                            <h2>National Gallery of Canada</h2>
-                            <p>Fan of art? We will know where to find you if you're late to the wedding.</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src='{!!asset( "images/uji_cafe.jpg")!!}' alt='image of cafe uji'>
-                        <div class="carousel-caption">
-                            <h2>Cafe Uji</h2>
-                            <p>Try some Japanese cheesecake.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Carousel Control -->
-                <a class='left carousel-control' href='#carousel-section' role='button' data-slide='prev'>
+<div id='carousel-section' class='carousel slide wow fadeInUp' data-wow-offset="300" data-ride='carousel'>
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-section" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-section" data-slide-to="1"></li>
+        <li data-target="#carousel-section" data-slide-to="2"></li>
+        <li data-target="#carousel-section" data-slide-to="3"></li>
+        <li data-target="#carousel-section" data-slide-to="4"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-header">
+        <h1 style="font-size: 63px; letter-spacing: -0.05em;">Things Todo in Ottawa</h1>
+        <span class='registryOptionText'>If you're coming to Ottawa for the first time, we've compiled a list of things that you should do while you're here!</span>
+    </div>
+    <div class="carousel-inner">
+
+        <div class="item active">
+            <img src='{!!asset( "images/byward_market_2.jpg")!!}' alt='image of byward market'>
+            <div class="carousel-caption">
+                <h1>Byward Market</h1>
+                <p>Street performers. Lively public. Local farmer's market.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src='{!!asset( "images/nature_museum.jpg")!!}' alt='image of nature museum'>
+            <div class="carousel-caption">
+                <h1>Nature Museum</h1>
+                <p>Fun for adults and kids!</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src='{!!asset( "images/dominion_arboretum_2.jpg")!!}' alt='image of dominion arboretum'>
+            <div class="carousel-caption">
+                <h1>Dominion Arboretum</h1>
+                <p>Take a stroll or go for a picnic, Sam and Sarah did.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src='{!!asset( "images/national_gallery_of_canada.jpg")!!}' alt='image of national gallery of canada'>
+            <div class="carousel-caption">
+                <h1>National Gallery of Canada</h1>
+                <p>Fan of art? We will know where to find you if you're late to the wedding.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src='{!!asset( "images/uji_cafe.jpg")!!}' alt='image of cafe uji'>
+            <div class="carousel-caption">
+                <h1>Cafe Uji</h1>
+                <p>Try some Japanese cheesecake.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel Control -->
+    <a class='left carousel-control' href='#carousel-section' role='button' data-slide='prev'>
                     <span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span><span class='sr-only'>Previous</span>
                 </a>
-                <a class='right carousel-control' href='#carousel-section' role='button' data-slide='next'>
+    <a class='right carousel-control' href='#carousel-section' role='button' data-slide='next'>
                     <span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>
                     <span class='sr-only'>Next</span>
                 </a>
-            </div>
-        </div>
-    </div>
 </div>
 <div class='jumbotron' id='fifth-body' data-wow-offset="300">
     <!-- What needs to be done in wedding party section

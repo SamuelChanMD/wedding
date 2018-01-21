@@ -31,6 +31,22 @@
 }
 
 
+.carousel img {
+    min-width: 100%;
+}
+
+.carousel-header {
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    background-color: rgba(54, 47, 45, 0.8);
+    color: #fff;
+    padding: 20px;
+}
+
 #first-body {
     /* Positioning */
     position: relative;
@@ -181,12 +197,77 @@
 
 #third-body {
     /* Display & Box Model */
-    background-image: url("../images/leaves.jpg");
+    background-image: url("../images/details_bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #f4efe9;
-    border-bottom: 4px solid #ecd4b6;
     margin: 0px;
+    padding: 0px;
+    border-bottom: 10px solid #534741;
+    border-top: 10px solid #534741;
+    color: #fff;
+}
+
+.details-left-holder {
+    /* causes .float-wrap's height to match its child divs */
+    white-space: nowrap;
+}
+
+.details-left {
+    min-width: 105%;
+    min-height: 500px;
+    -webkit-transform: skew(-20deg) translateX(-100px);
+       -moz-transform: skew(-20deg) translateX(-100px);
+         -o-transform: skew(-20deg) translateX(-100px);
+    /*border: 5px solid #f58b00;*/
+    transition: 0.25s;
+    display: inline-block;
+    float:left;
+
+
+    /* new styles */
+    position: relative;
+    overflow: hidden;
+
+
+    box-shadow: 5px 5px 13px 0px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.details-left::before {
+    content: "";
+    transform: skewX(20deg); 
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); /* Safari and Chrome */
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: top left;
+        display: inline-block;
+    
+    /* new styles */
+    position: absolute;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    width: 100%;
+}
+
+.details-left img {
+    content: ""; 
+    transform: skewX(20deg); 
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); /* Safari and Chrome */
+        position: absolute;
+    transform: translateX(-30px) translateY(-50px);
+    width: 105%; 
+}
+
+.details-location {
+  text-shadow: 5px 5px 13px rgba(0, 0, 0, 0.5);
+  font-size: 90px;
+  letter-spacing: -0.05em;
+  color: #c7b299;
 }
 
 #rsvp-button {
