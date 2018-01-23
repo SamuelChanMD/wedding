@@ -138,7 +138,7 @@
                     <span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span><span class='sr-only'>Previous</span>
                 </a>
     <a class='right carousel-control' href='#carousel-section' role='button' data-slide='next'>
-                    <span class='glyphicon glyphicon-menu-right' aria-hidden='true'></span>
+                    <span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>
                     <span class='sr-only'>Next</span>
                 </a>
 </div>
