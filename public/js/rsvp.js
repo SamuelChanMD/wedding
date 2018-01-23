@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 
 	/* Default whenever modal pops up */
-	$('#rsvp-button').click(function(){
+	$('.rsvp-button').click(function(){
 		console.log("Regsitered Click Event");
 		$('.alert').hide();
 	    $('.hiddenUntilAttending').hide();
