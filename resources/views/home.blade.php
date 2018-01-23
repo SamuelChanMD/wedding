@@ -30,11 +30,12 @@
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="active" id="event-nav"><a href="#">Event Details<span class="sr-only">(current)</span></a></li>
+                            <li id="event-nav"><a href="#">Event Details<span class="sr-only">(current)</span></a></li>
                             <li><a href="#" id="things-nav">Things To Do</a></li>
                             <li><a href="#" id="wedding-party-nav">Wedding Party</a></li>
-                            <li><a href="#" id="registry-nav">RSVP</a></li>
+                            <li><a href="#" class="rsvp-button" data-toggle="modal" data-target="#rsvpModal">RSVP</a></li>
                             <li><a href="#" id="registry-nav">Registry</a></li>
+                            <li><a href="#" id="photos-nav">Photos</a></li>
                         </ul>
                     </div>
                 </div>
@@ -65,6 +66,10 @@
             <div class="details-left-holder">
                 <div class="details-left">
                     <img src='{!! asset("/images/details_rings_bg.jpg")!!}'>
+                    <div class="details-date text-center">
+                        <h1>10th June</h1>
+                        <h1 style="font-size: 150px;">2018</h1>
+                    </div>
                 </div>
             </div>
         </div>
@@ -76,10 +81,12 @@
             </div>
             <div class="row">
                 <h2 style="font-size: 40px">Ceremony at 400PM Reception at 600PM </h2>
+                <div role="button" href="#" class="rsvp-button" id="rsvp-button" data-toggle="modal" data-target="#rsvpModal"><h1>RSVP</h1></div>
             </div>
         </div>
     </div>
 </div>
+<div id="fourth-body">
 <div id='carousel-section' class='carousel slide wow fadeInUp' data-wow-offset="300" data-ride='carousel'>
 
     <!-- Indicators -->
@@ -141,6 +148,7 @@
                     <span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>
                     <span class='sr-only'>Next</span>
                 </a>
+</div>
 </div>
 <div class='jumbotron' id='fifth-body' data-wow-offset="300">
     <!-- What needs to be done in wedding party section

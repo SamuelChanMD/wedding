@@ -118,6 +118,12 @@ $(document).ready(function() {
         }, 2000);
     });
 
+    $("#photos-nav").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#seventh-body").offset().top
+        }, 2000);
+    });
+
     $("#scrollTopBtn").click(function() {
         $('html, body').animate({
             scrollTop: $("html,body").offset().top
