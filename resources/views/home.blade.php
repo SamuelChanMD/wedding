@@ -165,7 +165,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading" style='color: #4e535c; background-color:#D2DEEA; border-bottom-width: 0px;'>
                         <h3 id='girl_name' class='huge text-center'></h3></div>
-                    <div class="panel-body" style='background-color: #7C918C; color: white;'>
+                    <div class="panel-body girl-postcard" > 
                         <p class='wedding-party-description text-center' id="girl_description"></p>
                         <div class="row">
                             <ul id='list-girls' class='wedding-party-list'>
@@ -220,7 +220,7 @@
                     <div class="panel-heading" style='color: #596359; background-color:#B3D0B4; border-bottom-width: 0px;'>
                         <h3 id='guy_name' class='huge text-center'></h3>
                     </div>
-                    <div class="panel-body" style='background-color: #88A48B; color: white;'>
+                    <div class="panel-body guy-postcard" style=''>
                         <p class='wedding-party-description text-center' id="guy_description"></p>
                         <div class="row">
                             <ul id='list-guys' class='wedding-party-list'>
@@ -316,7 +316,7 @@
         <h1 style='margin-bottom: 50px'>Engagement Photos</h1>
         <div class='row' style='margin-bottom: 20px'>
             <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_1.JPG" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_1.png" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
             <div class='col-md-4'>
                 <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_4.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">

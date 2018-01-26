@@ -465,6 +465,22 @@
     margin-top: 10px !important;
 }
 
+.guy-postcard {
+    /* for reference background-color: #88A48B; */
+    color: white;
+    background-image: linear-gradient( rgba(136, 164, 139, 0.4), rgba(136, 164, 139, 0.4)), url("../images/post_card_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.girl-postcard {
+    /* for reference background-color: #7C918C; */
+    color: white;
+    background-image: linear-gradient( rgba(124, 145, 140, 0.4), rgba(124, 145, 140, 0.4)), url("../images/post_card_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .wedding-party-list {
     /* Text */
     font-size: 14px;
