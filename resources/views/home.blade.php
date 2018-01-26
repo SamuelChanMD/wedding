@@ -53,12 +53,8 @@
 <div class='jumbotron' id='second-body'>
     <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
         <div class='container'>
-            <div class='panel-body text-center' id='our-story-section'>
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel-body">
-                        @include('our_story')
-                    </div>
-                </div>
+            <div class="row" id="accordion" role="tablist" aria-multiselectable="true">
+                 @include('our_story')
             </div>
         </div>
     </div>
@@ -148,11 +144,9 @@
 </div>
 <div class='jumbotron' id='fifth-body' data-wow-offset="300">
     <!-- What needs to be done in wedding party section
-    1. align brushes and pictures properly.
-    2. create the other things into cards
     3. Sarah's content of girls needs review
     4. Need to confirm girl side pictures
--->
+    -->
     <div class='row' style='margin-left: 2%; margin-right: 2%;'>
         <div class='col-md-12 text-center'>
             <h1>Wedding Party</h1>
@@ -171,37 +165,37 @@
                 <div class="panel panel-default">
                     <div class="panel-heading" style='color: #4e535c; background-color:#D2DEEA; border-bottom-width: 0px;'>
                         <h3 id='girl_name' class='huge text-center'></h3></div>
-                    <div class="panel-body" style='background-color: #7C918C; color: white;'>
+                    <div class="panel-body girl-postcard" > 
                         <p class='wedding-party-description text-center' id="girl_description"></p>
                         <div class="row">
                             <ul id='list-girls' class='wedding-party-list'>
-                                <div class="col-md-2">
-                                    <li><a href='#' name='girl' value='grace_kim'>
+                                <div class="col-xs-6 col-sm-4 col-md-2">
+                                    <li><a href='#' class='girl' name='girl' value='grace_kim'>
                             <img id='grace_kim_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/grace_kim.jpg")!!}' alt='image of Grace Kim'>
                         </a></li>
                                 </div>
-                                <div class="col-md-2">
-                                    <li><a href='#' name='girl' value='chelsea_anne'>
+                                <div class="col-xs-6 col-sm-4 col-md-2">
+                                    <li><a href='#' class='girl' name='girl' value='chelsea_anne'>
                             <img id='chelsea_anne_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/chelsea_anne.jpg")!!}' alt='image of Chelsea Anne'>
                         </a></li>
                                 </div>
-                                <div class="col-md-2">
-                                    <li><a href='#' name='girl' value='puja_ahluwalia'>
+                                <div class="col-xs-6 col-sm-4 col-md-2">
+                                    <li><a href='#' class='girl' name='girl' value='puja_ahluwalia'>
                             <img id='puja_ahluwalia_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/puja_ahluwalia.jpg")!!}' alt='image of Puja Ahluwalia'>
                         </a></li>
                                 </div>
-                                <div class="col-md-2">
-                                    <li><a href='#' name='girl' value='vikki_moon'>
+                                <div class="col-xs-6 col-sm-4 col-md-2">
+                                    <li><a href='#' class='girl' name='girl' value='vikki_moon'>
                             <img id='vikki_moon_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/vikki_moon.jpg")!!}' alt='image of Vikki Moon'>
                         </a></li>
                                 </div>
-                                <div class="col-md-2">
-                                    <li><a href='#' name='girl' value='randelee_macdonald'>
+                                <div class="col-xs-6 col-sm-4 col-md-2">
+                                    <li><a href='#' class='girl' name='girl' value='randelee_macdonald'>
                             <img id='randelee_macdonald_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/randelee_macdonald.jpg")!!}' alt='image of Randelee Macdonald'>
                         </a></li>
                                 </div>
-                                <div class="col-md-2">
-                                    <li><a href='#' name='girl' value='jessica_lee'>
+                                <div class="col-xs-6 col-sm-4 col-md-2">
+                                    <li><a href='#' class='girl' name='girl' value='jessica_lee'>
                             <img id='jessica_lee_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/jessica_lee.jpg")!!}' alt='image of Jessica Lee'>
                         </a></li>
                                 </div>
@@ -226,39 +220,39 @@
                     <div class="panel-heading" style='color: #596359; background-color:#B3D0B4; border-bottom-width: 0px;'>
                         <h3 id='guy_name' class='huge text-center'></h3>
                     </div>
-                    <div class="panel-body" style='background-color: #88A48B; color: white;'>
+                    <div class="panel-body guy-postcard" style=''>
                         <p class='wedding-party-description text-center' id="guy_description"></p>
                         <div class="row">
                             <ul id='list-guys' class='wedding-party-list'>
-                                <div class="col-md-2">
-                                    <li><a href='#' name='guy' value='paul_loh'>
-                                <img id='paul_loh_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/paul_loh.jpg ")!!}' alt='image of Paul Loh'>
-                            </a></li>
+                                <div class="col-xs-6 col-sm-4 col-md-2">
+                                    <li><a href='#' class='guy' name='guy' value='paul_loh'>
+                                        <img id='paul_loh_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/paul_loh.jpg ")!!}' alt='image of Paul Loh'>
+                                    </a></li>
                                 </div>
-                                <div class="col-md-2">
-                                    <li><a href='#' name='guy' value='paul_beckmann'>
-                                <img id='paul_beckmann_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/paul_beckmann.jpg")!!}' alt='image of Paul Beckmann'>
-                            </a></li>
+                                <div class="col-xs-6 col-sm-4 col-md-2">
+                                    <li><a href='#' class='guy' name='guy' value='paul_beckmann'>
+                                        <img id='paul_beckmann_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/paul_beckmann.jpg")!!}' alt='image of Paul Beckmann'>
+                                    </a></li>
                                 </div>
-                                <div class="col-md-2">
-                                    <li><a href='#' name='guy' value='aaron_wong'>
-                                <img id='aaron_wong_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/aaron_wong.jpg ")!!}' alt='image of Aaron Wong'>
-                            </a></li>
+                                <div class="col-xs-6 col-sm-4 col-md-2">
+                                    <li><a href='#' class='guy' name='guy' value='aaron_wong'>
+                                        <img id='aaron_wong_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/aaron_wong.jpg ")!!}' alt='image of Aaron Wong'>
+                                    </a></li>
                                 </div>
-                                <div class="col-md-2">
-                                    <li><a href='#' name='guy' value='daniel_chan'>
-                                <img id='daniel_chan_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/daniel_chan.jpg")!!}' alt='image of Daniel Chan'>
-                            </a></li>
+                                <div class="col-xs-6 col-sm-4 col-md-2">
+                                    <li><a href='#' class='guy' name='guy' value='daniel_chan'>
+                                        <img id='daniel_chan_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/daniel_chan.jpg")!!}' alt='image of Daniel Chan'>
+                                    </a></li>
                                 </div>
-                                <div class="col-md-2">
-                                    <li><a href='#' name='guy' value='ezekiel_chan'>
-                                <img id='ezekiel_chan_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/ezekiel_chan.jpg ")!!}' alt='image of Ezekiel Chan'>
-                            </a></li>
+                                <div class="col-xs-6 col-sm-4 col-md-2">
+                                    <li><a href='#' class='guy' name='guy' value='ezekiel_chan'>
+                                        <img id='ezekiel_chan_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/ezekiel_chan.jpg ")!!}' alt='image of Ezekiel Chan'>
+                                    </a></li>
                                 </div>
-                                <div class="col-md-2">
-                                    <li><a href='#' name='guy' value='jonathan_chan'>
-                                <img id='jonathan_chan_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/jonathan_chan.jpg")!!}' alt='image of Jonathan Chan'>
-                            </a></li>
+                                <div class="col-xs-6 col-sm-4 col-md-2">
+                                    <li><a href='#' class='guy' name='guy' value='jonathan_chan'>
+                                        <img id='jonathan_chan_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/jonathan_chan.jpg")!!}' alt='image of Jonathan Chan'>
+                                    </a></li>
                                 </div>
                             </ul>
                         </div>
@@ -276,7 +270,7 @@
     -->
     <div class='container text-center'>
         <h1 style='margin-bottom: 50px'>Registry</h1>
-        <p style='margin-bottom: 50px'>There are three different ways you can help us financially. Hover over the one of your choice! For any gift you want to send before the day of the wedding, the delivery address is 86 Blackburn Avenue, Ottawa, ON, K1N 8A5.
+        <p style='margin-bottom: 50px'>Should you like to support us financially, there are three different ways you can help. Hover over the one of your choice! For any gift you want to send before the day of the wedding, the delivery address is 86 Blackburn Avenue, Ottawa, ON, K1N 8A5.
         </p>
         <div class='row registryRow' style='margin-bottom: 200px'>
             <div class='col-md-4 registryOption'>
@@ -322,32 +316,32 @@
         <h1 style='margin-bottom: 50px'>Engagement Photos</h1>
         <div class='row' style='margin-bottom: 20px'>
             <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_1.JPG" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_1.png" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
-            <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_2.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
-            </div>
-            <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_3.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
-            </div>
-        </div>
-        <div class='row' style='margin-bottom: 20px'>
             <div class='col-md-4'>
                 <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_4.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
             <div class='col-md-4'>
                 <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_5.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
+        </div>
+        <div class='row' style='margin-bottom: 20px'>
             <div class='col-md-4'>
                 <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_6.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
+            </div>
+            <div class='col-md-4'>
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_7.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">            
+            </div>
+            <div class='col-md-4'>
+                <img class='img-responsive img-thumbnail engagementPhotoLong' src='{!!asset( "images/engagement_photo_8.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
         </div>
         <div class='row'>
             <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_7.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_2.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
             <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail engagementPhotoLong' src='{!!asset( "images/engagement_photo_8.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_3.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
             <div class='col-md-4'>
             </div>

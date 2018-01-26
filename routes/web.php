@@ -28,7 +28,4 @@ Route::get('/guest', 'GuestController@index')->name('guest.index');
 //User routes
 Auth::routes();
 
-/*
-*sam: registry section, menubar, photo gallery
-*/
 

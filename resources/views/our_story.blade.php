@@ -1,24 +1,20 @@
-<div>
+<div class='col-md-8 col-md-offset-2'>
     <br>
     <br>
     <p>We knew of each other a year before we first met. That’s right, it took a whole year before we would even speak to each other! It all started at an IVCF (a Christian club on campus) party. We never actually talked to each other that night but Sam's friends, Joshua and Jordyn, had met her and instantly saw the chemistry that could be. Don’t ask us how, they just did! After the party, they sat Sam down and told him of Sarah and how we were on the same wavelength. Sam shrugged it off at the time and that was that.</p>
     <p>Our fates clashed again at a week long camp retreat. Like our previous "encounter", we never talked. Take a look at this picture to see just how close we got without even interacting with each other.</p>
-    <br>
-    <br>
-    <div class='col-md-8 col-md-offset-2 wow slideInUp' data-wow-offset="400">
-        <img class='img-responsive' src='{!!asset( "images/sarah_sam_mark_central.jpg")!!}' alt='image of Sarah and Sam at Mark Central'>
+    <div class='col-md-8 col-md-offset-2'>
+        <img class='img-responsive img-rounded' src='{!!asset( "images/sarah_sam_mark_central.jpg")!!}' alt='image of Sarah and Sam at Mark Central'>
     </div>
     <div class='clearfix'></div>
     <br>
     <br>
-    <p>Finally, a few months later, we became bible study co-leaders. That’s when this happened</p>
+    <p>Finally, a few months later, we became bible study co-leaders. That’s when Sarah said her first words to me.</p>
     <br>
-    <br>
-    <div class='col-md-8 col-md-offset-2 wow slideInUp' data-wow-offset="400">
-        <img class='img-responive' src='{!!asset( "images/sarah_post.png")!!}' alt='image of Sarah facebook post'>
+    <div class='col-md-8 col-md-offset-2'>
+        <img class='img-responsive img-rounded' src='{!!asset( "images/sarah_post.png")!!}' alt='image of Sarah facebook post'>
     </div>
     <div class='clearfix'></div>
-    <br>
     <br>
     <p>From "being around but never interacting", we quickly became ingrained into each other's lives as we led Bible studies together and sparred on Saturday mornings. Our lives mixed like gravy and mashed potatoes.</p>
     <p>Samuel quickly grew feelings for Sarah and had concluded that Sarah felt the same way; in his opinion, the signs were too many. When he first approached her about this, she grew quiet and then mumbled, "umm, this is awkward". The stars were apparantly not aligned.</p>

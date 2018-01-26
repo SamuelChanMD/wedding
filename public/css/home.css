@@ -258,7 +258,7 @@
     transform: skewX(20deg); 
     -ms-transform: skewX(20deg); /* IE 9 */
     -webkit-transform: skewX(20deg); /* Safari and Chrome */
-        position: absolute;
+    position: absolute;
     transform: translateX(-30px) translateY(-50px);
     width: 105%; 
 }
@@ -391,10 +391,12 @@
      background-size: 100% 100%;
      background-repeat: no-repeat;
      width: 80%;
-     height: 220px;
+     width: 373px; 
+     height: 250px;
      margin: 0 auto;
-     margin-top: 30px;
-     margin-bottom: 30px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     padding-top: 15px;
  }
 
  .bridesmaids-temp {
@@ -402,17 +404,19 @@
      background-size: 100% 100%;
      background-repeat: no-repeat;
      width: 80%;
-     height: 220px;
+     height: 250px;
+     width: 373px;
      margin: 0 auto;
-     margin-top: 30px;
-     margin-bottom: 30px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     padding-top: 15px;
  }
 
 .wedding-image-holder { 
     /* Display & Box Model */
     margin: 0 auto;
-    height: 180px;
-    width: 180px; 
+    height: 200px;
+    width: 200px; 
 }
 
 .wedding-party-image {
@@ -429,9 +433,20 @@
 .wedding-party-token {
     /* Display & Box Model */
     border: 2px solid black;
-    height: 60px; 
-    width: 60px;
+    height: 80px; 
+    width: 80px;
     margin: 0 auto;
+    transition: border 0.5s ease, box-shadow 0.5s ease;
+}
+
+.guy .wedding-party-token:hover {
+    border: 4px solid #b7cdb8;
+    box-shadow: 3px 5px rgba(0, 0, 0, 0.55);
+}
+
+.girl .wedding-party-token:hover {
+    border: 4px solid #d2dbec;
+    box-shadow: 3px 5px rgba(0, 0, 0, 0.55);
 }
 
 .current-guy {
@@ -448,6 +463,22 @@
     /* Text */
     font-size: 38px;
     margin-top: 10px !important;
+}
+
+.guy-postcard {
+    /* for reference background-color: #88A48B; */
+    color: white;
+    background-image: linear-gradient( rgba(136, 164, 139, 0.4), rgba(136, 164, 139, 0.4)), url("../images/post_card_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.girl-postcard {
+    /* for reference background-color: #7C918C; */
+    color: white;
+    background-image: linear-gradient( rgba(124, 145, 140, 0.4), rgba(124, 145, 140, 0.4)), url("../images/post_card_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .wedding-party-list {
@@ -472,10 +503,10 @@
 
     /* Display & Box Model */
     display: block;
-    padding: 14px 16px;
+    padding: 8px 0px;
     text-align: center;
     text-decoration: none;
-    transition: background-color 0.5s ease;
+    /*transition: background-color 0.5s ease;*/
 }
 
 #list-guys {
@@ -488,23 +519,6 @@
     border-bottom: 10px solid #d2dbec;
 
 }
-
-#list-guys a:hover {
-    /* Color */
-    background-color: #2d2de5;
-    color: white;
-
-    /* Display & Box Model */
-    text-decoration: underline;
-}
-
-#list-girls a:hover {
-    /* Display & Box Model */
-    background-color: #b44457;
-    color: white;
-    text-decoration: underline;
-}
-
 
 .bridesmaids-section {
     background-image: url('../images/bridesmaid_brush.png');
@@ -549,7 +563,7 @@
     width: 22%;
     margin: 0 auto;
     border: 10px solid #C62C58;
-    box-shadow: 5px 8px rgba(0, 0, 0, 0.55);;
+    box-shadow: 5px 8px rgba(0, 0, 0, 0.55);
  }
 
  .registryOptionHeader {
@@ -574,6 +588,7 @@
     visibility: hidden;
     background-color: black;
     opacity: 0;
+    padding: 15% 0;
 }
 
 .registryOption:hover .registryOptionContent {
@@ -629,6 +644,17 @@
         width: 85%;
         margin-left: 7.5% !important;
         margin-bottom: 7.5%;
+    }
+
+    /* umm */
+    .carousel-header {
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        background-color: rgba(54, 47, 45, 0.8);
+        color: #fff;
+        padding: 20px;
     }
 
 }
