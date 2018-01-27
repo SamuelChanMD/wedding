@@ -61,7 +61,7 @@
     </div>
 </div>
 <div class='jumbotron wow slideInUp' id='third-body' data-wow-offset="300">
-    <div class="row">
+    <div class="row">   
         <div class="col-md-6">
             <div class="details-left-holder">
                 <div class="details-left">
@@ -69,6 +69,9 @@
                     <div class="details-date text-center">
                         <h1>10th June</h1>
                         <h1 style="font-size: 150px;">2018</h1>
+                    </div>
+                    <div class="text-center">
+                        <div role="button" href="#" class="rsvp-button" id="rsvp-button" data-toggle="modal" data-target="#rsvpModal"><h1>RSVP</h1></div>
                     </div>
                 </div>
             </div>
@@ -80,8 +83,17 @@
                 <h2 style="font-size: 40px">1985 9th Line Carleton Place  ON K7C 3P2</h2>
             </div>
             <div class="row">
-                <h2 style="font-size: 40px">Ceremony at 400PM Reception at 600PM </h2>
-                <div role="button" href="#" class="rsvp-button" id="rsvp-button" data-toggle="modal" data-target="#rsvpModal"><h1>RSVP</h1></div>
+                <div class="col-md-12">
+                    <div class="col-md-6 text-right">
+                        <img src='{!!asset( "images/wedding.png")!!}' alt='cheers' style="height:80px;">
+                        <h2 style="font-size: 40px">Ceremony<br>400PM</h2>
+                    </div>
+                    <div class="col-md-6 text-left">
+                        <img src='{!!asset( "images/cheers.png")!!}' alt='cheers' style="height:80px;">
+                        <h2 style="font-size: 40px">Reception<br>600PM</h2>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -324,32 +336,32 @@
         <h1 style='margin-bottom: 50px'>Engagement Photos</h1>
         <div class='row' style='margin-bottom: 20px'>
             <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_1.png" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/thumbnails/engagement_photo_1_thumbnail.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
             <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_4.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/thumbnails/engagement_photo_4_thumbnail.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
             <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_5.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/thumbnails/engagement_photo_5_thumbnail.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
         </div>
         <div class='row' style='margin-bottom: 20px'>
             <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_6.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/thumbnails/engagement_photo_6_thumbnail.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
             <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_7.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">            
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/thumbnails/engagement_photo_7_thumbnail.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">            
             </div>
             <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail engagementPhotoLong' src='{!!asset( "images/engagement_photo_8.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/thumbnails/engagement_photo_8_thumbnail.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
         </div>
         <div class='row'>
             <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_2.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/thumbnails/engagement_photo_2_thumbnail.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
             <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/engagement_photo_3.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/thumbnails/engagement_photo_3_thumbnail.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
             <div class='col-md-4'>
             </div>

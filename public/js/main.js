@@ -147,12 +147,7 @@ function scrollFunction() {
 
 $('.engagementPhoto').click(function(event){
     var pic = event.currentTarget.attributes.src.value;
-    $('#imageModal').attr('src', pic);
+    var largePicURL = pic.substring(0, pic.indexOf("_thumbnail")) + ".jpg";
+    $('#imageModal').attr('src', largePicURL);
     $('#photoModalDialog').addClass('modalWidth');
-});
-
-$('.engagementPhotoLong').click(function(event){
-    var pic = event.currentTarget.attributes.src.value;
-    $('#imageModal').attr('src', pic);
-    $('#photoModalDialog').removeClass('modalWidth');
 });
