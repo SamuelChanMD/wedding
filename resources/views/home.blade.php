@@ -52,13 +52,13 @@
     <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
         <div class='container'>
             <div class="row" id="accordion" role="tablist" aria-multiselectable="true">
-                 @include('our_story')
+                @include('our_story')
             </div>
         </div>
     </div>
 </div>
 <div class='jumbotron wow slideInUp' id='third-body' data-wow-offset="300">
-    <div class="row">   
+    <div class="row" style="margin:0px;">
         <div class="col-md-6">
             <div class="details-left-holder">
                 <div class="details-left">
@@ -68,7 +68,8 @@
                         <h1 style="font-size: 150px;">2018</h1>
                     </div>
                     <div class="text-center">
-                        <div role="button" href="#" class="rsvp-button" id="rsvp-button" data-toggle="modal" data-target="#rsvpModal"><h1>RSVP</h1></div>
+                        <div role="button" href="#" class="rsvp-button" id="rsvp-button" data-toggle="modal" data-target="#rsvpModal">
+                            <h1>RSVP</h1></div>
                     </div>
                 </div>
             </div>
@@ -90,74 +91,71 @@
                         <h2 style="font-size: 40px">Reception<br>600PM</h2>
                     </div>
                 </div>
-                
             </div>
         </div>
     </div>
 </div>
 <div id="fourth-body">
-<div id='carousel-section' class='carousel slide wow fadeInUp' data-wow-offset="300" data-ride='carousel'>
-
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#carousel-section" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-section" data-slide-to="1"></li>
-        <li data-target="#carousel-section" data-slide-to="2"></li>
-        <li data-target="#carousel-section" data-slide-to="3"></li>
-        <li data-target="#carousel-section" data-slide-to="4"></li>
-    </ol>
-    <!-- Wrapper for slides -->
-    <div class="carousel-header">
-        <h1 style="font-size: 63px; letter-spacing: -0.05em;">Things Todo in Ottawa</h1>
-        <span class='registryOptionText'>If you're coming to Ottawa for the first time, we've compiled a list of things that you should do while you're here!</span>
-    </div>
-    <div class="carousel-inner">
-
-        <div class="item active">
-            <img src='{!!asset( "images/byward_market_2.jpg")!!}' alt='image of byward market'>
-            <div class="carousel-caption">
-                <h1>Byward Market</h1>
-                <p>Street performers. Lively public. Local farmer's market.</p>
+    <div id='carousel-section' class='carousel slide wow fadeInUp' data-wow-offset="300" data-ride='carousel'>
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-section" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-section" data-slide-to="1"></li>
+            <li data-target="#carousel-section" data-slide-to="2"></li>
+            <li data-target="#carousel-section" data-slide-to="3"></li>
+            <li data-target="#carousel-section" data-slide-to="4"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-header">
+            <h1 style="font-size: 63px; letter-spacing: -0.05em;">Things Todo in Ottawa</h1>
+            <span class='registryOptionText'>If you're coming to Ottawa for the first time, we've compiled a list of things that you should do while you're here!</span>
+        </div>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src='{!!asset( "images/byward_market_2.jpg")!!}' alt='image of byward market'>
+                <div class="carousel-caption">
+                    <h1>Byward Market</h1>
+                    <p>Street performers. Lively public. Local farmer's market.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src='{!!asset( "images/nature_museum.jpg")!!}' alt='image of nature museum'>
+                <div class="carousel-caption">
+                    <h1>Nature Museum</h1>
+                    <p>Fun for adults and kids!</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src='{!!asset( "images/dominion_arboretum_2.jpg")!!}' alt='image of dominion arboretum'>
+                <div class="carousel-caption">
+                    <h1>Dominion Arboretum</h1>
+                    <p>Take a stroll or go for a picnic, Sam and Sarah did.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src='{!!asset( "images/national_gallery_of_canada.jpg")!!}' alt='image of national gallery of canada'>
+                <div class="carousel-caption">
+                    <h1>National Gallery of Canada</h1>
+                    <p>Fan of art? We will know where to find you if you're late to the wedding.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src='{!!asset( "images/uji_cafe.jpg")!!}' alt='image of cafe uji'>
+                <div class="carousel-caption">
+                    <h1>Cafe Uji</h1>
+                    <p>Try some Japanese cheesecake.</p>
+                </div>
             </div>
         </div>
-        <div class="item">
-            <img src='{!!asset( "images/nature_museum.jpg")!!}' alt='image of nature museum'>
-            <div class="carousel-caption">
-                <h1>Nature Museum</h1>
-                <p>Fun for adults and kids!</p>
-            </div>
-        </div>
-        <div class="item">
-            <img src='{!!asset( "images/dominion_arboretum_2.jpg")!!}' alt='image of dominion arboretum'>
-            <div class="carousel-caption">
-                <h1>Dominion Arboretum</h1>
-                <p>Take a stroll or go for a picnic, Sam and Sarah did.</p>
-            </div>
-        </div>
-        <div class="item">
-            <img src='{!!asset( "images/national_gallery_of_canada.jpg")!!}' alt='image of national gallery of canada'>
-            <div class="carousel-caption">
-                <h1>National Gallery of Canada</h1>
-                <p>Fan of art? We will know where to find you if you're late to the wedding.</p>
-            </div>
-        </div>
-        <div class="item">
-            <img src='{!!asset( "images/uji_cafe.jpg")!!}' alt='image of cafe uji'>
-            <div class="carousel-caption">
-                <h1>Cafe Uji</h1>
-                <p>Try some Japanese cheesecake.</p>
-            </div>
-        </div>
-    </div>
-    <!-- Carousel Control -->
-    <a class='left carousel-control' href='#carousel-section' role='button' data-slide='prev'>
+        <!-- Carousel Control -->
+        <a class='left carousel-control' href='#carousel-section' role='button' data-slide='prev'>
                     <span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span><span class='sr-only'>Previous</span>
                 </a>
-    <a class='right carousel-control' href='#carousel-section' role='button' data-slide='next'>
+        <a class='right carousel-control' href='#carousel-section' role='button' data-slide='next'>
                     <span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>
                     <span class='sr-only'>Next</span>
                 </a>
-</div>
+    </div>
 </div>
 <div class='jumbotron' id='fifth-body' data-wow-offset="300">
     <!-- What needs to be done in wedding party section
@@ -166,9 +164,9 @@
     -->
     <div class='row' style='margin-left: 2%; margin-right: 2%;'>
         <div class='col-md-12 text-center'>
-            <h1>Wedding Party</h1>
+            <h1 style="color:#a67c52">Wedding Party</h1>
             <div class='col-md-6 wow fadeInLeft' data-wow-duration="1.25s">
-                <h2 style='margin: 5px;'>Bridesmaids</h2>
+                <h2 style="color: #4e535c;font-size: 63px; letter-spacing: -0.05em; margin: 5px;">Bridesmaids</h2>
                 <div class='bridesmaids-temp'>
                     <div id='imagesOfGirls' class='wedding-image-holder'>
                         <img id='jessica_lee_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/jessica_lee.jpg")!!}' alt='image of Jessica Lee'>
@@ -181,8 +179,9 @@
                 </div>
                 <div class="panel panel-default">
                     <div class="panel-heading" style='color: #4e535c; background-color:#D2DEEA; border-bottom-width: 0px;'>
-                        <h3 id='girl_name' class='huge text-center'></h3></div>
-                    <div class="panel-body girl-postcard" > 
+                        <h2 style="font-size: 50px; letter-spacing: -0.05em;" id='girl_name' class='huge text-center'></h2>
+                    </div>
+                    <div class="panel-body girl-postcard">
                         <p class='wedding-party-description text-center' id="girl_description"></p>
                         <div class="row">
                             <ul id='list-girls' class='wedding-party-list'>
@@ -222,7 +221,7 @@
                 </div>
             </div>
             <div class='col-md-6 wow fadeInRight' data-wow-duration="1.25s">
-                <h2 style='margin: 5px;'>Groomsmen</h2>
+                <h2 style="color: #596359; font-size: 63px; letter-spacing: -0.05em; margin: 5px;">Groomsmen</h2>
                 <div class='groomsmen-temp'>
                     <div id='imagesOfGuys' class='wedding-image-holder'>
                         <img id='paul_loh_img' class='img-responsive img-circle wedding-party-image current-guy' src='{!!asset( "images/paul_loh.jpg")!!}' alt='image of Paul Loh'>
@@ -235,20 +234,20 @@
                 </div>
                 <div class="panel panel-default">
                     <div class="panel-heading" style='color: #596359; background-color:#B3D0B4; border-bottom-width: 0px;'>
-                        <h3 id='guy_name' class='huge text-center'></h3>
+                        <h2 style="font-size: 50px; letter-spacing: -0.05em;" id='guy_name' class='huge text-center'></h2>
                     </div>
                     <div class="panel-body guy-postcard" style=''>
                         <p class='wedding-party-description text-center' id="guy_description"></p>
                         <div class="row">
                             <ul id='list-guys' class='wedding-party-list'>
                                 <div class="col-xs-6 col-sm-4 col-md-2">
-                                    <li><a href='#' class='guy' name='guy' value='paul_loh'>
+                                    <li><a href='#' class='guy wow fadeIn' data-wow-dealy='1.25s' name='guy' value='paul_loh'>
                                         <img id='paul_loh_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/paul_loh.jpg ")!!}' alt='image of Paul Loh'>
                                     </a></li>
                                 </div>
                                 <div class="col-xs-6 col-sm-4 col-md-2">
                                     <li><a href='#' class='guy' name='guy' value='paul_beckmann'>
-                                        <img id='paul_beckmann_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/paul_beckmann.jpg")!!}' alt='image of Paul Beckmann'>
+                                        <img id='paul_beckmann_token' class='img-responsive img-circle wedding-party-token ' src='{!!asset( "images/paul_beckmann.jpg")!!}' alt='image of Paul Beckmann'>
                                     </a></li>
                                 </div>
                                 <div class="col-xs-6 col-sm-4 col-md-2">
@@ -347,7 +346,7 @@
                 <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/thumbnails/engagement_photo_6_thumbnail.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
             <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/thumbnails/engagement_photo_7_thumbnail.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">            
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/thumbnails/engagement_photo_7_thumbnail.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
             <div class='col-md-4'>
                 <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/thumbnails/engagement_photo_8_thumbnail.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
