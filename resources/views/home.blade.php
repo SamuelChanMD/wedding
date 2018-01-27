@@ -10,9 +10,6 @@
                 <div class="col-md-6">
                     <h1 class='pull-right name-heading' id="sam">Sam</h1>
                 </div>
-                <!-- <div class="col-md-12"> -->
-                <!-- <h1 class='name-heading' id="sam">Sam and Sarah</h1> -->
-                <!-- </div> -->
             </div>
         </div>
     </div>
