@@ -12,6 +12,8 @@
     <link href='{!! asset("/css/base.css")!!}' rel='stylesheet'>
     <link href='{!! asset("/css/animate.css")!!}' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+    <link rel="icon" href='{!! asset("/images/ss.ico")!!}'>
 </head>
 
 <body>
