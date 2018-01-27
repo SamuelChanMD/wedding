@@ -28,9 +28,9 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li id="event-nav"><a href="#">Event Details<span class="sr-only">(current)</span></a></li>
+                            <li><a href="#" class="rsvp-button" data-toggle="modal" data-target="#rsvpModal">RSVP</a></li>
                             <li><a href="#" id="things-nav">Things To Do</a></li>
                             <li><a href="#" id="wedding-party-nav">Wedding Party</a></li>
-                            <li><a href="#" class="rsvp-button" data-toggle="modal" data-target="#rsvpModal">RSVP</a></li>
                             <li><a href="#" id="registry-nav">Registry</a></li>
                             <li><a href="#" id="photos-nav">Photos</a></li>
                         </ul>
