@@ -212,17 +212,21 @@
     color: #fff;
 }
 
+.row-no-margin {
+    margin: 0px;
+}
+
 .details-left-holder {
     /* causes .float-wrap's height to match its child divs */
     white-space: nowrap;
 }
 
 .details-left {
-    min-width: 105%;
-    min-height: 500px;
-    -webkit-transform: skew(-20deg) translateX(-100px);
-    -moz-transform: skew(-20deg) translateX(-100px);
-    -o-transform: skew(-20deg) translateX(-100px);
+    min-width: 104%;
+    min-height: 600px;
+    -webkit-transform: skew(-20deg) translateX(-130px);
+    -moz-transform: skew(-20deg) translateX(-130px);
+    -o-transform: skew(-20deg) translateX(-130px);
     /*border: 5px solid #f58b00;*/
     transition: 0.25s;
     display: inline-block;
@@ -296,6 +300,22 @@
     /* Safari and Chrome */
 }
 
+.details-time {
+    padding: 20px;
+}
+
+.details-subheading {
+    font-size: 40px;
+}
+
+.details-icon {
+    height: 80px;
+}
+
+#details-year {
+    font-size: 150px;
+}
+
 #rsvp-button {
     /* Display & Box Model */
     margin: 0 auto;
@@ -336,13 +356,6 @@
     animation: fadeInDown 0.75s;
 }
 
-
-
-
-/*
- * WHAT TO DO STYLING
- */
-
 #details-section-divider {
     border-right: 7px ridge #000;
 }
@@ -350,7 +363,7 @@
 #fourth-body {
     /* Color */
     background-color: #fff;
-    background-image: linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url("../images/ottawa.jpg");
+    /*background-image: linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url("../images/ottawa.jpg");*/
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -365,15 +378,14 @@
 
     /* Display & Box Model */
     /*border-bottom: 4px solid #d9dada;*/
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 #sixth-body {
     /* Color */
     background-color: #f4efe9;
 }
-
-
-/* Carousel Overrides */
 
 .carousel-control.left {
     /* Display & Box Model */
@@ -395,20 +407,10 @@
     bottom: 0px !important;
 }
 
-
-/* RSVP Modal */
-
 #rsvpModal {
     /* Text */
     font-family: "Raleway", sans-serif;
 }
-
-
-
-
-/*
- * WEDDING PARTY STYLING
- */
 
 #fifth-body {
     /* Color */
@@ -418,11 +420,28 @@
     margin: 0;
 }
 
+.heading {
+    margin-bottom: 50px;
+}
+
+#wedding-heading {
+    color: #a67c52;
+}
+
+#groomsmen-heading {
+    color: #596359;
+    margin: 5px;
+}
+
+#bridesmaids-heading {
+    color: #4e535c;
+    margin: 5px;
+}
+
 .groomsmen-temp {
     background-image: url('../images/groomsmen_brush.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    width: 80%;
     width: 373px;
     height: 250px;
     margin: 0 auto;
@@ -435,9 +454,8 @@
     background-image: url('../images/bridesmaid_brush.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    width: 80%;
-    height: 250px;
     width: 373px;
+    height: 250px;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -497,6 +515,28 @@
     margin-top: 10px !important;
 }
 
+.panel>.girl-postcard-heading {
+    color: #4e535c;
+    background-color: #D2DEEA;
+    border-bottom: 0px;
+}
+
+.panel>.guy-postcard-heading {
+    color: #596359;
+    background-color: #B3D0B4;
+    border-bottom-width: 0px;
+}
+
+h1 {
+    font-size: 60px;
+    letter-spacing: -0.05em;
+}
+
+h2 {
+    font-size: 50px;
+    letter-spacing: -0.05em;
+}
+
 .guy-postcard {
     /* for reference background-color: #88A48B; */
     color: white;
@@ -538,7 +578,6 @@
     padding: 8px 0px;
     text-align: center;
     text-decoration: none;
-    /*transition: background-color 0.5s ease;*/
 }
 
 #list-guys {
@@ -562,12 +601,6 @@
     margin: 0 40px 0 40px;
 }
 
-
-
-/*
- * REGISTRY STYLING
- */
-
 #sixth-body {
     /* Color */
     color: white;
@@ -587,27 +620,52 @@
     height: 170px;
     padding-left: 35px;
     padding-right: 35px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+#registryOptionRow {
+    top: -20%;
 }
 
 .registryOption {
+    font-family: "Raleway";
+
     background-color: white;
-    height: 140%;
-    margin-top: -2% !important;
-    width: 22%;
+    width: 80%;
     margin: 0 auto;
     border: 10px solid #C62C58;
     box-shadow: 5px 5px 12px 0px rgba(0, 0, 0, 0.5);
 }
 
+.registryContainer {
+    position: relative;
+}
 
+.registryOption img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 30px;
 }
 
 .registryOptionHeader {
     background-color: #C62C58;
+}
+
+.registryOptionContent {
     position: absolute;
+    top: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
     width: 100%;
-    margin-left: -15px
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000;
+    padding: 10px;
+    padding-top: 40%;
 }
 
 .registryOptionText {
@@ -615,22 +673,9 @@
     font-family: 'Raleway';
 }
 
-.registryOptionContent {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    visibility: hidden;
-    background-color: black;
-    opacity: 0;
-    padding: 15% 0;
-}
-
 .registryOption:hover .registryOptionContent {
     visibility: visible;
     opacity: 0.75;
-    animation: fadeInTwo 0.75s;
 }
 
 @keyframes fadeInTwo {
@@ -643,35 +688,21 @@
     }
 }
 
-
-
-
-/*
- * ENGAGEMENT PHOTOS STYLING
- */
 #seventh-body {
     /* Color */
-
     background-color: #f2f4f3;
     /* Display & Box Model */
-
     margin: 0;
 }
 
 .engagementPhoto {
     max-height: 300px;
-    width: 100%;
     cursor: pointer;
     border: 0px;
     padding: 0px;
+    margin: 10px;
 }
 
-
-
-
-/* 
- * RESPONSIVE STYLING
- */
 @media only screen and (max-width: 992px) {
     .registryRow {
         background-color: transparent;
@@ -686,7 +717,6 @@
         margin-bottom: 7.5%;
     }
     /* umm */
-
     .carousel-header {
         position: relative;
         text-align: center;
@@ -697,12 +727,19 @@
         padding: 20px;
     }
 }
+
 .featurette-divider {
     border-color: #cdcdcd;
 }
 
+#imageModalContainer {
+    border-radius: 10px;
+}
 
-/* Small devices (tablets, 768px and up) */
+#imageModal {
+    border-radius: 10px;
+}
+
 @media only screen and (min-width: 768px) {
     .caption h1 {
         /* Text */
@@ -725,8 +762,6 @@
     }
 }
 
-
-/* Medium devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .caption h1 {
         /* Text */
@@ -749,8 +784,6 @@
     }
 }
 
-
-/* Large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .caption h1 {
         /* Text */

@@ -58,18 +58,14 @@
     </div>
 </div>
 <div class='jumbotron wow slideInUp' id='third-body' data-wow-offset="300">
-    <div class="row" style="margin:0px;">
+    <div class="row row-no-margin">
         <div class="col-md-6">
             <div class="details-left-holder">
                 <div class="details-left">
                     <img src='{!! asset("/images/details_rings_bg.jpg")!!}'>
                     <div class="details-date text-center">
                         <h1>10th June</h1>
-                        <h1 style="font-size: 150px;">2018</h1>
-                    </div>
-                    <div class="text-center">
-                        <div role="button" href="#" class="rsvp-button" id="rsvp-button" data-toggle="modal" data-target="#rsvpModal">
-                            <h1>RSVP</h1></div>
+                        <h1 id="details-year">2018</h1>
                     </div>
                 </div>
             </div>
@@ -77,20 +73,27 @@
         <div class="col-md-6 text-center">
             <h1>Event Details</h1>
             <div class="row">
-                <h1 class="details-location" style="font-size: 90px; letter-spacing: -0.05em; color: #c7b299">StoneFields</h1>
-                <h2 style="font-size: 40px">1985 9th Line Carleton Place  ON K7C 3P2</h2>
+                <div class="details-location">StoneFields</div>
+                <h2 class="details-subheading">1985 9th Line Carleton Place  ON K7C 3P2</h2>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="col-md-6 text-right">
-                        <img src='{!!asset( "images/wedding.png")!!}' alt='cheers' style="height:80px;">
-                        <h2 style="font-size: 40px">Ceremony<br>400PM</h2>
+            <div class="row details-time">
+                <div class="col-md-12 text-center">
+                    <div class="col-md-3 col-md-offset-3 details-item">
+                        <img src='{!!asset( "images/wedding.png")!!}' alt='cheers' class="details-icon">
+                        <h2 class="details-subheading">Ceremony<br>400PM</h2>
                     </div>
-                    <div class="col-md-6 text-left">
-                        <img src='{!!asset( "images/cheers.png")!!}' alt='cheers' style="height:80px;">
-                        <h2 style="font-size: 40px">Reception<br>600PM</h2>
+                    <div class="col-md-3 details-item">
+                        <img src='{!!asset( "images/cheers.png")!!}' alt='cheers' class="details-icon">
+                        <h2 class="details-subheading">Reception<br>600PM</h2>
                     </div>
                 </div>
+                <!-- <div class="row">
+    <div class="text-center">
+        <div role="button" href="#" class="rsvp-button" id="rsvp-button" data-toggle="modal" data-target="#rsvpModal">
+            <h1>RSVP</h1>
+        </div>
+    </div>
+</div> -->
             </div>
         </div>
     </div>
@@ -107,7 +110,7 @@
         </ol>
         <!-- Wrapper for slides -->
         <div class="carousel-header">
-            <h1 style="font-size: 63px; letter-spacing: -0.05em;">Things Todo in Ottawa</h1>
+            <h1>Things Todo in Ottawa</h1>
             <span class='registryOptionText'>If you're coming to Ottawa for the first time, we've compiled a list of things that you should do while you're here!</span>
         </div>
         <div class="carousel-inner">
@@ -162,11 +165,11 @@
     3. Sarah's content of girls needs review
     4. Need to confirm girl side pictures
     -->
-    <div class='row' style='margin-left: 2%; margin-right: 2%;'>
+    <div class='row'>
         <div class='col-md-12 text-center'>
-            <h1 style="color:#a67c52">Wedding Party</h1>
-            <div class='col-md-6 wow fadeInLeft' data-wow-duration="1.25s">
-                <h2 style="color: #4e535c;font-size: 63px; letter-spacing: -0.05em; margin: 5px;">Bridesmaids</h2>
+            <h1 id="wedding-heading">Wedding Party</h1>
+            <div class='col-md-6 wow fadeInLeft' data-wow-duration="0.75s">
+                <h1 id="bridesmaids-heading">Bridesmaids</h1>
                 <div class='bridesmaids-temp'>
                     <div id='imagesOfGirls' class='wedding-image-holder'>
                         <img id='jessica_lee_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/jessica_lee.jpg")!!}' alt='image of Jessica Lee'>
@@ -178,8 +181,8 @@
                     </div>
                 </div>
                 <div class="panel panel-default">
-                    <div class="panel-heading" style='color: #4e535c; background-color:#D2DEEA; border-bottom-width: 0px;'>
-                        <h2 style="font-size: 50px; letter-spacing: -0.05em;" id='girl_name' class='huge text-center'></h2>
+                    <div class="panel-heading girl-postcard-heading">
+                        <h2 id='girl_name' class='text-center'></h2>
                     </div>
                     <div class="panel-body girl-postcard">
                         <p class='wedding-party-description text-center' id="girl_description"></p>
@@ -220,8 +223,8 @@
                     </div>
                 </div>
             </div>
-            <div class='col-md-6 wow fadeInRight' data-wow-duration="1.25s">
-                <h2 style="color: #596359; font-size: 63px; letter-spacing: -0.05em; margin: 5px;">Groomsmen</h2>
+            <div class='col-md-6 wow fadeInRight' data-wow-duration="0.75s">
+                <h1 id="groomsmen-heading">Groomsmen</h1>
                 <div class='groomsmen-temp'>
                     <div id='imagesOfGuys' class='wedding-image-holder'>
                         <img id='paul_loh_img' class='img-responsive img-circle wedding-party-image current-guy' src='{!!asset( "images/paul_loh.jpg")!!}' alt='image of Paul Loh'>
@@ -233,10 +236,10 @@
                     </div>
                 </div>
                 <div class="panel panel-default">
-                    <div class="panel-heading" style='color: #596359; background-color:#B3D0B4; border-bottom-width: 0px;'>
-                        <h2 style="font-size: 50px; letter-spacing: -0.05em;" id='guy_name' class='huge text-center'></h2>
+                    <div class="panel-heading guy-postcard-heading">
+                        <h2 id='guy_name' class='text-center'></h2>
                     </div>
-                    <div class="panel-body guy-postcard" style=''>
+                    <div class="panel-body guy-postcard">
                         <p class='wedding-party-description text-center' id="guy_description"></p>
                         <div class="row">
                             <ul id='list-guys' class='wedding-party-list'>
@@ -285,43 +288,52 @@
             3. Link to zola once we open it
     -->
     <div class='container text-center'>
-        <h1 style='margin-bottom: 50px'>Registry</h1>
-        <p style='margin-bottom: 50px'>Should you like to support us financially, there are three different ways you can help. Hover over the one of your choice! For any gift you want to send before the day of the wedding, the delivery address is 86 Blackburn Avenue, Ottawa, ON, K1N 8A5.
-        </p>
-        <div class='row registryRow' style='margin-bottom: 200px'>
-            <div class='col-md-4 registryOption'>
-                <img class='img-responsive' src='{!!asset( "images/zola.png" )!!}'>
-                <div class='registryOptionContent'>
-                    <span class='registryOptionText'>
-                        Help us build a lovely home by purchasing a household item on Zola!
-                    </span>
+        <div class="row">
+            <h1>Registry</h1>
+            <br>
+            <p>Should you like to support us financially, there are three different ways you can help. Hover over the one of your choice! For any gift you want to send before the day of the wedding, the delivery address is 86 Blackburn Avenue, Ottawa, ON, K1N 8A5.
+            </p>
+        </div>
+        <div class='row registryRow'>
+            <div class="col-md-12" id="registryOptionRow">
+                <div class='col-md-4'>
+                    <div class="registryOption">
+                        <div class="registryContainer">
+                            <img class='img-responsive' src='{!!asset( "images/zola.png" )!!}'>
+                            <div class='registryOptionContent'>
+                                <span class='registryOptionText'>Help us build a lovely home by purchasing a household item on Zola!</span>
+                            </div>
+                        </div>
+                        <div class='registryOptionHeader'>
+                            <strong>ZOLA REGISTRY</strong>
+                        </div>
+                    </div>
                 </div>
-                <div class='registryOptionHeader'>
-                    <span class='registryOptionText'><strong>ZOLA REGISTRY</strong></span>
+                <div class='col-md-4'>
+                    <div class="registryOption">
+                        <div class="registryContainer">
+                            <img class='img-responsive' src='{!!asset( "images/piggy_bank.png" )!!}'>
+                            <div class='registryOptionContent'>
+                                <span class='registryOptionText'>Make a monetary donation to help us with the big stuff!</span>
+                            </div>
+                        </div>
+                        <div class='registryOptionHeader'>
+                            <strong>CASH FUND</strong>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class='col-md-4 registryOption' style='margin-left:17%'>
-                <img class='img-responsive' src='{!!asset( "images/piggy_bank.png" )!!}'>
-                <div class='registryOptionContent'>
-                    <span class='registryOptionText'>
-                        Make a monetary donation to help us with the big stuff!
-                    </span>
-                </div>
-                <div class='registryOptionHeader'>
-                    <span class='registryOptionText'><strong>CASH FUND</strong></span>
-                </div>
-            </div>
-            <div class='col-md-4 registryOption' style='margin-left:17%'>
-                <div style='width:100%; padding: 15px'>
-                    <img class='img-responsive' src='{!!asset( "images/gift.png" )!!}'>
-                </div>
-                <div class='registryOptionContent'>
-                    <span class='registryOptionText'>
-                        Already have a gift in mind? Send to the address above or wait until the wedding day!
-                    </span>
-                </div>
-                <div class='registryOptionHeader'>
-                    <span class='registryOptionText'><strong>PERSONAL GIFT</strong></span>
+                <div class='col-md-4'>
+                    <div class="registryOption">
+                        <div class="registryContainer">
+                            <img class='img-responsive' src='{!!asset( "images/gift.png" )!!}'>
+                            <div class='registryOptionContent'>
+                                <span class='registryOptionText'>Already have a gift in mind? Send to the address above or wait until the wedding day!</span>
+                            </div>
+                        </div>
+                        <div class='registryOptionHeader'>
+                            <strong>PERSONAL GIFT</strong>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -329,8 +341,8 @@
 </div>
 <div class='jumbotron wow slideInUp' id='seventh-body' data-wow-offset="300">
     <div class='container text-center'>
-        <h1 style='margin-bottom: 50px'>Engagement Photos</h1>
-        <div class='row' style='margin-bottom: 20px'>
+        <h1 class="heading">Engagement Photos</h1>
+        <div class='row'>
             <div class='col-md-4'>
                 <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/thumbnails/engagement_photo_1_thumbnail.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
@@ -341,7 +353,7 @@
                 <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/thumbnails/engagement_photo_5_thumbnail.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
         </div>
-        <div class='row' style='margin-bottom: 20px'>
+        <div class='row'>
             <div class='col-md-4'>
                 <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/thumbnails/engagement_photo_6_thumbnail.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
@@ -366,7 +378,7 @@
 </div>
 <div class="modal animated bounceInDown" id="engagementPhotoModal" tabindex="-1" role="dialog" aria-labelledby="whatIsThis">
     <div id='photoModalDialog' class="modal-dialog modalWidth" role="document">
-        <div class="modal-content" style="border-radius: 4px">
+        <div id="imageModalContainer" class="modal-content">
             <img id='imageModal' class='img-responsive img-thumbnail' src=''>
         </div>
     </div>
