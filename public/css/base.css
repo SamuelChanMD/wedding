@@ -1,24 +1,25 @@
 /* 
     Base Styling
 */
+
 @font-face {
     /* Text */
     font-family: 'BaseFont';
-    src: url('../fonts/base.ttf'); 
+    src: url('../fonts/base.ttf');
 }
 
 
 html,
 body {
     /* Color */
-    background-color: #f4efe9;
+    background-color: #f2f4f3;
 
     /* Display & Box Model */
     height: 100%;
 
     /* Text */
-    font-size: 1.1em;
-    font-family: 'BaseFont', sans-serif;;
+    font-size: 1em;
+    font-family: 'BaseFont', sans-serif;
 }
 
 p {
@@ -28,7 +29,7 @@ p {
 }
 
 .jumbotron p {
-    font-size: 0.85em;
+    font-size: 1em;
 }
 
 ::-webkit-scrollbar {
@@ -66,7 +67,7 @@ p {
     outline: none;
     padding: 8px;
     transition: 0.75s ease-in-out;
-    
+
     /* Color */
     background-color: #fff;
     color: #f26d7d;
@@ -89,6 +90,37 @@ p {
 
     /* Color */
     color: #f26d7d;
+}
+
+#loading {
+    /* Background & Color */
+    background: url(../images/ss_logo.png) center no-repeat rgba(0, 0, 0, 0);
+
+    animation: flipInY 2s;
+
+    /* Positioning */
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 9999;
+
+    /* Display & Box Model */
+    height: 100%;
+    width: 100%;
+}
+
+#loading-container {
+
+    background-color: #fff;
+
+    /* Positioning */
+    position: fixed;
+    left: 0px;
+    top: 0px;
+
+    /* Display & Box Model */
+    height: 100%;
+    width: 100%;
 }
 
 footer {

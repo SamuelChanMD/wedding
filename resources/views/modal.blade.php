@@ -4,9 +4,8 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h1 class="modal-title rsvp-modal-heading">
-                    RSVP To Our Wedding
+                    RSVP To Our Wedding <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove-circle" classaria-hidden="true"></span></button>
                 </h1>
             </div>
             <div class="modal-body">
@@ -58,24 +57,21 @@
                                         <label class="col-sm-4 control-label">Dietary Restrictions</label>
                                         <div class="col-sm-6">
                                             <div class="checkbox pull-left">
-                                              <label>
-                                                <input type="checkbox" name="vegetarian" value="1">
-                                                Vegetarian
-                                              </label>
+                                                <label>
+                                                    <input type="checkbox" name="vegetarian" value="1"> Vegetarian
+                                                </label>
                                             </div>
                                             <div class='clearfix'></div>
                                             <div class="checkbox pull-left">
-                                              <label>
-                                                <input type="checkbox" name="glutenFree" value="1">
-                                                Gluten Free
-                                              </label>
+                                                <label>
+                                                    <input type="checkbox" name="glutenFree" value="1"> Gluten Free
+                                                </label>
                                             </div>
                                             <div class='clearfix'></div>
                                             <div class="checkbox pull-left">
-                                              <label>
-                                                <input type="checkbox" name="lactoseIntolerant" value="1">
-                                                Lactose Intolerant
-                                              </label>
+                                                <label>
+                                                    <input type="checkbox" name="lactoseIntolerant" value="1"> Lactose Intolerant
+                                                </label>
                                             </div>
                                         </div>
                                     </div>
@@ -129,24 +125,21 @@
                                 <label class="col-sm-4 control-label">Dietary Restrictions</label>
                                 <div class="col-sm-6">
                                     <div class="checkbox pull-left">
-                                      <label>
-                                        <input type="checkbox" name="vegetarian" value="1">
-                                        Vegetarian
-                                      </label>
+                                        <label>
+                                            <input type="checkbox" name="vegetarian" value="1"> Vegetarian
+                                        </label>
                                     </div>
                                     <div class='clearfix'></div>
                                     <div class="checkbox pull-left">
-                                      <label>
-                                        <input type="checkbox" name="glutenFree" value="1">
-                                        Gluten Free
-                                      </label>
+                                        <label>
+                                            <input type="checkbox" name="glutenFree" value="1"> Gluten Free
+                                        </label>
                                     </div>
                                     <div class='clearfix'></div>
                                     <div class="checkbox pull-left">
-                                      <label>
-                                        <input type="checkbox" name="lactoseIntolerant" value="1">
-                                        Lactose Intolerant
-                                      </label>
+                                        <label>
+                                            <input type="checkbox" name="lactoseIntolerant" value="1"> Lactose Intolerant
+                                        </label>
                                     </div>
                                 </div>
                             </div>

@@ -26,5 +26,4 @@
     <p>Sarah, reluctant to turn Sam down again, had tried to express it more elegantly than last time. Needless to say, Sarah eventually began to reciprocate the feelings a month later and after a couple more months of careful thought, she decided to tell Sam.</p>
     <p>Our relationship has been more or less followed the same template: Samuel has always been eager to move to the next stage (sometimes impatiently) while Sarah has been cautious (sometimes reluctant). The exception to this ocurred in August of 2017 when Sarah decided she was ready for marriage and rather than telling Samuel (which is what he was waiting for), she decided to keep her feelings hidden from him until they took a trip to BC on a YMCA youth exchange program with our church. On top of Sunny Peaks mountain, Sarah proposed.</p>
     <p>So here we are now, getting ready for marriage and we want you to be a part of it 🙂</p>
-    <hr class="featurette-divider">
 </div>

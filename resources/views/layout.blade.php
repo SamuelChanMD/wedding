@@ -12,7 +12,6 @@
     <link href='{!! asset("/css/base.css")!!}' rel='stylesheet'>
     <link href='{!! asset("/css/animate.css")!!}' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-
     <link rel="icon" href='{!! asset("/images/ss.ico")!!}'>
 </head>
 
@@ -24,7 +23,12 @@
     <script type='text/javascript' src='{!! asset("/js/wow.js")!!}'></script>
     <script type='text/javascript' src='{!! asset("/js/main.js")!!}'></script>
     <script type='text/javascript' src='{!! asset("/js/rsvp.js")!!}'></script>
-    <script>new WOW().init();</script>
+    <script>
+    new WOW().init();
+    </script>
+    <div id="loading-container">
+        <div id="loading"></div>
+    </div>
 </body>
 
 </html>

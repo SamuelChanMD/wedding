@@ -10,9 +10,6 @@
                 <div class="col-md-6">
                     <h1 class='pull-right name-heading' id="sam">Sam</h1>
                 </div>
-                <!-- <div class="col-md-12"> -->
-                <!-- <h1 class='name-heading' id="sam">Sam and Sarah</h1> -->
-                <!-- </div> -->
             </div>
         </div>
     </div>
@@ -31,9 +28,9 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li id="event-nav"><a href="#">Event Details<span class="sr-only">(current)</span></a></li>
+                            <li><a href="#" class="rsvp-button" data-toggle="modal" data-target="#rsvpModal">RSVP</a></li>
                             <li><a href="#" id="things-nav">Things To Do</a></li>
                             <li><a href="#" id="wedding-party-nav">Wedding Party</a></li>
-                            <li><a href="#" class="rsvp-button" data-toggle="modal" data-target="#rsvpModal">RSVP</a></li>
                             <li><a href="#" id="registry-nav">Registry</a></li>
                             <li><a href="#" id="photos-nav">Photos</a></li>
                         </ul>
@@ -55,23 +52,20 @@
     <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
         <div class='container'>
             <div class="row" id="accordion" role="tablist" aria-multiselectable="true">
-                 @include('our_story')
+                @include('our_story')
             </div>
         </div>
     </div>
 </div>
 <div class='jumbotron wow slideInUp' id='third-body' data-wow-offset="300">
-    <div class="row">   
+    <div class="row row-no-margin">
         <div class="col-md-6">
             <div class="details-left-holder">
                 <div class="details-left">
                     <img src='{!! asset("/images/details_rings_bg.jpg")!!}'>
                     <div class="details-date text-center">
                         <h1>10th June</h1>
-                        <h1 style="font-size: 150px;">2018</h1>
-                    </div>
-                    <div class="text-center">
-                        <div role="button" href="#" class="rsvp-button" id="rsvp-button" data-toggle="modal" data-target="#rsvpModal"><h1>RSVP</h1></div>
+                        <h1 id="details-year">2018</h1>
                     </div>
                 </div>
             </div>
@@ -79,99 +73,103 @@
         <div class="col-md-6 text-center">
             <h1>Event Details</h1>
             <div class="row">
-                <h1 class="details-location" style="font-size: 90px; letter-spacing: -0.05em; color: #c7b299">StoneFields</h1>
-                <h2 style="font-size: 40px">1985 9th Line Carleton Place  ON K7C 3P2</h2>
+                <div class="details-location">StoneFields</div>
+                <h2 class="details-subheading">1985 9th Line Carleton Place  ON K7C 3P2</h2>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="col-md-6 text-right">
-                        <img src='{!!asset( "images/wedding.png")!!}' alt='cheers' style="height:80px;">
-                        <h2 style="font-size: 40px">Ceremony<br>400PM</h2>
+            <div class="row details-time">
+                <div class="col-md-12 text-center">
+                    <div class="col-md-3 col-md-offset-3 details-item">
+                        <img src='{!!asset( "images/wedding.png")!!}' alt='cheers' class="details-icon">
+                        <h2 class="details-subheading">Ceremony<br>400PM</h2>
                     </div>
-                    <div class="col-md-6 text-left">
-                        <img src='{!!asset( "images/cheers.png")!!}' alt='cheers' style="height:80px;">
-                        <h2 style="font-size: 40px">Reception<br>600PM</h2>
+                    <div class="col-md-3 details-item">
+                        <img src='{!!asset( "images/cheers.png")!!}' alt='cheers' class="details-icon">
+                        <h2 class="details-subheading">Reception<br>600PM</h2>
                     </div>
                 </div>
-                
+                <!-- <div class="row">
+    <div class="text-center">
+        <div role="button" href="#" class="rsvp-button" id="rsvp-button" data-toggle="modal" data-target="#rsvpModal">
+            <h1>RSVP</h1>
+        </div>
+    </div>
+</div> -->
             </div>
         </div>
     </div>
 </div>
 <div id="fourth-body">
-<div id='carousel-section' class='carousel slide wow fadeInUp' data-wow-offset="300" data-ride='carousel'>
-
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#carousel-section" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-section" data-slide-to="1"></li>
-        <li data-target="#carousel-section" data-slide-to="2"></li>
-        <li data-target="#carousel-section" data-slide-to="3"></li>
-        <li data-target="#carousel-section" data-slide-to="4"></li>
-    </ol>
-    <!-- Wrapper for slides -->
-    <div class="carousel-header">
-        <h1 style="font-size: 63px; letter-spacing: -0.05em;">Things Todo in Ottawa</h1>
-        <span class='registryOptionText'>If you're coming to Ottawa for the first time, we've compiled a list of things that you should do while you're here!</span>
-    </div>
-    <div class="carousel-inner">
-
-        <div class="item active">
-            <img src='{!!asset( "images/byward_market_2.jpg")!!}' alt='image of byward market'>
-            <div class="carousel-caption">
-                <h1>Byward Market</h1>
-                <p>Street performers. Lively public. Local farmer's market.</p>
+    <div id='carousel-section' class='carousel slide wow fadeInUp' data-wow-offset="300" data-ride='carousel'>
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-section" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-section" data-slide-to="1"></li>
+            <li data-target="#carousel-section" data-slide-to="2"></li>
+            <li data-target="#carousel-section" data-slide-to="3"></li>
+            <li data-target="#carousel-section" data-slide-to="4"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-header">
+            <h1>Things Todo in Ottawa</h1>
+            <span class='registryOptionText'>If you're coming to Ottawa for the first time, we've compiled a list of things that you should do while you're here!</span>
+        </div>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src='{!!asset( "images/byward_market_2.jpg")!!}' alt='image of byward market'>
+                <div class="carousel-caption">
+                    <h1>Byward Market</h1>
+                    <p>Street performers. Lively public. Local farmer's market.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src='{!!asset( "images/nature_museum.jpg")!!}' alt='image of nature museum'>
+                <div class="carousel-caption">
+                    <h1>Nature Museum</h1>
+                    <p>Fun for adults and kids!</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src='{!!asset( "images/dominion_arboretum_2.jpg")!!}' alt='image of dominion arboretum'>
+                <div class="carousel-caption">
+                    <h1>Dominion Arboretum</h1>
+                    <p>Take a stroll or go for a picnic, Sam and Sarah did.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src='{!!asset( "images/national_gallery_of_canada.jpg")!!}' alt='image of national gallery of canada'>
+                <div class="carousel-caption">
+                    <h1>National Gallery of Canada</h1>
+                    <p>Fan of art? We will know where to find you if you're late to the wedding.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src='{!!asset( "images/uji_cafe.jpg")!!}' alt='image of cafe uji'>
+                <div class="carousel-caption">
+                    <h1>Cafe Uji</h1>
+                    <p>Try some Japanese cheesecake.</p>
+                </div>
             </div>
         </div>
-        <div class="item">
-            <img src='{!!asset( "images/nature_museum.jpg")!!}' alt='image of nature museum'>
-            <div class="carousel-caption">
-                <h1>Nature Museum</h1>
-                <p>Fun for adults and kids!</p>
-            </div>
-        </div>
-        <div class="item">
-            <img src='{!!asset( "images/dominion_arboretum_2.jpg")!!}' alt='image of dominion arboretum'>
-            <div class="carousel-caption">
-                <h1>Dominion Arboretum</h1>
-                <p>Take a stroll or go for a picnic, Sam and Sarah did.</p>
-            </div>
-        </div>
-        <div class="item">
-            <img src='{!!asset( "images/national_gallery_of_canada.jpg")!!}' alt='image of national gallery of canada'>
-            <div class="carousel-caption">
-                <h1>National Gallery of Canada</h1>
-                <p>Fan of art? We will know where to find you if you're late to the wedding.</p>
-            </div>
-        </div>
-        <div class="item">
-            <img src='{!!asset( "images/uji_cafe.jpg")!!}' alt='image of cafe uji'>
-            <div class="carousel-caption">
-                <h1>Cafe Uji</h1>
-                <p>Try some Japanese cheesecake.</p>
-            </div>
-        </div>
-    </div>
-    <!-- Carousel Control -->
-    <a class='left carousel-control' href='#carousel-section' role='button' data-slide='prev'>
+        <!-- Carousel Control -->
+        <a class='left carousel-control' href='#carousel-section' role='button' data-slide='prev'>
                     <span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span><span class='sr-only'>Previous</span>
                 </a>
-    <a class='right carousel-control' href='#carousel-section' role='button' data-slide='next'>
+        <a class='right carousel-control' href='#carousel-section' role='button' data-slide='next'>
                     <span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>
                     <span class='sr-only'>Next</span>
                 </a>
-</div>
+    </div>
 </div>
 <div class='jumbotron' id='fifth-body' data-wow-offset="300">
     <!-- What needs to be done in wedding party section
     3. Sarah's content of girls needs review
     4. Need to confirm girl side pictures
     -->
-    <div class='row' style='margin-left: 2%; margin-right: 2%;'>
+    <div class='row'>
         <div class='col-md-12 text-center'>
-            <h1>Wedding Party</h1>
-            <div class='col-md-6 wow fadeInLeft' data-wow-duration="1.25s">
-                <h2 style='margin: 5px;'>Bridesmaids</h2>
+            <h1 id="wedding-heading">Wedding Party</h1>
+            <div class='col-md-6 wow fadeInLeft' data-wow-duration="0.75s">
+                <h1 id="bridesmaids-heading">Bridesmaids</h1>
                 <div class='bridesmaids-temp'>
                     <div id='imagesOfGirls' class='wedding-image-holder'>
                         <img id='jessica_lee_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/jessica_lee.jpg")!!}' alt='image of Jessica Lee'>
@@ -183,9 +181,10 @@
                     </div>
                 </div>
                 <div class="panel panel-default">
-                    <div class="panel-heading" style='color: #4e535c; background-color:#D2DEEA; border-bottom-width: 0px;'>
-                        <h3 id='girl_name' class='huge text-center'></h3></div>
-                    <div class="panel-body girl-postcard" > 
+                    <div class="panel-heading girl-postcard-heading">
+                        <h2 id='girl_name' class='text-center'></h2>
+                    </div>
+                    <div class="panel-body girl-postcard">
                         <p class='wedding-party-description text-center' id="girl_description"></p>
                         <div class="row">
                             <ul id='list-girls' class='wedding-party-list'>
@@ -224,8 +223,8 @@
                     </div>
                 </div>
             </div>
-            <div class='col-md-6 wow fadeInRight' data-wow-duration="1.25s">
-                <h2 style='margin: 5px;'>Groomsmen</h2>
+            <div class='col-md-6 wow fadeInRight' data-wow-duration="0.75s">
+                <h1 id="groomsmen-heading">Groomsmen</h1>
                 <div class='groomsmen-temp'>
                     <div id='imagesOfGuys' class='wedding-image-holder'>
                         <img id='paul_loh_img' class='img-responsive img-circle wedding-party-image current-guy' src='{!!asset( "images/paul_loh.jpg")!!}' alt='image of Paul Loh'>
@@ -237,21 +236,21 @@
                     </div>
                 </div>
                 <div class="panel panel-default">
-                    <div class="panel-heading" style='color: #596359; background-color:#B3D0B4; border-bottom-width: 0px;'>
-                        <h3 id='guy_name' class='huge text-center'></h3>
+                    <div class="panel-heading guy-postcard-heading">
+                        <h2 id='guy_name' class='text-center'></h2>
                     </div>
-                    <div class="panel-body guy-postcard" style=''>
+                    <div class="panel-body guy-postcard">
                         <p class='wedding-party-description text-center' id="guy_description"></p>
                         <div class="row">
                             <ul id='list-guys' class='wedding-party-list'>
                                 <div class="col-xs-6 col-sm-4 col-md-2">
-                                    <li><a href='#' class='guy' name='guy' value='paul_loh'>
+                                    <li><a href='#' class='guy wow fadeIn' data-wow-dealy='1.25s' name='guy' value='paul_loh'>
                                         <img id='paul_loh_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/paul_loh.jpg ")!!}' alt='image of Paul Loh'>
                                     </a></li>
                                 </div>
                                 <div class="col-xs-6 col-sm-4 col-md-2">
                                     <li><a href='#' class='guy' name='guy' value='paul_beckmann'>
-                                        <img id='paul_beckmann_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/paul_beckmann.jpg")!!}' alt='image of Paul Beckmann'>
+                                        <img id='paul_beckmann_token' class='img-responsive img-circle wedding-party-token ' src='{!!asset( "images/paul_beckmann.jpg")!!}' alt='image of Paul Beckmann'>
                                     </a></li>
                                 </div>
                                 <div class="col-xs-6 col-sm-4 col-md-2">
@@ -289,43 +288,52 @@
             3. Link to zola once we open it
     -->
     <div class='container text-center'>
-        <h1 style='margin-bottom: 50px'>Registry</h1>
-        <p style='margin-bottom: 50px'>Should you like to support us financially, there are three different ways you can help. Hover over the one of your choice! For any gift you want to send before the day of the wedding, the delivery address is 86 Blackburn Avenue, Ottawa, ON, K1N 8A5.
-        </p>
-        <div class='row registryRow' style='margin-bottom: 200px'>
-            <div class='col-md-4 registryOption'>
-                <img class='img-responsive' src='{!!asset( "images/zola.png" )!!}'>
-                <div class='registryOptionContent'>
-                    <span class='registryOptionText'>
-                        Help us build a lovely home by purchasing a household item on Zola!
-                    </span>
+        <div class="row">
+            <h1>Registry</h1>
+            <br>
+            <p>Should you like to support us financially, there are three different ways you can help. Hover over the one of your choice! For any gift you want to send before the day of the wedding, the delivery address is 86 Blackburn Avenue, Ottawa, ON, K1N 8A5.
+            </p>
+        </div>
+        <div class='row registryRow'>
+            <div class="col-md-12" id="registryOptionRow">
+                <div class='col-md-4'>
+                    <div class="registryOption">
+                        <div class="registryContainer">
+                            <img class='img-responsive' src='{!!asset( "images/zola.png" )!!}'>
+                            <div class='registryOptionContent'>
+                                <span class='registryOptionText'>Help us build a lovely home by purchasing a household item on Zola!</span>
+                            </div>
+                        </div>
+                        <div class='registryOptionHeader'>
+                            <strong>ZOLA REGISTRY</strong>
+                        </div>
+                    </div>
                 </div>
-                <div class='registryOptionHeader'>
-                    <span class='registryOptionText'><strong>ZOLA REGISTRY</strong></span>
+                <div class='col-md-4'>
+                    <div class="registryOption">
+                        <div class="registryContainer">
+                            <img class='img-responsive' src='{!!asset( "images/piggy_bank.png" )!!}'>
+                            <div class='registryOptionContent'>
+                                <span class='registryOptionText'>Make a monetary donation to help us with the big stuff!</span>
+                            </div>
+                        </div>
+                        <div class='registryOptionHeader'>
+                            <strong>CASH FUND</strong>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class='col-md-4 registryOption' style='margin-left:17%'>
-                <img class='img-responsive' src='{!!asset( "images/piggy_bank.png" )!!}'>
-                <div class='registryOptionContent'>
-                    <span class='registryOptionText'>
-                        Make a monetary donation to help us with the big stuff!
-                    </span>
-                </div>
-                <div class='registryOptionHeader'>
-                    <span class='registryOptionText'><strong>CASH FUND</strong></span>
-                </div>
-            </div>
-            <div class='col-md-4 registryOption' style='margin-left:17%'>
-                <div style='width:100%; padding: 15px'>
-                    <img class='img-responsive' src='{!!asset( "images/gift.png" )!!}'>
-                </div>
-                <div class='registryOptionContent'>
-                    <span class='registryOptionText'>
-                        Already have a gift in mind? Send to the address above or wait until the wedding day!
-                    </span>
-                </div>
-                <div class='registryOptionHeader'>
-                    <span class='registryOptionText'><strong>PERSONAL GIFT</strong></span>
+                <div class='col-md-4'>
+                    <div class="registryOption">
+                        <div class="registryContainer">
+                            <img class='img-responsive' src='{!!asset( "images/gift.png" )!!}'>
+                            <div class='registryOptionContent'>
+                                <span class='registryOptionText'>Already have a gift in mind? Send to the address above or wait until the wedding day!</span>
+                            </div>
+                        </div>
+                        <div class='registryOptionHeader'>
+                            <strong>PERSONAL GIFT</strong>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -333,8 +341,8 @@
 </div>
 <div class='jumbotron wow slideInUp' id='seventh-body' data-wow-offset="300">
     <div class='container text-center'>
-        <h1 style='margin-bottom: 50px'>Engagement Photos</h1>
-        <div class='row' style='margin-bottom: 20px'>
+        <h1 class="heading">Engagement Photos</h1>
+        <div class='row'>
             <div class='col-md-4'>
                 <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/thumbnails/engagement_photo_1_thumbnail.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
@@ -345,12 +353,12 @@
                 <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/thumbnails/engagement_photo_5_thumbnail.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
         </div>
-        <div class='row' style='margin-bottom: 20px'>
+        <div class='row'>
             <div class='col-md-4'>
                 <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/thumbnails/engagement_photo_6_thumbnail.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
             <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/thumbnails/engagement_photo_7_thumbnail.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">            
+                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/thumbnails/engagement_photo_7_thumbnail.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
             </div>
             <div class='col-md-4'>
                 <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset( "images/thumbnails/engagement_photo_8_thumbnail.jpg" )!!}' data-toggle="modal" data-target="#engagementPhotoModal">
@@ -370,7 +378,7 @@
 </div>
 <div class="modal animated bounceInDown" id="engagementPhotoModal" tabindex="-1" role="dialog" aria-labelledby="whatIsThis">
     <div id='photoModalDialog' class="modal-dialog modalWidth" role="document">
-        <div class="modal-content" style="border-radius: 4px">
+        <div id="imageModalContainer" class="modal-content">
             <img id='imageModal' class='img-responsive img-thumbnail' src=''>
         </div>
     </div>

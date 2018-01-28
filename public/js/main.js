@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    $("#loading-container").fadeOut(2500);
+
     var boys = {
         'paul_loh': {
             'name': 'Paul Loh',
@@ -145,7 +147,7 @@ function scrollFunction() {
  * Photo Section
  */
 
-$('.engagementPhoto').click(function(event){
+$('.engagementPhoto').click(function(event) {
     var pic = event.currentTarget.attributes.src.value;
     var largePicURL = pic.substring(0, pic.indexOf("_thumbnail")) + ".jpg";
     $('#imageModal').attr('src', largePicURL);
