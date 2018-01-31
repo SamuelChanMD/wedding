@@ -282,16 +282,11 @@
     </div>
 </div>
 <div class='jumbotron wow slideInUp' id='sixth-body' data-wow-offset="300">
-    <!-- What needs to be done in REGISTRY section
-            1. Center registryOptionText
-            2. Content Review
-            3. Link to zola once we open it
-    -->
     <div class='container text-center'>
         <div class="row">
             <h1>Registry</h1>
             <br>
-            <p>Should you like to support us financially, there are three different ways you can help. Hover over the one of your choice! For any gift you want to send before the day of the wedding, the delivery address is 86 Blackburn Avenue, Ottawa, ON, K1N 8A5.
+            <p>Should you like to support us, there are three different ways you can help. Hover over the one of your choice! For any gift you want to send before the day of the wedding, the delivery address is 86 Blackburn Avenue, Ottawa, ON, K1N 8A5.
             </p>
         </div>
         <div class='row registryRow'>
@@ -299,23 +294,27 @@
                 <div class='col-md-4'>
                     <div class="registryOption">
                         <div class="registryContainer">
-                            <img class='img-responsive' src='{!!asset( "images/zola.png" )!!}'>
-                            <div class='registryOptionContent'>
-                                <span class='registryOptionText'>Help us build a lovely home by purchasing a household item on Zola!</span>
-                            </div>
+                            <a href="https://www.bedbathandbeyond.ca:443/store/giftregistry/view_registry_guest.jsp?registryId=545515201&eventType=Wedding&pwsurl=" target="_blank">
+                                <img class='img-responsive' src='{!!asset( "images/bed_bath_and_beyond.jpg" )!!}'>
+                                <div class='registryOptionContent'>
+                                    <span class='registryOptionText'>Help us build a lovely home by purchasing a household item on Bed Bath and Beyond!</span>
+                                </div>
+                            </a>
                         </div>
                         <div class='registryOptionHeader'>
-                            <strong>ZOLA REGISTRY</strong>
+                            <strong>BBB REGISTRY</strong>
                         </div>
                     </div>
                 </div>
                 <div class='col-md-4'>
                     <div class="registryOption">
                         <div class="registryContainer">
-                            <img class='img-responsive' src='{!!asset( "images/piggy_bank.png" )!!}'>
-                            <div class='registryOptionContent'>
-                                <span class='registryOptionText'>Make a monetary donation to help us with the big stuff!</span>
-                            </div>
+                            <a href="https://www.myregistry.com/wedding-registry/Samuel-Chan-and-Sarah-Kim-Ottawa-ON/1518958" target="_blank">
+                                <img class='img-responsive' src='{!!asset( "images/piggy_bank.png" )!!}'>
+                                <div class='registryOptionContent'>
+                                    <span class='registryOptionText'>Make a monetary donation on myRegistry.com!</span>
+                                </div>
+                            </a>
                         </div>
                         <div class='registryOptionHeader'>
                             <strong>CASH FUND</strong>

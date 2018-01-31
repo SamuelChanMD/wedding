@@ -651,6 +651,7 @@ h2 {
 
 .registryOptionHeader {
     background-color: #C62C58;
+    padding-top: 10px;
 }
 
 .registryOptionContent {
@@ -665,17 +666,18 @@ h2 {
     transition: .5s ease;
     background-color: #000;
     padding: 10px;
-    padding-top: 40%;
+    padding-top: 35%;
 }
 
 .registryOptionText {
     vertical-align: middle;
     font-family: 'Raleway';
+    color: white;
 }
 
 .registryOption:hover .registryOptionContent {
     visibility: visible;
-    opacity: 0.75;
+    opacity: 0.80;
 }
 
 @keyframes fadeInTwo {
@@ -709,11 +711,10 @@ h2 {
         height: auto;
         padding: 0;
     }
-
     .registryOption {
         margin-top: 0 !important;
-        width: 85%;
-        margin-left: 7.5% !important;
+        width: 65%;
+        margin-left: 17.5% !important;
         margin-bottom: 7.5%;
     }
     /* umm */
@@ -725,6 +726,15 @@ h2 {
         background-color: rgba(54, 47, 45, 0.8);
         color: #fff;
         padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .registryOption {
+        margin-top: 0 !important;
+        width: 85%;
+        margin-left: 7.5% !important;
+        margin-bottom: 7.5%;
     }
 }
 
