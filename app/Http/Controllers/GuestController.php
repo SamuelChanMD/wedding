@@ -8,6 +8,11 @@ use App\Guest;
 class GuestController extends Controller
 {
 
+	public function __construct()
+	{
+	   $this->middleware('auth', ['except' => ['rsvp', 'rsvp2']]);
+	}
+
 	/**
 	 * The first rsvp must be someone registered in the database
 	 */
@@ -111,7 +116,6 @@ class GuestController extends Controller
 	 */
 	public function index()
 	{
-		$this->middleware('auth');
 	    $guests = Guest::all();
 	    $guestAttendingCount = Guest::where('attending', 1)->count();
 	    $childAttendingCount = Guest::where('attending', 1)->where('isKid', 1)->count();
