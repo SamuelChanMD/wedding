@@ -111,42 +111,42 @@
         <!-- Wrapper for slides -->
         <div class="carousel-header">
             <h1>Things Todo in Ottawa</h1>
-            <span class='registryOptionText'>If you're coming to Ottawa for the first time, we've compiled a list of things that you should do while you're here!</span>
+            <span class='registryOptionText'>If you're coming to Ottawa for the first time, we've compiled a list of things that you can do while you're here!</span>
         </div>
         <div class="carousel-inner">
             <div class="item active">
-                <img src='{!!asset( "images/byward_market_2.jpg")!!}' alt='image of byward market'>
+                <img src='{!!asset( "images/todoOttawa/byward_market.jpg")!!}' alt='image of byward market'>
                 <div class="carousel-caption">
                     <h1>Byward Market</h1>
-                    <p>Street performers. Lively public. Local farmer's market.</p>
+                    <p>Street performers, lively public, a local farmer's market, and plenty of restaurants, there is lots to do here!</p>
                 </div>
             </div>
             <div class="item">
-                <img src='{!!asset( "images/nature_museum.jpg")!!}' alt='image of nature museum'>
+                <img src='{!!asset( "images/todoOttawa/nature_museum.jpg")!!}' alt='image of nature museum'>
                 <div class="carousel-caption">
                     <h1>Nature Museum</h1>
-                    <p>Fun for adults and kids!</p>
+                    <p>Fun for adults and kids! Just don't get lost!</p>
                 </div>
             </div>
             <div class="item">
-                <img src='{!!asset( "images/dominion_arboretum_2.jpg")!!}' alt='image of dominion arboretum'>
+                <img src='{!!asset( "images/todoOttawa/dominion_arboretum.jpg")!!}' alt='image of dominion arboretum'>
                 <div class="carousel-caption">
                     <h1>Dominion Arboretum</h1>
                     <p>Take a stroll or go for a picnic, Sam and Sarah did.</p>
                 </div>
             </div>
             <div class="item">
-                <img src='{!!asset( "images/national_gallery_of_canada.jpg")!!}' alt='image of national gallery of canada'>
+                <img src='{!!asset( "images/todoOttawa/national_gallery_of_canada.jpg")!!}' alt='image of national gallery of canada'>
                 <div class="carousel-caption">
                     <h1>National Gallery of Canada</h1>
                     <p>Fan of art? We will know where to find you if you're late to the wedding.</p>
                 </div>
             </div>
             <div class="item">
-                <img src='{!!asset( "images/uji_cafe.jpg")!!}' alt='image of cafe uji'>
+                <img src='{!!asset( "images/todoOttawa/uji_cafe.jpg")!!}' alt='image of cafe uji'>
                 <div class="carousel-caption">
                     <h1>Cafe Uji</h1>
-                    <p>Try some Japanese cheesecake.</p>
+                    <p>Try some Japanese ramen with some Japanese cheesecake and Japanese tea!</p>
                 </div>
             </div>
         </div>
