@@ -23,9 +23,6 @@
     <script type='text/javascript' src='{!! asset("/js/wow.js")!!}'></script>
     <script type='text/javascript' src='{!! asset("/js/home.js")!!}'></script>
     <script type='text/javascript' src='{!! asset("/js/rsvp.js")!!}'></script>
-    <script>
-    new WOW().init();
-    </script>
     <div id="loading-container">
         <div id="loading"></div>
     </div>
