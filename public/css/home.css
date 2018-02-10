@@ -1,17 +1,13 @@
 h1 {
-    font-size: 60px;
-
     letter-spacing: -.05em;
 }
 
 h2 {
-    font-size: 50px;
-
     letter-spacing: -.05em;
 }
 
 .jumbotron p {
-    font-size: 1em;
+    font-size: .9em;
 }
 
 #loading {
@@ -28,24 +24,27 @@ h2 {
     background: url(../images/ss_logo.png) center no-repeat rgba(0, 0, 0, 0);
 }
 
+.carousel-inner>.item>img {
+    max-width: none;
+    height: 500px;
+}
+
 #loading-container {
-    /* Positioning */
     position: fixed;
     top: 0;
     left: 0;
 
     width: 100%;
-    /* Display & Box Model */
     height: 100%;
 
     background-color: #fff;
 }
 
 .navbar-default {
-    font-size: 2em;
+    font-size: 1.3em;
 
     border: none;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, .5);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .65);
 }
 
@@ -83,7 +82,7 @@ h2 {
 
 .carousel-header {
     position: absolute;
-    z-index: 5;
+    z-index: 1;
     top: 0;
 
     width: 100%;
@@ -143,7 +142,7 @@ h2 {
 .caption h1 {
     font-size: 3em;
 
-    text-shadow: 7px 7px 3px rgba(0, 0, 0, .65);
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, .65);
 }
 
 #our-story-btn {
@@ -159,12 +158,15 @@ h2 {
 .our-story-btn-svg {
     z-index: 1001;
 
+    width: 50px;
+    height: 50px;
+
     transition: .5s ease-in-out;
     transform: rotate(0deg);
 }
 
 .our-story-heading-text {
-    font-size: 2em;
+    font-size: 3em;
 
     padding: 10px;
 
@@ -223,6 +225,9 @@ h2 {
 }
 
 .details-left-holder {
+    padding-right: 0;
+    padding-left: 0;
+
     white-space: nowrap;
 }
 
@@ -233,13 +238,10 @@ h2 {
     float: left;
     overflow: hidden;
 
-    min-width: 104%;
-    min-height: 600px;
+    min-width: 100%;
+    min-height: 300px;
 
     transition: .25s;
-    -webkit-transform: skew(-20deg) translateX(-130px);
-    -moz-transform: skew(-20deg) translateX(-130px);
-    -o-transform: skew(-20deg) translateX(-130px);
 
     box-shadow: 5px 5px 13px 0 rgba(0, 0, 0, .5);
 }
@@ -251,14 +253,6 @@ h2 {
 
     width: 100%;
 
-    content: '';
-    -webkit-transform: skewX(20deg);
-    -ms-transform: skewX(20deg);
-    transform: skewX(20deg);
-    -webkit-transform-origin: top left;
-    -ms-transform-origin: top left;
-    transform-origin: top left;
-
     background-repeat: no-repeat;
     background-position: top left;
     background-size: contain;
@@ -267,40 +261,34 @@ h2 {
 .details-left img {
     position: absolute;
 
-    width: 105%;
+    height: 130%;
 
     content: '';
-    -webkit-transform: skewX(20deg);
-    -ms-transform: skewX(20deg);
-    transform: skewX(20deg);
-    transform: translateX(-30px) translateY(-50px);
 }
 
 .details-left h1 {
-    font-size: 80px;
+    font-size: 3em;
 
     text-shadow: 5px 5px 13px rgba(0, 0, 0, .5);
 }
 
-.details-location {
-    font-size: 90px;
+#details-year {
+    font-size: 6em;
+}
 
-    letter-spacing: -.05em;
+#details-location {
+    font-size: 3em;
 
     color: #c7b299;
     text-shadow: 5px 5px 13px rgba(0, 0, 0, .5);
 }
 
 .details-date {
-    position: absolute;
+    position: relative;
 
-    margin-top: 48px;
-    margin-left: 40%;
+    width: 85%;
+    margin: 10% auto;
     padding: 10px;
-
-    -webkit-transform: skewX(20deg);
-    -ms-transform: skewX(20deg);
-    transform: skewX(20deg);
 
     color: #000;
     border: 7px solid #000;
@@ -312,15 +300,15 @@ h2 {
 }
 
 .details-subheading {
-    font-size: 40px;
+    /*font-size: 40px;*/
 }
 
 .details-icon {
     height: 80px;
 }
 
-#details-year {
-    font-size: 150px;
+.img-responsive {
+    margin: 0 auto;
 }
 
 #rsvp-button {
@@ -376,19 +364,12 @@ h2 {
 }
 
 .carousel-caption p {
-    font-size: 18px;
     font-weight: 600;
 }
 
 .carousel-caption {
-    transition: background-color .5s ease;
-
-    background-color: rgba(100, 100, 100, .0);
-    text-shadow: 2px 2px 1px rgba(0, 0, 0, .85);
-}
-
-.carousel-caption:hover {
-    background-color: rgba(100, 100, 100, .7);
+    border-radius: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .85);
 }
 
 #wedding-party-container {
@@ -567,36 +548,33 @@ h2 {
     background-size: cover;
 }
 
-.registryRow {
-    height: 170px;
-    margin-top: 80px;
-    margin-bottom: 100px;
-    padding-right: 35px;
-    padding-left: 35px;
+.registry-row {
+    height: auto;
+    padding: 0;
 
-    background-color: #ae0d46;
+    background-color: transparent;
 }
 
-#registryOptionRow {
+#registry-option-row {
     top: -20%;
 }
 
-.registryOption {
+.registry-option {
     font-family: 'Raleway';
 
     width: 80%;
-    margin: 0 auto;
+    margin: 5px auto 5px auto;
 
     border: 10px solid #c62c58;
     background-color: white;
     box-shadow: 5px 5px 12px 0 rgba(0, 0, 0, .5);
 }
 
-.registryContainer {
+.registry-option-container {
     position: relative;
 }
 
-.registryOption img {
+.registry-option img {
     display: block;
 
     width: 100%;
@@ -604,13 +582,13 @@ h2 {
     padding: 30px;
 }
 
-.registryOptionHeader {
+.registry-option-header {
     padding-top: 10px;
 
     background-color: #c62c58;
 }
 
-.registryOptionContent {
+.registry-option-content {
     position: absolute;
     top: 0;
     right: 0;
@@ -636,7 +614,7 @@ h2 {
     color: white;
 }
 
-.registryOption:hover .registryOptionContent {
+.registry-option:hover .registry-option-content {
     visibility: visible;
 
     opacity: .80;
@@ -648,10 +626,9 @@ h2 {
     background-color: #f2f4f3;
 }
 
-.engagementPhoto {
+.engagement-photo {
     max-height: 300px;
-    margin: 10px;
-    padding: 0;
+    margin: 5px;
 
     cursor: pointer;
 
@@ -759,21 +736,17 @@ h2 {
     transition-delay: .175s;
 }
 
+#imageModalContainer {
+    border-radius: 10px;
+}
 
-@media only screen and (max-width: 992px) {
-    .registryRow {
-        height: auto;
-        padding: 0;
+#imageModal {
+    border-radius: 10px;
+}
 
-        background-color: transparent;
-    }
-    .registryOption {
-        width: 65%;
-        margin-top: 0 !important;
-        margin-bottom: 7.5%;
-        margin-left: 17.5% !important;
-    }
 
+
+/*@media only screen and (max-width: 992px) {
     .carousel-header {
         position: relative;
 
@@ -786,17 +759,11 @@ h2 {
         color: #fff;
         background-color: rgba(54, 47, 45, .8);
     }
-}
+}*/
 
-@media only screen and (max-width: 500px) {
-    .registryOption {
-        width: 85%;
-        margin-top: 0 !important;
-        margin-bottom: 7.5%;
-        margin-left: 7.5% !important;
-    }
 
-    .groomsmen-temp {
+/*@media only screen and (max-width: 500px) {
+        .groomsmen-temp {
         width: 100%;
         height: auto;
         padding-top: 0;
@@ -815,7 +782,6 @@ h2 {
     .wedding-image-holder {
         width: 220px;
         height: 220px;
-        /* Display & Box Model */
         margin: 0 auto;
     }
 
@@ -823,41 +789,164 @@ h2 {
         min-height: 160px;
         margin: 0 7px 0 7px;
     }
-}
-
-#imageModalContainer {
-    border-radius: 10px;
-}
-
-#imageModal {
-    border-radius: 10px;
-}
+}*/
 
 @media only screen and (min-width: 768px) {
-    .caption h1 {
-        font-size: 3em;
+    .navbar-default {
+        font-size: 1.5em;
+
+        background-color: transparent;
     }
-    
+
+    .caption h1 {
+        font-size: 4em;
+    }
+
+    #details-location {
+        font-size: 4em;
+    }
+
     .our-story-heading-text {
-        font-size: 3em;
+        font-size: 4em;
     }
 
     #rsvp-button {
         font-size: 3em;
+    }
+
+    .carousel-inner>.item>img {
+        max-width: 100%;
+    }
+
+    .our-story-btn-svg {
+        width: 70px;
+        height: 70px;
+    }
+
+    .details-date {
+        width: 75%;
+    }
+
+    .details-left h1 {
+        font-size: 80px;
+
+        text-shadow: 5px 5px 13px rgba(0, 0, 0, .5);
+    }
+
+    #details-year {
+        font-size: 150px;
+    }
+
+    .details-left img {
+        height: 110%;
+    }
+
+    .details-left {
+        min-height: 500px;
     }
 }
 
 @media only screen and (min-width: 992px) {
+    .navbar-default {
+        font-size: 2em;
+    }
+
     .caption h1 {
-        font-size: 4em;
+        font-size: 5em;
+
+        text-shadow: 5px 5px 2px rgba(0, 0, 0, .65);
     }
 
     .our-story-heading-text {
-        font-size: 4em;
+        font-size: 5em;
     }
 
     #rsvp-button {
         font-size: 4em;
+    }
+
+    .carousel-inner>.item>img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .registry-row {
+        height: 170px;
+        margin-top: 80px;
+        margin-bottom: 100px;
+        padding-right: 35px;
+        padding-left: 35px;
+
+        background-color: #ae0d46;
+    }
+
+    .details-left-holder {
+        white-space: nowrap;
+    }
+
+    .details-left {
+        position: relative;
+
+        display: inline-block;
+        float: left;
+        overflow: hidden;
+
+        min-width: 104%;
+        min-height: 600px;
+
+        transition: .25s;
+        -webkit-transform: skew(-15deg) translateX(-110px);
+        -moz-transform: skew(-15deg) translateX(-110px);
+        -o-transform: skew(-15deg) translateX(-110px);
+
+        box-shadow: 5px 5px 13px 0 rgba(0, 0, 0, .5);
+    }
+
+    .details-left::before {
+        position: absolute;
+
+        display: inline-block;
+
+        width: 100%;
+
+        content: '';
+        -webkit-transform: skewX(15deg);
+        -ms-transform: skewX(15deg);
+        transform: skewX(15deg);
+        -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+        transform-origin: top left;
+
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: contain;
+    }
+
+    .details-left img {
+        position: absolute;
+
+        height: 140%;
+
+        content: '';
+        -webkit-transform: skewX(15deg);
+        -ms-transform: skewX(15deg);
+        transform: skewX(15deg) translateX(-30px) translateY(-50px);
+    }
+
+    .details-date {
+        position: absolute;
+
+        width: auto;
+        margin-left: 40%;
+        padding: 10px;
+
+        -webkit-transform: skewX(15deg);
+        -ms-transform: skewX(15deg);
+        transform: skewX(15deg);
+
+        color: #000;
+        border: 7px solid #000;
+        background-color: #fcf4e3;
     }
 }
 
@@ -873,5 +962,15 @@ h2 {
     .modalWidth {
         width: auto !important;
         max-width: 60% !important;
+    }
+
+    .details-left img {
+        height: 130%;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    .details-left img {
+        height: 180%;
     }
 }

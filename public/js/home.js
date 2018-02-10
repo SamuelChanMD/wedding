@@ -149,7 +149,7 @@ function scrollFunction() {
  * Photo Section
  */
 
-$('.engagementPhoto').click(function(event) {
+$('.engagement-photo').click(function(event) {
     var pic = event.currentTarget.attributes.src.value;
     var largePicURL = pic.substring(0, pic.indexOf("_thumbnail")) + ".jpg";
     $('#imageModal').attr('src', largePicURL);

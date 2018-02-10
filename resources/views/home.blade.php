@@ -74,38 +74,36 @@
 </div>
 <div class='jumbotron wow slideInUp' id='details-container' data-wow-offset='300'>
     <div class='row row-no-margin'>
-        <div class='col-md-6'>
-            <div class='details-left-holder'>
-                <div class='details-left'>
-                    <img src='{!! asset("/images/details_rings_bg.jpg")!!}'>
-                    <div class='details-date text-center'>
-                        <h1>10th June</h1>
-                        <h1 id='details-year'>2018</h1>
-                    </div>
+        <div class='col-xs-12 col-sm-6 col-md-6 details-left-holder'>
+            <div class='details-left'>
+                <img src='{!! asset("/images/details_rings_bg.jpg")!!}'>
+                <div class='details-date text-center'>
+                    <h1>10th June</h1>
+                    <h1 id='details-year'>2018</h1>
                 </div>
             </div>
         </div>
-        <div class='col-md-6 text-center'>
+        <div class='col-xs-12 col-sm-6 col-md-6 text-center'>
             <h1>Event Details</h1>
             <div class='row'>
-                <div class='details-location'>StoneFields</div>
+                <h1 id='details-location'>StoneFields</h1>
                 <h2 class='details-subheading'>1985 9th Line Carleton Place ON K7C 3P2</h2>
             </div>
             <div class='row details-time'>
-                <div class='col-md-12 text-center'>
-                    <div class='col-md-3 col-md-offset-3 details-item'>
+                <div class='col-xs-12 col-sm-12 col-md-12 text-center'>
+                    <div class='col-xs-6 col-xs-3-offset-6 col-sm-3 col-sm-offset-3 col-md-3 col-md-offset-3 details-item'>
                         <img src='{!!asset("images/wedding.png")!!}' alt='cheers' class='details-icon wow zoomIn' data-wow-duration='2s'>
                         <h2 class='details-subheading'>Ceremony
                             <br>400PM</h2>
                     </div>
-                    <div class='col-md-3 details-item'>
+                    <div class='col-xs-6 col-sm-3 col-md-3 details-item'>
                         <img src='{!!asset("images/cheers.png")!!}' alt='cheers' class='details-icon wow zoomIn' data-wow-duration='2s'>
                         <h2 class='details-subheading'>Reception
                             <br>600PM</h2>
                     </div>
-                    <div role='button' href='#' class='rsvp-button' id='rsvp-button' data-toggle='modal' data-target='#rsvpModal'>
+                    <!-- <div role='button' href='#' class='rsvp-button' id='rsvp-button' data-toggle='modal' data-target='#rsvpModal'>
                         <h1>RSVP</h1>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -120,10 +118,9 @@
             <li data-target='#carousel-section' data-slide-to='3'></li>
             <li data-target='#carousel-section' data-slide-to='4'></li>
         </ol>
-        <!-- Wrapper for slides -->
         <div class='carousel-header'>
             <h1>Things Todo in Ottawa</h1>
-            <span class='registryOptionText'>If you're coming to Ottawa for the first time, we've compiled a list of things that you can do while you're here!</span>
+            <p>If you're coming to Ottawa for the first time, we've compiled a list of things that you can do while you're here!</p>
         </div>
         <div class='carousel-inner'>
             <div class='item active'>
@@ -172,11 +169,7 @@
         </a>
     </div>
 </div>
-<div class='jumbotron' id='wedding-party-container' data-wow-offset='300'>
-    <!-- What needs to be done in wedding party section
-    3. Sarah's content of girls needs review
-    4. Need to confirm girl side pictures
-    -->
+<!-- <div class='jumbotron' id='wedding-party-container' data-wow-offset='300'>
     <div class='row'>
         <div class='col-md-12 text-center'>
             <h1 id='wedding-heading'>Wedding Party</h1>
@@ -316,7 +309,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <div class='jumbotron wow slideInUp' id='registry-container' data-wow-offset='300'>
     <div class='container text-center'>
         <div class='row'>
@@ -325,47 +318,47 @@
             <p>Should you like to support us, there are three different ways you can help. Hover over the one of your choice! For any gift you want to send before the day of the wedding, the delivery address is 86 Blackburn Avenue, Ottawa, ON, K1N 8A5.
             </p>
         </div>
-        <div class='row registryRow'>
-            <div class='col-md-12' id='registryOptionRow'>
-                <div class='col-md-4 wow fadeInUp' data-wow-delay='0.5s'>
-                    <div class='registryOption'>
-                        <div class='registryContainer'>
+        <div class='row registry-row'>
+            <div class='col-md-12' id='registry-option-row'>
+                <div class='col-xs-12 col-sm-4 col-md-4 wow fadeInUp' data-wow-delay='0.5s'>
+                    <div class='registry-option'>
+                        <div class='registry-option-container'>
                             <a href='https://www.bedbathandbeyond.ca:443/store/giftregistry/view_registry_guest.jsp?registryId=545515201&eventType=Wedding&pwsurl=' target='_blank'>
                                 <img class='img-responsive' src='{!!asset("images/bed_bath_and_beyond.jpg")!!}'>
-                                <div class='registryOptionContent'>
-                                    <span class='registryOptionText'>Help us build a lovely home by purchasing a household item on Bed Bath and Beyond!</span>
+                                <div class='registry-option-content'>
+                                    <span class='registry-option-text'>Help us build a lovely home by purchasing a household item on Bed Bath and Beyond!</span>
                                 </div>
                             </a>
                         </div>
-                        <div class='registryOptionHeader'>
+                        <div class='registry-option-header'>
                             <strong>BBB REGISTRY</strong>
                         </div>
                     </div>
                 </div>
-                <div class='col-md-4 wow fadeInUp'>
-                    <div class='registryOption'>
-                        <div class='registryContainer'>
+                <div class='col-xs-12 col-sm-4 col-md-4 wow fadeInUp'>
+                    <div class='registry-option'>
+                        <div class='registry-option-container'>
                             <a href='https://www.myregistry.com/wedding-registry/Samuel-Chan-and-Sarah-Kim-Ottawa-ON/1518958' target='_blank'>
                                 <img class='img-responsive' src='{!!asset("images/piggy_bank.png")!!}'>
-                                <div class='registryOptionContent'>
-                                    <span class='registryOptionText'>Make a monetary donation on myRegistry.com!</span>
+                                <div class='registry-option-content'>
+                                    <span class='registry-option-text'>Make a monetary donation on myRegistry.com!</span>
                                 </div>
                             </a>
                         </div>
-                        <div class='registryOptionHeader'>
+                        <div class='registry-option-header'>
                             <strong>CASH FUND</strong>
                         </div>
                     </div>
                 </div>
-                <div class='col-md-4 wow fadeInUp' data-wow-delay='1s'>
-                    <div class='registryOption'>
-                        <div class='registryContainer'>
+                <div class='col-xs-12 col-sm-4 col-md-4 wow fadeInUp' data-wow-delay='1s'>
+                    <div class='registry-option'>
+                        <div class='registry-option-container'>
                             <img class='img-responsive' src='{!!asset("images/gift.png")!!}'>
-                            <div class='registryOptionContent'>
-                                <span class='registryOptionText'>Already have a gift in mind? Send to the address above or wait until the wedding day!</span>
+                            <div class='registry-option-content'>
+                                <span class='registry-option-text'>Already have a gift in mind? Send to the address above or wait until the wedding day!</span>
                             </div>
                         </div>
-                        <div class='registryOptionHeader'>
+                        <div class='registry-option-header'>
                             <strong>PERSONAL GIFT</strong>
                         </div>
                     </div>
@@ -378,35 +371,31 @@
     <div class='container text-center'>
         <h1 class='heading'>Engagement Photos</h1>
         <div class='row'>
-            <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset("images/thumbnails/engagement_photo_1_thumbnail.jpg")!!}' data-toggle='modal' data-target='#engagementPhotoModal'>
+            <div class='col-xs-12 col-sm-6 col-md-4'>
+                <img class='img-responsive img-thumbnail engagement-photo' src='{!!asset("images/thumbnails/engagement_photo_1_thumbnail.jpg")!!}' data-toggle='modal' data-target='#engagementPhotoModal'>
             </div>
-            <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset("images/thumbnails/engagement_photo_4_thumbnail.jpg")!!}' data-toggle='modal' data-target='#engagementPhotoModal'>
+            <div class='col-xs-12 col-sm-6 col-md-4'>
+                <img class='img-responsive img-thumbnail engagement-photo' src='{!!asset("images/thumbnails/engagement_photo_4_thumbnail.jpg")!!}' data-toggle='modal' data-target='#engagementPhotoModal'>
             </div>
-            <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset("images/thumbnails/engagement_photo_5_thumbnail.jpg")!!}' data-toggle='modal' data-target='#engagementPhotoModal'>
+            <div class='col-xs-12 col-sm-6 col-md-4'>
+                <img class='img-responsive img-thumbnail engagement-photo' src='{!!asset("images/thumbnails/engagement_photo_5_thumbnail.jpg")!!}' data-toggle='modal' data-target='#engagementPhotoModal'>
             </div>
-        </div>
-        <div class='row'>
-            <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset("images/thumbnails/engagement_photo_6_thumbnail.jpg")!!}' data-toggle='modal' data-target='#engagementPhotoModal'>
+            <div class='col-xs-12 col-sm-6 col-md-4'>
+                <img class='img-responsive img-thumbnail engagement-photo' src='{!!asset("images/thumbnails/engagement_photo_6_thumbnail.jpg")!!}' data-toggle='modal' data-target='#engagementPhotoModal'>
             </div>
-            <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset("images/thumbnails/engagement_photo_7_thumbnail.jpg")!!}' data-toggle='modal' data-target='#engagementPhotoModal'>
+            <div class='col-xs-12 col-sm-6 col-md-4'>
+                <img class='img-responsive img-thumbnail engagement-photo' src='{!!asset("images/thumbnails/engagement_photo_7_thumbnail.jpg")!!}' data-toggle='modal' data-target='#engagementPhotoModal'>
             </div>
-            <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset("images/thumbnails/engagement_photo_8_thumbnail.jpg")!!}' data-toggle='modal' data-target='#engagementPhotoModal'>
+            <div class='col-xs-12 col-sm-6 col-md-4'>
+                <img class='img-responsive img-thumbnail engagement-photo' src='{!!asset("images/thumbnails/engagement_photo_8_thumbnail.jpg")!!}' data-toggle='modal' data-target='#engagementPhotoModal'>
             </div>
-        </div>
-        <div class='row'>
-            <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset("images/thumbnails/engagement_photo_2_thumbnail.jpg")!!}' data-toggle='modal' data-target='#engagementPhotoModal'>
+            <div class='col-xs-12 col-sm-6 col-md-4'>
+                <img class='img-responsive img-thumbnail engagement-photo' src='{!!asset("images/thumbnails/engagement_photo_2_thumbnail.jpg")!!}' data-toggle='modal' data-target='#engagementPhotoModal'>
             </div>
-            <div class='col-md-4'>
-                <img class='img-responsive img-thumbnail engagementPhoto' src='{!!asset("images/thumbnails/engagement_photo_3_thumbnail.jpg")!!}' data-toggle='modal' data-target='#engagementPhotoModal'>
+            <div class='col-xs-12 col-sm-6 col-md-4'>
+                <img class='img-responsive img-thumbnail engagement-photo' src='{!!asset("images/thumbnails/engagement_photo_3_thumbnail.jpg")!!}' data-toggle='modal' data-target='#engagementPhotoModal'>
             </div>
-            <div class='col-md-4'>
+            <div class='col-xs-12 col-sm-6 col-md-4'>
             </div>
         </div>
     </div>
@@ -423,5 +412,6 @@
         <h3>Sam and Sarah 2018</h3>
     </footer>
 </div>
-<button id='scroll-to-top-nav'><span class='glyphicon glyphicon-menu-up'></span> Back To Top</button>
+<button id='scroll-to-top-nav'>
+    <span class='glyphicon glyphicon-menu-up'></span> Back To Top</button>
 @component('modal') @endcomponent @stop
