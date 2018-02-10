@@ -745,24 +745,7 @@ h2 {
 }
 
 
-
-/*@media only screen and (max-width: 992px) {
-    .carousel-header {
-        position: relative;
-
-        width: 100%;
-        margin: 0 auto;
-        padding: 20px;
-
-        text-align: center;
-
-        color: #fff;
-        background-color: rgba(54, 47, 45, .8);
-    }
-}*/
-
-
-/*@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
         .groomsmen-temp {
         width: 100%;
         height: auto;
@@ -789,7 +772,7 @@ h2 {
         min-height: 160px;
         margin: 0 7px 0 7px;
     }
-}*/
+}
 
 @media only screen and (min-width: 768px) {
     .navbar-default {

@@ -169,147 +169,145 @@
         </a>
     </div>
 </div>
-<!-- <div class='jumbotron' id='wedding-party-container' data-wow-offset='300'>
-    <div class='row'>
-        <div class='col-md-12 text-center'>
-            <h1 id='wedding-heading'>Wedding Party</h1>
-            <div class='col-md-6 wow fadeInLeft' data-wow-duration='0.75s'>
-                <h1 id='bridesmaids-heading'>Bridesmaids</h1>
-                <div class='bridesmaids-temp'>
-                    <div id='imagesOfGirls' class='wedding-image-holder'>
-                        <img id='jessica_lee_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/jessica_lee.jpg")!!}' alt='image of Jessica Lee'>
-                        <img id='randelee_macdonald_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/randelee_macdonald.jpg")!!}' alt='image of Randelee Macdonald'>
-                        <img id='vikki_moon_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/vikki_moon.jpg")!!}' alt='image of Vikki Moon'>
-                        <img id='grace_kim_img' class='img-responsive img-circle wedding-party-image current-girl' src='{!!asset( "images/grace_kim.jpg")!!}' alt='image of Grace Kim'>
-                        <img id='chelsea_anne_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/chelsea_anne.jpg")!!}' alt='image of Chelsea Anne'>
-                        <img id='puja_ahluwalia_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/puja_ahluwalia.jpg")!!}' alt='image of Puja Ahluwalia'>
-                    </div>
+<div class='jumbotron row' id='wedding-party-container' data-wow-offset='300'>
+    <div class='col-md-12 text-center'>
+        <h1 id='wedding-heading'>Wedding Party</h1>
+        <div class='col-md-6 wow fadeInLeft' data-wow-duration='0.75s'>
+            <h1 id='bridesmaids-heading'>Bridesmaids</h1>
+            <div class='bridesmaids-temp'>
+                <div id='imagesOfGirls' class='wedding-image-holder'>
+                    <img id='jessica_lee_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/jessica_lee.jpg")!!}' alt='image of Jessica Lee'>
+                    <img id='randelee_macdonald_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/randelee_macdonald.jpg")!!}' alt='image of Randelee Macdonald'>
+                    <img id='vikki_moon_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/vikki_moon.jpg")!!}' alt='image of Vikki Moon'>
+                    <img id='grace_kim_img' class='img-responsive img-circle wedding-party-image current-girl' src='{!!asset( "images/grace_kim.jpg")!!}' alt='image of Grace Kim'>
+                    <img id='chelsea_anne_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/chelsea_anne.jpg")!!}' alt='image of Chelsea Anne'>
+                    <img id='puja_ahluwalia_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/puja_ahluwalia.jpg")!!}' alt='image of Puja Ahluwalia'>
                 </div>
-                <div class='panel panel-default'>
-                    <div class='panel-heading girl-postcard-heading'>
-                        <h2 id='girl_name' class='text-center'></h2>
-                    </div>
-                    <div class='panel-body girl-postcard'>
-                        <p class='wedding-party-description text-center' id='girl_description'></p>
-                        <div class='row'>
-                            <ul id='list-girls' class='wedding-party-list'>
-                                <div class='col-xs-6 col-sm-4 col-md-2'>
-                                    <li>
-                                        <a href='#' class='girl' name='girl' value='grace_kim'>
-                                            <img id='grace_kim_token' class='img-responsive img-circle wedding-party-token' src='{!!asset("images/grace_kim.jpg")!!}' alt='image of Grace Kim'>
-                                        </a>
-                                    </li>
-                                </div>
-                                <div class='col-xs-6 col-sm-4 col-md-2'>
-                                    <li>
-                                        <a href='#' class='girl' name='girl' value='chelsea_anne'>
-                                            <img id='chelsea_anne_token' class='img-responsive img-circle wedding-party-token' src='{!!asset("images/chelsea_anne.jpg")!!}' alt='image of Chelsea Anne'>
-                                        </a>
-                                    </li>
-                                </div>
-                                <div class='col-xs-6 col-sm-4 col-md-2'>
-                                    <li>
-                                        <a href='#' class='girl' name='girl' value='puja_ahluwalia'>
-                                            <img id='puja_ahluwalia_token' class='img-responsive img-circle wedding-party-token' src='{!!asset("images/puja_ahluwalia.jpg")!!}' alt='image of Puja Ahluwalia'>
-                                        </a>
-                                    </li>
-                                </div>
-                                <div class='col-xs-6 col-sm-4 col-md-2'>
-                                    <li>
-                                        <a href='#' class='girl' name='girl' value='vikki_moon'>
-                                            <img id='vikki_moon_token' class='img-responsive img-circle wedding-party-token' src='{!!asset("images/vikki_moon.jpg")!!}' alt='image of Vikki Moon'>
-                                        </a>
-                                    </li>
-                                </div>
-                                <div class='col-xs-6 col-sm-4 col-md-2'>
-                                    <li>
-                                        <a href='#' class='girl' name='girl' value='randelee_macdonald'>
-                                            <img id='randelee_macdonald_token' class='img-responsive img-circle wedding-party-token' src='{!!asset("images/randelee_macdonald.jpg")!!}' alt='image of Randelee Macdonald'>
-                                        </a>
-                                    </li>
-                                </div>
-                                <div class='col-xs-6 col-sm-4 col-md-2'>
-                                    <li>
-                                        <a href='#' class='girl' name='girl' value='jessica_lee'>
-                                            <img id='jessica_lee_token' class='img-responsive img-circle wedding-party-token' src='{!!asset("images/jessica_lee.jpg")!!}' alt='image of Jessica Lee'>
-                                        </a>
-                                    </li>
-                                </div>
-                            </ul>
-                        </div>
+            </div>
+            <div class='panel panel-default'>
+                <div class='panel-heading girl-postcard-heading'>
+                    <h2 id='girl_name' class='text-center'></h2>
+                </div>
+                <div class='panel-body girl-postcard'>
+                    <p class='wedding-party-description text-center' id='girl_description'></p>
+                    <div class='row'>
+                        <ul id='list-girls' class='wedding-party-list'>
+                            <div class='col-xs-6 col-sm-4 col-md-2'>
+                                <li>
+                                    <a href='#' class='girl' name='girl' value='grace_kim'>
+                                        <img id='grace_kim_token' class='img-responsive img-circle wedding-party-token' src='{!!asset("images/grace_kim.jpg")!!}' alt='image of Grace Kim'>
+                                    </a>
+                                </li>
+                            </div>
+                            <div class='col-xs-6 col-sm-4 col-md-2'>
+                                <li>
+                                    <a href='#' class='girl' name='girl' value='chelsea_anne'>
+                                        <img id='chelsea_anne_token' class='img-responsive img-circle wedding-party-token' src='{!!asset("images/chelsea_anne.jpg")!!}' alt='image of Chelsea Anne'>
+                                    </a>
+                                </li>
+                            </div>
+                            <div class='col-xs-6 col-sm-4 col-md-2'>
+                                <li>
+                                    <a href='#' class='girl' name='girl' value='puja_ahluwalia'>
+                                        <img id='puja_ahluwalia_token' class='img-responsive img-circle wedding-party-token' src='{!!asset("images/puja_ahluwalia.jpg")!!}' alt='image of Puja Ahluwalia'>
+                                    </a>
+                                </li>
+                            </div>
+                            <div class='col-xs-6 col-sm-4 col-md-2'>
+                                <li>
+                                    <a href='#' class='girl' name='girl' value='vikki_moon'>
+                                        <img id='vikki_moon_token' class='img-responsive img-circle wedding-party-token' src='{!!asset("images/vikki_moon.jpg")!!}' alt='image of Vikki Moon'>
+                                    </a>
+                                </li>
+                            </div>
+                            <div class='col-xs-6 col-sm-4 col-md-2'>
+                                <li>
+                                    <a href='#' class='girl' name='girl' value='randelee_macdonald'>
+                                        <img id='randelee_macdonald_token' class='img-responsive img-circle wedding-party-token' src='{!!asset("images/randelee_macdonald.jpg")!!}' alt='image of Randelee Macdonald'>
+                                    </a>
+                                </li>
+                            </div>
+                            <div class='col-xs-6 col-sm-4 col-md-2'>
+                                <li>
+                                    <a href='#' class='girl' name='girl' value='jessica_lee'>
+                                        <img id='jessica_lee_token' class='img-responsive img-circle wedding-party-token' src='{!!asset("images/jessica_lee.jpg")!!}' alt='image of Jessica Lee'>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class='col-md-6 wow fadeInRight' data-wow-duration='0.75s'>
-                <h1 id='groomsmen-heading'>Groomsmen</h1>
-                <div class='groomsmen-temp'>
-                    <div id='imagesOfGuys' class='wedding-image-holder'>
-                        <img id='paul_loh_img' class='img-responsive img-circle wedding-party-image current-guy' src='{!!asset("images/paul_loh.jpg")!!}' alt='image of Paul Loh'>
-                        <img id='paul_beckmann_img' class='img-responsive img-circle wedding-party-image' src='{!!asset("images/paul_beckmann.jpg")!!}' alt='image of Paul Beckmann'>
-                        <img id='aaron_wong_img' class='img-responsive img-circle wedding-party-image' src='{!!asset("images/aaron_wong.jpg")!!}' alt='image of Aaron Wong'>
-                        <img id='daniel_chan_img' class='img-responsive img-circle wedding-party-image' src='{!!asset("images/daniel_chan.jpg")!!}' alt='image of Daniel Chan'>
-                        <img id='ezekiel_chan_img' class='img-responsive img-circle wedding-party-image' src='{!!asset("images/ezekiel_chan.jpg")!!}' alt='image of Ezekiel Chan'>
-                        <img id='jonathan_chan_img' class='img-responsive img-circle wedding-party-image' src='{!!asset("images/jonathan_chan.jpg")!!}' alt='image of Jonathan Chan'>
-                    </div>
+        </div>
+        <div class='col-md-6 wow fadeInRight' data-wow-duration='0.75s'>
+            <h1 id='groomsmen-heading'>Groomsmen</h1>
+            <div class='groomsmen-temp'>
+                <div id='imagesOfGuys' class='wedding-image-holder'>
+                    <img id='paul_loh_img' class='img-responsive img-circle wedding-party-image current-guy' src='{!!asset("images/paul_loh.jpg")!!}' alt='image of Paul Loh'>
+                    <img id='paul_beckmann_img' class='img-responsive img-circle wedding-party-image' src='{!!asset("images/paul_beckmann.jpg")!!}' alt='image of Paul Beckmann'>
+                    <img id='aaron_wong_img' class='img-responsive img-circle wedding-party-image' src='{!!asset("images/aaron_wong.jpg")!!}' alt='image of Aaron Wong'>
+                    <img id='daniel_chan_img' class='img-responsive img-circle wedding-party-image' src='{!!asset("images/daniel_chan.jpg")!!}' alt='image of Daniel Chan'>
+                    <img id='ezekiel_chan_img' class='img-responsive img-circle wedding-party-image' src='{!!asset("images/ezekiel_chan.jpg")!!}' alt='image of Ezekiel Chan'>
+                    <img id='jonathan_chan_img' class='img-responsive img-circle wedding-party-image' src='{!!asset("images/jonathan_chan.jpg")!!}' alt='image of Jonathan Chan'>
                 </div>
-                <div class='panel panel-default'>
-                    <div class='panel-heading guy-postcard-heading'>
-                        <h2 id='guy_name' class='text-center'></h2>
-                    </div>
-                    <div class='panel-body guy-postcard'>
-                        <p class='wedding-party-description text-center' id='guy_description'></p>
-                        <div class='row'>
-                            <ul id='list-guys' class='wedding-party-list'>
-                                <div class='col-xs-6 col-sm-4 col-md-2'>
-                                    <li>
-                                        <a href='#' class='guy wow fadeIn' data-wow-dealy='1.25s' name='guy' value='paul_loh'>
+            </div>
+            <div class='panel panel-default'>
+                <div class='panel-heading guy-postcard-heading'>
+                    <h2 id='guy_name' class='text-center'></h2>
+                </div>
+                <div class='panel-body guy-postcard'>
+                    <p class='wedding-party-description text-center' id='guy_description'></p>
+                    <div class='row'>
+                        <ul id='list-guys' class='wedding-party-list'>
+                            <div class='col-xs-6 col-sm-4 col-md-2'>
+                                <li>
+                                    <a href='#' class='guy wow fadeIn' data-wow-dealy='1.25s' name='guy' value='paul_loh'>
                                         <img id='paul_loh_token' class='img-responsive img-circle wedding-party-token' src='{!!asset( "images/paul_loh.jpg")!!}' alt='image of Paul Loh'>
                                     </a>
                                 </li>
-                                </div>
-                                <div class='col-xs-6 col-sm-4 col-md-2'>
-                                    <li>
-                                        <a href='#' class='guy' name='guy' value='paul_beckmann'>
-                                        <img id='paul_beckmann_token' class='img-responsive img-circle wedding-party-token' src='{!!asset('images/paul_beckmann.jpg')!!}' alt='image of Paul Beckmann'>
+                            </div>
+                            <div class='col-xs-6 col-sm-4 col-md-2'>
+                                <li>
+                                    <a href='#' class='guy' name='guy' value='paul_beckmann'>
+                                        <img id='paul_beckmann_token' class='img-responsive img-circle wedding-party-token' src='{!!asset("images/paul_beckmann.jpg")!!}' alt='image of Paul Beckmann'>
                                     </a>
                                 </li>
-                                </div>
-                                <div class='col-xs-6 col-sm-4 col-md-2'>
-                                    <li>
-                                        <a href='#' class='guy' name='guy' value='aaron_wong'>
-                                        <img id='aaron_wong_token' class='img-responsive img-circle wedding-party-token' src='{!!asset('images/aaron_wong.jpg')!!}' alt='image of Aaron Wong'>
+                            </div>
+                            <div class='col-xs-6 col-sm-4 col-md-2'>
+                                <li>
+                                    <a href='#' class='guy' name='guy' value='aaron_wong'>
+                                        <img id='aaron_wong_token' class='img-responsive img-circle wedding-party-token' src='{!!asset("images/aaron_wong.jpg")!!}' alt='image of Aaron Wong'>
                                     </a>
                                 </li>
-                                </div>
-                                <div class='col-xs-6 col-sm-4 col-md-2'>
-                                    <li>
-                                        <a href='#' class='guy' name='guy' value='daniel_chan'>
-                                        <img id='daniel_chan_token' class='img-responsive img-circle wedding-party-token' src='{!!asset('images/daniel_chan.jpg')!!}' alt='image of Daniel Chan'>
+                            </div>
+                            <div class='col-xs-6 col-sm-4 col-md-2'>
+                                <li>
+                                    <a href='#' class='guy' name='guy' value='daniel_chan'>
+                                        <img id='daniel_chan_token' class='img-responsive img-circle wedding-party-token' src='{!!asset("images/daniel_chan.jpg")!!}' alt='image of Daniel Chan'>
                                     </a>
                                 </li>
-                                </div>
-                                <div class='col-xs-6 col-sm-4 col-md-2'>
-                                    <li>
-                                        <a href='#' class='guy' name='guy' value='ezekiel_chan'>
-                                        <img id='ezekiel_chan_token' class='img-responsive img-circle wedding-party-token' src='{!!asset('images/ezekiel_chan.jpg')!!}' alt='image of Ezekiel Chan'>
+                            </div>
+                            <div class='col-xs-6 col-sm-4 col-md-2'>
+                                <li>
+                                    <a href='#' class='guy' name='guy' value='ezekiel_chan'>
+                                        <img id='ezekiel_chan_token' class='img-responsive img-circle wedding-party-token' src='{!!asset("images/ezekiel_chan.jpg")!!}' alt='image of Ezekiel Chan'>
                                     </a>
                                 </li>
-                                </div>
-                                <div class='col-xs-6 col-sm-4 col-md-2'>
-                                    <li>
-                                        <a href='#' class='guy' name='guy' value='jonathan_chan'>
-                                        <img id='jonathan_chan_token' class='img-responsive img-circle wedding-party-token' src='{!!asset('images/jonathan_chan.jpg')!!}' alt='image of Jonathan Chan'>
+                            </div>
+                            <div class='col-xs-6 col-sm-4 col-md-2'>
+                                <li>
+                                    <a href='#' class='guy' name='guy' value='jonathan_chan'>
+                                        <img id='jonathan_chan_token' class='img-responsive img-circle wedding-party-token' src='{!!asset("images/jonathan_chan.jpg")!!}' alt='image of Jonathan Chan'>
                                     </a>
                                 </li>
-                                </div>
-                            </ul>
-                        </div>
+                            </div>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div> -->
+</div>
 <div class='jumbotron wow slideInUp' id='registry-container' data-wow-offset='300'>
     <div class='container text-center'>
         <div class='row'>
