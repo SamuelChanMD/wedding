@@ -1,6 +1,6 @@
 @extends('layout') @section('title','Sam & Sarah') @section('content')
 <link href='{!! asset("/css/home.css")!!}' rel='stylesheet'>
-<div id='first-body' style='background-image: url("{!! ( isset($img_banner) ? asset($img_banner) : asset("images/home_page.JPG")) !!}");' class='text-center'>
+<div id='heading-container' style='background-image: url("{!! ( isset($img_banner) ? asset($img_banner) : asset("images/home_page.JPG")) !!}");' class='text-center'>
     <div class='caption'>
         <div class='container'>
             <div class='row'>
@@ -27,7 +27,7 @@
                     </div>
                     <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
                         <ul class='nav navbar-nav'>
-                            <li id='event-nav'>
+                            <li id='details-nav'>
                                 <a href='#'>Event Details
                                     <span class='sr-only'>(current)</span>
                                 </a>
@@ -36,7 +36,7 @@
                                 <a href='#' class='rsvp-button' data-toggle='modal' data-target='#rsvpModal'>RSVP</a>
                             </li>
                             <li>
-                                <a href='#' id='things-nav'>Things To Do</a>
+                                <a href='#' id='things-to-do-nav'>Things To Do</a>
                             </li>
                             <li>
                                 <a href='#' id='wedding-party-nav'>Wedding Party</a>
@@ -63,7 +63,7 @@
         </div>
     </div>
 </div>
-<div class='jumbotron' id='second-body'>
+<div class='jumbotron' id='our-story-container'>
     <div id='collapseOne' class='panel-collapse collapse' role='tabpanel' aria-labelledby='headingOne'>
         <div class='container'>
             <div class='row' id='accordion' role='tablist' aria-multiselectable='true'>
@@ -72,7 +72,7 @@
         </div>
     </div>
 </div>
-<div class='jumbotron wow slideInUp' id='third-body' data-wow-offset='300'>
+<div class='jumbotron wow slideInUp' id='details-container' data-wow-offset='300'>
     <div class='row row-no-margin'>
         <div class='col-md-6'>
             <div class='details-left-holder'>
@@ -111,7 +111,7 @@
         </div>
     </div>
 </div>
-<div id='fourth-body'>
+<div id='things-to-do-container'>
     <div id='carousel-section' class='carousel slide wow fadeInUp' data-wow-offset='300' data-ride='carousel'>
         <ol class='carousel-indicators'>
             <li data-target='#carousel-section' data-slide-to='0' class='active'></li>
@@ -172,7 +172,7 @@
         </a>
     </div>
 </div>
-<div class='jumbotron' id='fifth-body' data-wow-offset='300'>
+<div class='jumbotron' id='wedding-party-container' data-wow-offset='300'>
     <!-- What needs to be done in wedding party section
     3. Sarah's content of girls needs review
     4. Need to confirm girl side pictures
@@ -317,7 +317,7 @@
         </div>
     </div>
 </div>
-<div class='jumbotron wow slideInUp' id='sixth-body' data-wow-offset='300'>
+<div class='jumbotron wow slideInUp' id='registry-container' data-wow-offset='300'>
     <div class='container text-center'>
         <div class='row'>
             <h1>Registry</h1>
@@ -374,7 +374,7 @@
         </div>
     </div>
 </div>
-<div class='jumbotron wow slideInUp' id='seventh-body' data-wow-offset='300'>
+<div class='jumbotron wow slideInUp' id='photos-container' data-wow-offset='300'>
     <div class='container text-center'>
         <h1 class='heading'>Engagement Photos</h1>
         <div class='row'>
@@ -423,5 +423,5 @@
         <h3>Sam and Sarah 2018</h3>
     </footer>
 </div>
-<button id='scrollTopBtn'><span class='glyphicon glyphicon-menu-up'></span> Back To Top</button>
+<button id='scroll-to-top-nav'><span class='glyphicon glyphicon-menu-up'></span> Back To Top</button>
 @component('modal') @endcomponent @stop
