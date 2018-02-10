@@ -21,7 +21,7 @@
     <script type='text/javascript' src='{!! asset("/js/jquery-1.9.1.min.js")!!}'></script>
     <script type='text/javascript' src='{!! asset("/bootstrap/js/bootstrap.min.js")!!}'></script>
     <script type='text/javascript' src='{!! asset("/js/wow.js")!!}'></script>
-    <script type='text/javascript' src='{!! asset("/js/main.js")!!}'></script>
+    <script type='text/javascript' src='{!! asset("/js/home.js")!!}'></script>
     <script type='text/javascript' src='{!! asset("/js/rsvp.js")!!}'></script>
     <script>
     new WOW().init();

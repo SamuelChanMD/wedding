@@ -122,7 +122,7 @@ class GuestController extends Controller
 	    $vegetarianAttendingCount = Guest::where('attending', 1)->where('vegetarian', 1)->count();
 	    $glutenFreeAttendingCount = Guest::where('attending', 1)->where('glutenFree', 1)->count();
 	    $lactoseIntolerantAttendingCount = Guest::where('attending', 1)->where('lactoseIntolerant', 1)->count();
-	    return view('guest.index')->with('guests', $guests)
+	    return view('admin.index')->with('guests', $guests)
 	    						  ->with('guestAttendingCount', $guestAttendingCount)
 	    						  ->with('childAttendingCount', $childAttendingCount)
 	    						  ->with('vegetarianAttendingCount', $vegetarianAttendingCount)

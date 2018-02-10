@@ -85,7 +85,8 @@
                                 </div>
                             </div>
                             <div class="row text-center">
-                                <button type='submit' id='submit1' class='btn btn-primary custom-btn'>Submit RSVP</button>
+                                <!-- <button type='submit' id='submit1' class='btn btn-primary custom-btn'>Submit RSVP</button> -->
+                                <button type='submit' id='submit1' class="button button--aylen button--border-thick button--text-upper button--size-s">Submit RSVP</button>
                             </div>
                         </form>
                     </div>
@@ -170,7 +171,7 @@
                                 </div>
                             </div>
                             <div class="row text-center">
-                                <button type='submit' id='submit2' class='btn btn-primary custom-btn'>Submit RSVP</button>
+                                <button type='submit' id='submit2' class="button button--aylen button--border-thick button--text-upper button--size-s">Submit RSVP</button>
                             </div>
                         </form>
                     </div>

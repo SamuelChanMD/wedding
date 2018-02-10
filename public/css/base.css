@@ -28,10 +28,6 @@ p {
     font-weight: 500;
 }
 
-.jumbotron p {
-    font-size: 1em;
-}
-
 ::-webkit-scrollbar {
     /* Display & Box Model */
     width: 8px;
@@ -55,72 +51,6 @@ p {
 ::-webkit-scrollbar-thumb:window-inactive {
     /* Display & Box Model */
     background: rgba(125, 150, 100, 0.4);
-}
-
-.custom-btn {
-    /* Display & Box Model */
-    border-bottom: 3px solid #f26d7d;
-    border-top: 3px solid transparent;
-    border-right: 2px solid transparent;
-    border-left: 2px solid transparent;
-    border-radius: 0px;
-    outline: none;
-    padding: 8px;
-    transition: 0.75s ease-in-out;
-
-    /* Color */
-    background-color: #fff;
-    color: #f26d7d;
-
-    /* Text */
-    font-family: "BaseFont";
-    font-size: 2em;
-}
-
-.custom-btn:hover,
-.custom-btn:active,
-.custom-btn:focus {
-    /* Display & Box Model */
-    background-color: #fff;
-    border-top: 3px double #f26d7d;
-    border-bottom: 3px double #f26d7d;
-    border-right: 2px solid transparent;
-    border-left: 2px solid transparent;
-    transition: 0.75s ease-in-out;
-
-    /* Color */
-    color: #f26d7d;
-}
-
-#loading {
-    /* Background & Color */
-    background: url(../images/ss_logo.png) center no-repeat rgba(0, 0, 0, 0);
-
-    animation: flipInY 2s;
-
-    /* Positioning */
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    z-index: 9999;
-
-    /* Display & Box Model */
-    height: 100%;
-    width: 100%;
-}
-
-#loading-container {
-
-    background-color: #fff;
-
-    /* Positioning */
-    position: fixed;
-    left: 0px;
-    top: 0px;
-
-    /* Display & Box Model */
-    height: 100%;
-    width: 100%;
 }
 
 footer {
