@@ -12,7 +12,7 @@
     <p>Finally, a few months later, we became bible study co-leaders. That’s when Sarah said her first words to Sam.</p>
     <br>
     <div class='col-md-12'>
-        <img class='img-responsive img-rounded' src='{!!asset("images/sarah_post.png")!!}' alt='image of Sarah facebook post'>
+        <img class='img-responsive img-rounded' src='{!!asset("images/sarah_post.jpg")!!}' alt='image of Sarah facebook post'>
     </div>
     <div class='clearfix'></div>
     <br>
