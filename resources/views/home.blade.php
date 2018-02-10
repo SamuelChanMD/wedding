@@ -162,7 +162,6 @@
                 </div>
             </div>
         </div>
-        <!-- Carousel Control -->
         <a class='left carousel-control' href='#carousel-section' role='button' data-slide='prev'>
             <span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span>
             <span class='sr-only'>Previous</span>
