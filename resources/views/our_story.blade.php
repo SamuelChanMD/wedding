@@ -1,18 +1,18 @@
-<div class='col-md-8 col-md-offset-2'>
+<div class='col-md-12'>
     <br>
     <br>
     <p>We knew of each other a year before we first met. That’s right, it took a whole year before we would even speak to one another! It all started at an IVCF (a Christian club on campus) party that we both attended. Sam's friends, Joshua and Jordyn, had met her and instantly saw the chemistry that could be. Don’t ask us how, they just did! After the party, they sat Sam down and told him of Sarah and how she matched his wavelength. Sam shrugged it off at the time and that was that.</p>
     <p>Our fates clashed again at a week long camp retreat. Like our previous "encounter", we never talked. Take a look at this picture to see just how close we got without even interacting with each other.</p>
-    <div class='col-md-8 col-md-offset-2'>
-        <img class='img-responsive img-rounded' src='{!!asset( "images/sarah_sam_mark_central.jpg")!!}' alt='image of Sarah and Sam at Mark Central'>
+    <div class='col-md-12'>
+        <img class='img-responsive img-rounded' src='{!!asset("images/sarah_sam_mark_central.jpg")!!}' alt='image of Sarah and Sam at Mark Central'>
     </div>
     <div class='clearfix'></div>
     <br>
     <br>
     <p>Finally, a few months later, we became bible study co-leaders. That’s when Sarah said her first words to Sam.</p>
     <br>
-    <div class='col-md-8 col-md-offset-2'>
-        <img class='img-responsive img-rounded' src='{!!asset( "images/sarah_post.png")!!}' alt='image of Sarah facebook post'>
+    <div class='col-md-12'>
+        <img class='img-responsive img-rounded' src='{!!asset("images/sarah_post.jpg")!!}' alt='image of Sarah facebook post'>
     </div>
     <div class='clearfix'></div>
     <br>

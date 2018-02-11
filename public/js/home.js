@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    new WOW().init();
+
     $("#loading-container").fadeOut(2500);
 
     var boys = {
@@ -96,37 +98,37 @@ $(document).ready(function() {
         }
     );
 
-    $("#event-nav").click(function() {
+    $("#details-nav").click(function() {
         $('html, body').animate({
-            scrollTop: $("#third-body").offset().top
+            scrollTop: $("#details-container").offset().top
         }, 2000);
     });
 
-    $("#things-nav").click(function() {
+    $("#things-to-do-nav").click(function() {
         $('html, body').animate({
-            scrollTop: $("#fourth-body").offset().top
+            scrollTop: $("#things-to-do-container").offset().top
         }, 2000);
     });
 
     $("#wedding-party-nav").click(function() {
         $('html, body').animate({
-            scrollTop: $("#fifth-body").offset().top
+            scrollTop: $("#wedding-party-container").offset().top
         }, 2000);
     });
 
     $("#registry-nav").click(function() {
         $('html, body').animate({
-            scrollTop: $("#sixth-body").offset().top
+            scrollTop: $("#registry-container").offset().top
         }, 2000);
     });
 
     $("#photos-nav").click(function() {
         $('html, body').animate({
-            scrollTop: $("#seventh-body").offset().top
+            scrollTop: $("#photos-container").offset().top
         }, 2000);
     });
 
-    $("#scrollTopBtn").click(function() {
+    $("#scroll-to-top-nav").click(function() {
         $('html, body').animate({
             scrollTop: $("html,body").offset().top
         }, 2000);
@@ -137,9 +139,9 @@ window.onscroll = function() { scrollFunction() };
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("scrollTopBtn").style.display = "block";
+        document.getElementById("scroll-to-top-nav").style.display = "block";
     } else {
-        document.getElementById("scrollTopBtn").style.display = "none";
+        document.getElementById("scroll-to-top-nav").style.display = "none";
     }
 }
 
@@ -147,7 +149,7 @@ function scrollFunction() {
  * Photo Section
  */
 
-$('.engagementPhoto').click(function(event) {
+$('.engagement-photo').click(function(event) {
     var pic = event.currentTarget.attributes.src.value;
     var largePicURL = pic.substring(0, pic.indexOf("_thumbnail")) + ".jpg";
     $('#imageModal').attr('src', largePicURL);

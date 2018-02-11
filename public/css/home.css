@@ -1,10 +1,51 @@
-/* Home Styling */
+h1 {
+    letter-spacing: -.05em;
+}
+
+h2 {
+    letter-spacing: -.05em;
+}
+
+.jumbotron p {
+    font-size: .9em;
+}
+
+#loading {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    animation: flipInY 2s;
+
+    background: url(../images/ss_logo.png) center no-repeat rgba(0, 0, 0, 0);
+}
+
+.carousel-inner>.item>img {
+    max-width: none;
+    height: 500px;
+}
+
+#loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #fff;
+}
 
 .navbar-default {
-    background-color: transparent;
+    font-size: 1.3em;
+
     border: none;
-    font-size: 2em;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, .5);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .65);
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -14,8 +55,8 @@
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
-    background-color: transparent;
     color: #f26d7d;
+    background-color: transparent;
 }
 
 .navbar-default .navbar-nav>li>a:focus,
@@ -26,6 +67,7 @@
 .navbar .navbar-nav {
     display: inline-block;
     float: none;
+
     vertical-align: top;
 }
 
@@ -40,264 +82,217 @@
 
 .carousel-header {
     position: absolute;
+    z-index: 1;
     top: 0;
-    z-index: 5;
-    text-align: center;
-    margin: 0 auto;
+
     width: 100%;
-    background-color: rgba(54, 47, 45, 0.8);
-    color: #fff;
+    margin: 0 auto;
     padding: 20px;
+
+    text-align: center;
+
+    color: #fff;
+    background-color: rgba(54, 47, 45, .8);
 }
 
-#first-body {
-    /* Positioning */
+#heading-container {
     position: relative;
 
-    /* Display & Box Model */
-    background-color: #f4efe9;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 100%;
-    opacity: 0.9;
+
+    opacity: .9;
+    background-color: #f4efe9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #sam {
-    /* Display & Box Model */
-    transition: 0.25s;
-    animation: fadeInRight 0.75s ease-in;
+    transition: .25s;
+    animation: fadeInRight .75s ease-in;
 }
 
 #sam:hover {
-    /* Color */
     color: #80b1bc;
 }
 
 #sarah {
-    /* Display & Box Model */
-    animation: fadeInLeft 0.75s ease-in;
-    transition: 0.25s;
+    transition: .25s;
+    animation: fadeInLeft .75s ease-in;
 }
 
 #sarah:hover {
-    /* Color */
     color: #f26d7d;
 }
 
 .caption {
-    /* Positioning */
-    left: 0;
+    font-family: 'BaseFont', sans-serif;
+
     position: absolute;
     top: 45%;
+    left: 0;
+
     width: 100%;
 
-    /* Color */
-    color: #fff;
-
-    /* Text */
-    font-family: 'BaseFont', sans-serif;
     text-align: center;
-}
 
-.caption-title {
-    /* Display & Box Model */
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 5px;
-
-    /* Color */
-    background-color: rgba(47, 79, 79, 1);
-
-    /* Text */
-    font-size: 48px;
     color: #fff;
 }
 
 .caption h1 {
-    /* Text */
     font-size: 3em;
-    text-shadow: 7px 7px 3px rgba(0, 0, 0, 0.65);
-}
 
-
-.caption h2 {
-    /* Text */
-    font-size: 1.5em;
-    text-shadow: 7px 7px 3px rgba(0, 0, 0, 0.65);
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, .65);
 }
 
 #our-story-btn {
-    /* Positioning */
     position: absolute;
+    right: 0;
     bottom: -10px;
     left: 0;
-    right: 0;
 
-    /* Display & Box Model */
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
 }
 
 .our-story-btn-svg {
-    /* Display & Box Model */
     z-index: 1001;
-    transition: 0.5s ease-in-out;
+
+    width: 50px;
+    height: 50px;
+
+    transition: .5s ease-in-out;
     transform: rotate(0deg);
 }
 
 .our-story-heading-text {
-    /* Display & Box Model */
-    text-shadow: 7px 7px 3px rgba(0, 0, 0, 0.65);
+    font-size: 3em;
+
     padding: 10px;
 
-    /* Color */
     color: #fff;
-
-    /* Text */
-    font-size: 2em;
+    text-shadow: 7px 7px 3px rgba(0, 0, 0, .65);
 }
 
 #our-heading-text {
-    /* Display & Box Model */
-    transition: 0.75s ease-in-out;
+    transition: .75s ease-in-out;
 }
 
 .our-highlight-text {
-    /* Color */
     color: #80b1bc;
 }
 
 #story-heading-text {
-    /* Display & Box Model */
-    transition: 0.75s ease-in-out;
+    transition: .75s ease-in-out;
 }
 
 .story-highlight-text {
-    /* Color */
     color: #f26d7d;
 }
 
 .rotate-anim {
-    /* Display & Box Model */
     transform: rotate(180deg);
 }
 
-#second-body {
-    /* Display & Box Model */
-    background-image: url("../images/leaves-repeat.jpg");
-    background-size: cover;
-    background-color: #f4efe9;
-    margin: 0px;
-    padding: 0px;
+#our-story-container {
     z-index: 999;
 
-    /* Text */
+    margin: 0;
+    padding: 0;
+
     text-align: center;
+
+    background-color: #f4efe9;
+    background-image: url('../images/leaves-repeat.jpg');
+    background-size: cover;
 }
 
+#details-container {
+    margin: 0;
+    padding: 0;
 
-
-#third-body {
-    /* Display & Box Model */
-    background-image: url("../images/details_bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #f4efe9;
-    margin: 0px;
-    padding: 0px;
-    border-bottom: 10px solid #534741;
-    border-top: 10px solid #534741;
     color: #fff;
+    border-top: 10px solid #534741;
+    border-bottom: 10px solid #534741;
+    background-color: #f4efe9;
+    background-image: url('../images/details_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .row-no-margin {
-    margin: 0px;
+    margin: 0;
 }
 
 .details-left-holder {
-    /* causes .float-wrap's height to match its child divs */
+    padding-right: 0;
+    padding-left: 0;
+
     white-space: nowrap;
 }
 
 .details-left {
-    min-width: 104%;
-    min-height: 600px;
-    -webkit-transform: skew(-20deg) translateX(-130px);
-    -moz-transform: skew(-20deg) translateX(-130px);
-    -o-transform: skew(-20deg) translateX(-130px);
-    /*border: 5px solid #f58b00;*/
-    transition: 0.25s;
+    position: relative;
+
     display: inline-block;
     float: left;
-
-
-    /* new styles */
-    position: relative;
     overflow: hidden;
 
+    min-width: 100%;
+    min-height: 300px;
 
-    box-shadow: 5px 5px 13px 0px rgba(0, 0, 0, 0.5);
+    transition: .25s;
+
+    box-shadow: 5px 5px 13px 0 rgba(0, 0, 0, .5);
 }
 
 .details-left::before {
-    content: "";
-    transform: skewX(20deg);
-    -ms-transform: skewX(20deg);
-    /* IE 9 */
-    -webkit-transform: skewX(20deg);
-    /* Safari and Chrome */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top left;
+    position: absolute;
+
     display: inline-block;
 
-    /* new styles */
-    position: absolute;
-    -webkit-transform-origin: top left;
-    -ms-transform-origin: top left;
-    transform-origin: top left;
     width: 100%;
+
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
 }
 
 .details-left img {
-    content: "";
-    transform: skewX(20deg);
-    -ms-transform: skewX(20deg);
-    /* IE 9 */
-    -webkit-transform: skewX(20deg);
-    /* Safari and Chrome */
     position: absolute;
-    transform: translateX(-30px) translateY(-50px);
-    width: 105%;
+
+    height: 130%;
+
+    content: '';
 }
 
 .details-left h1 {
-    font-size: 80px;
-    text-shadow: 5px 5px 13px rgba(0, 0, 0, 0.5);
+    font-size: 3em;
+
+    text-shadow: 5px 5px 13px rgba(0, 0, 0, .5);
 }
 
-.details-location {
-    text-shadow: 5px 5px 13px rgba(0, 0, 0, 0.5);
-    font-size: 90px;
-    letter-spacing: -0.05em;
+#details-year {
+    font-size: 6em;
+}
+
+#details-location {
+    font-size: 3em;
+
     color: #c7b299;
+    text-shadow: 5px 5px 13px rgba(0, 0, 0, .5);
 }
 
 .details-date {
-    background-color: #fcf4e3;
-    margin-left: 40%;
-    margin-top: 48px;
-    color: #000;
-    position: absolute;
-    border: 7px solid #000;
+    position: relative;
+
+    width: 85%;
+    margin: 10% auto;
     padding: 10px;
-    transform: skewX(20deg);
-    -ms-transform: skewX(20deg);
-    /* IE 9 */
-    -webkit-transform: skewX(20deg);
-    /* Safari and Chrome */
+
+    color: #000;
+    border: 7px solid #000;
+    background-color: #fcf4e3;
 }
 
 .details-time {
@@ -305,121 +300,84 @@
 }
 
 .details-subheading {
-    font-size: 40px;
+    /*font-size: 40px;*/
 }
 
 .details-icon {
     height: 80px;
 }
 
-#details-year {
-    font-size: 150px;
+.img-responsive {
+    margin: 0 auto;
 }
 
 #rsvp-button {
-    /* Display & Box Model */
+    font-size: 2em;
+
+    width: auto;
     margin: 0 auto;
     margin: 30px;
-    transition: 0.4s ease-in;
-    width: auto;
 
-    /* Color */
-    background-color: transparent;
+    transition: .4s ease-in;
+
     color: #f26d7d;
-
-    /* Text */
-    font-size: 2em;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    background-color: transparent;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .6);
 }
 
 #rsvp-button:hover {
-    /* Display & Box Model */
     outline: none;
-
-    /* Text */
     text-shadow: 23px 2px 2px rgba(0, 0, 0, 0);
 }
 
 #rsvp-button:focus,
 #rsvp-button:active {
-    /* Display & Box Model */
     outline: none;
 }
 
-#details-section h2 {
-    /* Display & Box Model */
-    animation: fadeInUp 1.5s;
-}
+#wedding-party-container {
+    margin: 0;
 
-#details-section h1 {
-    /* Display & Box Model */
-    animation: fadeInDown 0.75s;
-}
-
-#details-section-divider {
-    border-right: 7px ridge #000;
-}
-
-#fourth-body {
-    /* Color */
     background-color: #fff;
-    /*background-image: linear-gradient( rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url("../images/ottawa.jpg");*/
-    background-size: cover;
     background-repeat: no-repeat;
-
-    /* Display & Box Model */
-    margin: 0px;
+    background-size: cover;
 }
 
 .carousel-control.left {
-    /* Display & Box Model */
     background-image: none;
 }
 
 .carousel-control.right {
-    /* Display & Box Model */
     background-image: none;
 }
 
 .carousel-indicators .active {
-    /* Color */
     background-color: #ed145b;
 }
 
 .carousel-indicators {
-    /* Display & Box Model */
-    bottom: 0px !important;
+    bottom: 0 !important;
 }
 
 #rsvpModal {
-    /* Text */
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .carousel-caption p {
     font-weight: 600;
-    font-size: 18px;
-    
 }
 
 .carousel-caption {
-    background-color: rgba(100, 100, 100, 0.0);
-    transition: background-color 0.5s ease;
-    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.85);
+    border-radius: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .85);
 }
 
-.carousel-caption:hover {
-    background-color: rgba(100, 100, 100, 0.7);
-}
-
-#fifth-body {
-    /* Color */
-    background-color: #fcf4e3;
-
-    /* Display & Box Model */
+#wedding-party-container {
     margin: 0;
-    padding-left: 2%;
     padding-right: 2%;
+    padding-left: 2%;
+
+    background-color: #fcf4e3;
 }
 
 .heading {
@@ -431,171 +389,147 @@
 }
 
 #groomsmen-heading {
-    color: #596359;
     margin: 5px;
+
+    color: #596359;
 }
 
 #bridesmaids-heading {
-    color: #4e535c;
     margin: 5px;
+
+    color: #4e535c;
 }
 
 .groomsmen-temp {
-    background-image: url('../images/groomsmen_brush.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
     width: 373px;
     height: 250px;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 15px;
+
+    background-image: url('../images/groomsmen_brush.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .bridesmaids-temp {
-    background-image: url('../images/bridesmaid_brush.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
     width: 373px;
     height: 250px;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 15px;
+
+    background-image: url('../images/bridesmaid_brush.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .wedding-image-holder {
-    /* Display & Box Model */
-    margin: 0 auto;
-    height: 200px;
     width: 200px;
+    height: 200px;
+    margin: 0 auto;
 }
 
 .wedding-party-image {
-    /* Display & Box Model */
-    border: 2px solid black;
-    height: 220px;
-    width: 220px;
-
-    /* Positioning */
     position: absolute;
     z-index: 1;
+
+    width: 220px;
+    height: 220px;
+
+    border: 2px solid black;
 }
 
 .wedding-party-token {
-    /* Display & Box Model */
-    border: 2px solid black;
-    height: 80px;
     width: 80px;
+    height: 80px;
     margin: 0 auto;
-    transition: border 0.25s ease, box-shadow 0.25s ease;
+
+    transition: border .25s ease, box-shadow .25s ease;
+
+    border: 2px solid black;
 }
 
 .guy .wedding-party-token:hover {
     border: 2px solid #b7cdb8;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
 }
 
 .girl .wedding-party-token:hover {
     border: 2px solid #d2dbec;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
 }
 
 .current-guy {
-    /* Positioning */
     z-index: 3;
 }
 
 .current-girl {
-    /* Positioning */
     z-index: 3;
-}
-
-.huge {
-    /* Text */
-    font-size: 38px;
-    margin-top: 10px !important;
 }
 
 .panel>.girl-postcard-heading {
     color: #4e535c;
-    background-color: #D2DEEA;
-    border-bottom: 0px;
+    border-bottom: 0;
+    background-color: #d2deea;
 }
 
 .panel>.guy-postcard-heading {
     color: #596359;
-    background-color: #B3D0B4;
-    border-bottom-width: 0px;
-}
-
-h1 {
-    font-size: 60px;
-    letter-spacing: -0.05em;
-}
-
-h2 {
-    font-size: 50px;
-    letter-spacing: -0.05em;
+    border-bottom-width: 0;
+    background-color: #b3d0b4;
 }
 
 .guy-postcard {
     /* for reference background-color: #88A48B; */
     color: white;
-    background-image: linear-gradient( rgba(145, 162, 146, 0.75), rgba(145, 162, 146, 0.75)), url("../images/post_card_bg.jpg");
-    background-size: cover;
+    background-image: linear-gradient( rgba(145, 162, 146, .75), rgba(145, 162, 146, .75)), url('../images/post_card_bg.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .girl-postcard {
     /* for reference background-color: #7C918C; */
     color: white;
-    background-image: linear-gradient( rgba(129, 135, 145, 0.75), rgba(129, 135, 145, 0.75)), url("../images/post_card_bg.jpg");
-    background-size: cover;
+    background-image: linear-gradient( rgba(129, 135, 145, .75), rgba(129, 135, 145, .75)), url('../images/post_card_bg.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .wedding-party-list {
-    /* Text */
     font-size: 14px;
 
-    /* Display & Box Model */
-    float: left;
-    list-style-type: none;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 0;
-    width: 100%;
-
-    /* Positioning */
     position: inline;
+
+    float: left;
+    overflow: hidden;
+
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+
+    list-style-type: none;
 }
 
 .wedding-party-list li a {
-    /* Color */
-    color: white;
-
-    /* Display & Box Model */
     display: block;
-    padding: 8px 0px;
+
+    padding: 8px 0;
+
     text-align: center;
     text-decoration: none;
+
+    color: white;
 }
 
 #list-guys {
-    /* Color */
     border-bottom: 10px solid #b7cdb8;
 }
 
 #list-girls {
-    /* Color */
     border-bottom: 10px solid #d2dbec;
-}
-
-.bridesmaids-section {
-    background-image: url('../images/bridesmaid_brush.png');
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .wedding-party-description {
@@ -603,171 +537,203 @@ h2 {
     margin: 0 40px 0 40px;
 }
 
-#sixth-body {
-    /* Color */
+#registry-container {
+    margin: 0;
+
     color: white;
-
-    /* Display & Box Model */
-    background-color: #000;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/registry_background.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    /*opacity: 0.75;*/
-    margin: 0px;
     border-bottom: 4px solid #d9dada;
+    background-color: #000;
+    background-image: linear-gradient( rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url('../images/registry_background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.registryRow {
-    background-color: #AE0D46;
-    height: 170px;
-    padding-left: 35px;
-    padding-right: 35px;
-    margin-top: 80px;
-    margin-bottom: 100px;
+.registry-row {
+    height: auto;
+    padding: 0;
+
+    background-color: transparent;
 }
 
-#registryOptionRow {
+#registry-option-row {
     top: -20%;
 }
 
-.registryOption {
-    font-family: "Raleway";
+.registry-option {
+    font-family: 'Raleway';
 
-    background-color: white;
     width: 80%;
-    margin: 0 auto;
-    border: 10px solid #C62C58;
-    box-shadow: 5px 5px 12px 0px rgba(0, 0, 0, 0.5);
+    margin: 5px auto 5px auto;
+
+    border: 10px solid #c62c58;
+    background-color: white;
+    box-shadow: 5px 5px 12px 0 rgba(0, 0, 0, .5);
 }
 
-.registryContainer {
+.registry-option-container {
     position: relative;
 }
 
-.registryOption img {
+.registry-option img {
     display: block;
+
     width: 100%;
     height: auto;
     padding: 30px;
 }
 
-.registryOptionHeader {
-    background-color: #C62C58;
+.registry-option-header {
     padding-top: 10px;
+
+    background-color: #c62c58;
 }
 
-.registryOptionContent {
+.registry-option-content {
     position: absolute;
     top: 0;
+    right: 0;
     bottom: 0;
     left: 0;
-    right: 0;
-    height: 100%;
+
     width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #000;
+    height: 100%;
     padding: 10px;
     padding-top: 35%;
+
+    transition: .5s ease;
+
+    opacity: 0;
+    background-color: #000;
 }
 
 .registryOptionText {
-    vertical-align: middle;
     font-family: 'Raleway';
+
+    vertical-align: middle;
+
     color: white;
 }
 
-.registryOption:hover .registryOptionContent {
+.registry-option:hover .registry-option-content {
     visibility: visible;
-    opacity: 0.80;
+
+    opacity: .80;
 }
 
-@keyframes fadeInTwo {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 0.75;
-    }
-}
-
-#seventh-body {
-    /* Color */
-    background-color: #f2f4f3;
-    /* Display & Box Model */
+#photos-container {
     margin: 0;
+
+    background-color: #f2f4f3;
 }
 
-.engagementPhoto {
+.engagement-photo {
     max-height: 300px;
+    margin: 5px;
+
     cursor: pointer;
-    border: 0px;
-    padding: 0px;
-    margin: 10px;
+
+    border: 0;
 }
 
-@media only screen and (max-width: 992px) {
-    .registryRow {
-        background-color: transparent;
-        height: auto;
-        padding: 0;
-    }
-    .registryOption {
-        margin-top: 0 !important;
-        width: 65%;
-        margin-left: 17.5% !important;
-        margin-bottom: 7.5%;
-    }
-    /* umm */
-    .carousel-header {
-        position: relative;
-        text-align: center;
-        margin: 0 auto;
-        width: 100%;
-        background-color: rgba(54, 47, 45, 0.8);
-        color: #fff;
-        padding: 20px;
-    }
+#scroll-to-top-nav {
+    position: fixed;
+    z-index: 99;
+    right: 30px;
+    bottom: 20px;
+
+    display: none;
+
+    padding: 15px;
+
+    cursor: pointer;
+
+    color: white;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: #555;
 }
 
-@media only screen and (max-width: 500px) {
-    .registryOption {
-        margin-top: 0 !important;
-        width: 85%;
-        margin-left: 7.5% !important;
-        margin-bottom: 7.5%;
-    }
-
-    .groomsmen-temp {
-        background-image: none;
-        width: 100%;
-        height: auto;
-        padding-top: 0px;
-    }
-
-    .bridesmaids-temp {
-        background-image: none;
-        width: 100%;
-        height: auto;
-        padding-top: 0px;
-    }
-
-    .wedding-image-holder {
-        /* Display & Box Model */
-        margin: 0 auto;
-        height: 220px;
-        width: 220px;
-    }
-
-    .wedding-party-description {
-        min-height: 160px;
-        margin: 0 7px 0 7px;
-    }
+#scroll-to-top-nav:hover {
+    background-color: #555;
 }
 
-.featurette-divider {
-    border-color: #cdcdcd;
+.button {
+    position: relative;
+    z-index: 1;
+
+    display: block;
+
+    min-width: 150px;
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 1em 2em;
+
+    vertical-align: middle;
+
+    color: inherit;
+    border: none;
+    background: none;
+
+    -webkit-backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button.button--aylen {
+    font-size: 1.2em;
+    font-weight: bold;
+
+    overflow: hidden;
+
+    -webkit-transition: color .3s;
+    transition: color .3s;
+
+    color: #f26d7d;
+    background: #fff;
+}
+
+.button--aylen::before,
+.button--aylen::after {
+    position: absolute;
+    z-index: -1;
+    bottom: 100%;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+    -webkit-transition: -webkit-transform .3s;
+    transition: transform .3s;
+    -webkit-transition-timing-function: cubic-bezier(.75, 0, .125, 1);
+    transition-timing-function: cubic-bezier(.75, 0, .125, 1);
+}
+
+.button--aylen::before {
+    background: #fab8c0;
+}
+
+.button--aylen::after {
+    background: #f26d7d;
+}
+
+.button--aylen:hover {
+    color: #fff;
+}
+
+.button--aylen:hover::before,
+.button--aylen:hover::after {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+.button--aylen:hover::after {
+    -webkit-transition-delay: .175s;
+    transition-delay: .175s;
 }
 
 #imageModalContainer {
@@ -778,89 +744,216 @@ h2 {
     border-radius: 10px;
 }
 
-@media only screen and (min-width: 768px) {
-    .caption h1 {
-        /* Text */
-        font-size: 3em;
+
+@media only screen and (max-width: 500px) {
+        .groomsmen-temp {
+        width: 100%;
+        height: auto;
+        padding-top: 0;
+
+        background-image: none;
     }
 
-    .caption h2 {
-        /* Text */
+    .bridesmaids-temp {
+        width: 100%;
+        height: auto;
+        padding-top: 0;
+
+        background-image: none;
+    }
+
+    .wedding-image-holder {
+        width: 220px;
+        height: 220px;
+        margin: 0 auto;
+    }
+
+    .wedding-party-description {
+        min-height: 160px;
+        margin: 0 7px 0 7px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-default {
         font-size: 1.5em;
+
+        background-color: transparent;
+    }
+
+    .caption h1 {
+        font-size: 4em;
+    }
+
+    #details-location {
+        font-size: 4em;
     }
 
     .our-story-heading-text {
-        /* Text */
-        font-size: 3em;
+        font-size: 4em;
     }
 
     #rsvp-button {
-        /* Text */
         font-size: 3em;
+    }
+
+    .carousel-inner>.item>img {
+        max-width: 100%;
+    }
+
+    .our-story-btn-svg {
+        width: 70px;
+        height: 70px;
+    }
+
+    .details-date {
+        width: 75%;
+    }
+
+    .details-left h1 {
+        font-size: 80px;
+
+        text-shadow: 5px 5px 13px rgba(0, 0, 0, .5);
+    }
+
+    #details-year {
+        font-size: 150px;
+    }
+
+    .details-left img {
+        height: 110%;
+    }
+
+    .details-left {
+        min-height: 500px;
     }
 }
 
 @media only screen and (min-width: 992px) {
-    .caption h1 {
-        /* Text */
-        font-size: 4em;
+    .navbar-default {
+        font-size: 2em;
     }
 
-    .caption h2 {
-        /* Text */
-        font-size: 2.5em;
+    .caption h1 {
+        font-size: 5em;
+
+        text-shadow: 5px 5px 2px rgba(0, 0, 0, .65);
     }
 
     .our-story-heading-text {
-        /* Text */
-        font-size: 4em;
+        font-size: 5em;
     }
 
     #rsvp-button {
-        /* Text */
         font-size: 4em;
+    }
+
+    .carousel-inner>.item>img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .registry-row {
+        height: 170px;
+        margin-top: 80px;
+        margin-bottom: 100px;
+        padding-right: 35px;
+        padding-left: 35px;
+
+        background-color: #ae0d46;
+    }
+
+    .details-left-holder {
+        white-space: nowrap;
+    }
+
+    .details-left {
+        position: relative;
+
+        display: inline-block;
+        float: left;
+        overflow: hidden;
+
+        min-width: 104%;
+        min-height: 600px;
+
+        transition: .25s;
+        -webkit-transform: skew(-15deg) translateX(-110px);
+        -moz-transform: skew(-15deg) translateX(-110px);
+        -o-transform: skew(-15deg) translateX(-110px);
+
+        box-shadow: 5px 5px 13px 0 rgba(0, 0, 0, .5);
+    }
+
+    .details-left::before {
+        position: absolute;
+
+        display: inline-block;
+
+        width: 100%;
+
+        content: '';
+        -webkit-transform: skewX(15deg);
+        -ms-transform: skewX(15deg);
+        transform: skewX(15deg);
+        -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+        transform-origin: top left;
+
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: contain;
+    }
+
+    .details-left img {
+        position: absolute;
+
+        height: 140%;
+
+        content: '';
+        -webkit-transform: skewX(15deg);
+        -ms-transform: skewX(15deg);
+        transform: skewX(15deg) translateX(-30px) translateY(-50px);
+    }
+
+    .details-date {
+        position: absolute;
+
+        width: auto;
+        margin-left: 40%;
+        padding: 10px;
+
+        -webkit-transform: skewX(15deg);
+        -ms-transform: skewX(15deg);
+        transform: skewX(15deg);
+
+        color: #000;
+        border: 7px solid #000;
+        background-color: #fcf4e3;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .caption h1 {
-        /* Text */
         font-size: 6em;
     }
 
-    .caption h2 {
-        /* Text */
-        font-size: 4em;
-    }
-
     .our-story-heading-text {
-        /* Text */
         font-size: 6em;
     }
 
     .modalWidth {
-        /* Used to make landscape images bigger on bigger screens */
-        max-width: 60% !important;
         width: auto !important;
+        max-width: 60% !important;
+    }
+
+    .details-left img {
+        height: 130%;
     }
 }
 
-#scrollTopBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: #555;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-#scrollTopBtn:hover {
-    background-color: #555;
-    /* Add a dark-grey background on hover */
+@media only screen and (min-width: 2000px) {
+    .details-left img {
+        height: 180%;
+    }
 }

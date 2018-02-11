@@ -1,114 +1,113 @@
-$( document ).ready(function() {
+$(document).ready(function() {
 
-	/* Default whenever modal pops up */
-	$('.rsvp-button').click(function(){
-		console.log("Regsitered Click Event");
-		$('.alert').hide();
-	    $('.hiddenUntilAttending').hide();
-	    $('.second-rsvp-form-div').hide();
-	});
+    /* Default whenever modal pops up */
+    $('.rsvp-button').click(function() {
+        $('.alert').hide();
+        $('.hiddenUntilAttending').hide();
+        $('.second-rsvp-form-div').hide();
+    });
 
     /* First form */
-	$('#rsvpForm').submit(function(event){
-		event.preventDefault();
-		var data = $(this).serialize();
-		var url = $(this).attr('action');
+    $('#rsvpForm').submit(function(event) {
+        event.preventDefault();
+        var data = $(this).serialize();
+        var url = $(this).attr('action');
 
-		$.ajax({
-			method: "get",
-			url: url,
-			data: data,
-			error: function( jqXHR, textStatus, errorThrown ){
-				errorHandler(jqXHR);
-			},
-			success: function(response){
-				
-				if(response.error){
-					displayAlert(response.error, "error", 100);
-					return;
-				} 
+        $.ajax({
+            method: "get",
+            url: url,
+            data: data,
+            error: function(jqXHR, textStatus, errorThrown) {
+                errorHandler(jqXHR);
+            },
+            success: function(response) {
 
-				if (response.success){
+                if (response.error) {
+                    displayAlert(response.error, "error", 100);
+                    return;
+                }
 
-					var glyphicon = 'glyphicon glyphicon-ok';
+                if (response.success) {
 
-					var success = "<ul>";
-					success += "<li>" + response.success + "</li>";
-					
-					if(response.attending === '1'){
+                    var glyphicon = 'glyphicon glyphicon-ok';
 
-						glyphicon = 'glyphicon glyphicon-heart';
+                    var success = "<ul>";
+                    success += "<li>" + response.success + "</li>";
 
-						$('.first-rsvp-form-div').fadeOut(1000, function(){
-							$(this).hide();
-						});
+                    if (response.attending === '1') {
 
-						$('#invitorFirstName').val(response.invitorFN);
-						$('#invitorLastName').val(response.invitorLN);
+                        glyphicon = 'glyphicon glyphicon-heart';
 
-						success += "<li>You can invite another again.</li>";
-						success += "</ul>";
+                        $('.first-rsvp-form-div').fadeOut(1000, function() {
+                            $(this).hide();
+                        });
 
-						$('.second-rsvp-form-div').delay(900).fadeIn(1000, function(){
-							$(this).show();
-						});
-					}
+                        $('#invitorFirstName').val(response.invitorFN);
+                        $('#invitorLastName').val(response.invitorLN);
 
-					displayAlert(success, "success", glyphicon, 900);
-				}
+                        success += "<li>You can invite another again.</li>";
+                        success += "</ul>";
 
-			}
-		});
-	});
+                        $('.second-rsvp-form-div').delay(900).fadeIn(1000, function() {
+                            $(this).show();
+                        });
+                    }
 
-	/* Second form */
-	$('#rsvpForm2').submit(function(event){
-		event.preventDefault();
-		var data = $(this).serialize();
-		var url = $(this).attr('action');
+                    displayAlert(success, "success", glyphicon, 900);
+                }
 
-		$.ajax({
-			method: "get",
-			url: url,
-			data: data,
-			error: function( jqXHR, textStatus, errorThrown ){
-				errorHandler(jqXHR);
-			},
-			success: function(response){
+            }
+        });
+    });
 
-				if(response.error){
-					displayAlert(response.error, "error", 100);
-					return;
-				} 
+    /* Second form */
+    $('#rsvpForm2').submit(function(event) {
+        event.preventDefault();
+        var data = $(this).serialize();
+        var url = $(this).attr('action');
 
-				if (response.success){
-					$('.second-rsvp-form-div').fadeOut(1000, function(){
-						$(this).hide();
-					});
+        $.ajax({
+            method: "get",
+            url: url,
+            data: data,
+            error: function(jqXHR, textStatus, errorThrown) {
+                errorHandler(jqXHR);
+            },
+            success: function(response) {
 
-					document.getElementById("rsvpForm2").reset();
-					$('#invitorFirstName').val(response.invitorFN);
-					$('#invitorLastName').val(response.invitorLN);
+                if (response.error) {
+                    displayAlert(response.error, "error", 100);
+                    return;
+                }
 
-					$('.second-rsvp-form-div').delay(900).fadeIn(1000, function(){
-						$(this).show();
-					});
-					var success = "<ul>";
-					success += "<li>" + response.success + "</li>";
-					success += "<li>You can invite another again.</li>";
-					success += "</ul>";
-					displayAlert(success, "success", 'glyphicon glyphicon-heart', 900);
-				}
+                if (response.success) {
+                    $('.second-rsvp-form-div').fadeOut(1000, function() {
+                        $(this).hide();
+                    });
 
-			}
-		});
-	});
+                    document.getElementById("rsvpForm2").reset();
+                    $('#invitorFirstName').val(response.invitorFN);
+                    $('#invitorLastName').val(response.invitorLN);
 
-	/* Fields that should only display once guest is attending */
-    $('input[name="attending"]').click(function(eventObj){
+                    $('.second-rsvp-form-div').delay(900).fadeIn(1000, function() {
+                        $(this).show();
+                    });
+                    var success = "<ul>";
+                    success += "<li>" + response.success + "</li>";
+                    success += "<li>You can invite another again.</li>";
+                    success += "</ul>";
+                    displayAlert(success, "success", 'glyphicon glyphicon-heart', 900);
+                }
+
+            }
+        });
+    });
+
+    /* Fields that should only display once guest is attending */
+    $('input[name="attending"]').click(function(eventObj) {
         var obj = eventObj.target;
 
-        if(obj.id === 'attending1'){
+        if (obj.id === 'attending1') {
             $('.hiddenUntilAttending').show();
         } else {
             $('.hiddenUntilAttending').hide();
@@ -116,31 +115,31 @@ $( document ).ready(function() {
     });
 
     /* Error Hander */
-    function errorHandler(jqXHR){
-    	var response = JSON.parse(jqXHR.responseText);
-    	var errors = "<ul>";
-    	for(var errorTitle in response.errors){
-    		errors += "<li>" + response.errors[errorTitle] + "</li>";
-    	}
-    	errors += "</ul>";
-    	displayAlert(errors, "error", 100);
+    function errorHandler(jqXHR) {
+        var response = JSON.parse(jqXHR.responseText);
+        var errors = "<ul>";
+        for (var errorTitle in response.errors) {
+            errors += "<li>" + response.errors[errorTitle] + "</li>";
+        }
+        errors += "</ul>";
+        displayAlert(errors, "error", 100);
     }
 
     /* Display Alert */
-    function displayAlert(alertMsg, alertType, glyphicon, delayTime = 0){
-    	$('.alert').empty().hide();
-    	var header = '';
+    function displayAlert(alertMsg, alertType, glyphicon, delayTime = 0) {
+        $('.alert').empty().hide();
+        var header = '';
 
-		if(alertType === "error"){
-			header = "<h4 class='text-center'>Error!</h4>"
-			$('#alert-error').html(header+alertMsg).delay(delayTime).fadeIn(1000, function(){
-				$(this).show();
-			});
-		} else {
-			header = "<h4 class='text-center'>Success! <span class='" + glyphicon + "'></span></h4>";
-			$('#alert-success').html(header+alertMsg).delay(delayTime).fadeIn(1000, function(){
-				$(this).show();
-			});
-		}
-	}
+        if (alertType === "error") {
+            header = "<h4 class='text-center'>Error!</h4>"
+            $('#alert-error').html(header + alertMsg).delay(delayTime).fadeIn(1000, function() {
+                $(this).show();
+            });
+        } else {
+            header = "<h4 class='text-center'>Success! <span class='" + glyphicon + "'></span></h4>";
+            $('#alert-success').html(header + alertMsg).delay(delayTime).fadeIn(1000, function() {
+                $(this).show();
+            });
+        }
+    }
 });
