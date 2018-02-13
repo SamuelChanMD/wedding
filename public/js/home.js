@@ -34,27 +34,27 @@ $(document).ready(function() {
     var girls = {
         'grace_kim': {
             'name': 'Grace Kim',
-            'description': 'Sister of the bride with a child at her side. From worst-of-worst enemies to two halves of one person, we’ve been through it all. Tragically loves the bed more than food, her apathetic life finds small hope in decorating her home.'
+            'description': 'Sister of the bride with a child at her side! From worst-of-worst enemies to two halves of one person, we’ve journeyed through it all. Tragically loves the bed more than food, her apathetic life finds small hope in decorating her home.<br><br>What I love most about her: Grace is a comical character and marches to her own drum <span class="glyphicon glyphicon-heart"></span>'
         },
         'puja_ahluwalia': {
             'name': 'Puja Ahluwali',
-            'description': 'The youngest amiga from the Ladouceur Losers (our old house name) and the most dumb points gained (don’t worry, you can laugh). Adult lifestyle; child at heart. Aspiring chef, no compass, but a big heart! Also a crucial planner behind our proposal story <3'
+            'description': 'The youngest amiga from the Ladouceur Losers (our old house name) and the most dumb points gained (don’t worry, you can laugh). Adult lifestyle; child at heart. Aspiring chef, no compass, but a big heart! Also a crucial planner behind the proposal.<br><br>What I love most about her: she’s a precious dreamer. Oh, and that I can catch her at any hour of the night and have deep/dumb talks <span class="glyphicon glyphicon-heart"></span>'
         },
         'chelsea_anne': {
             'name': 'Chelsea Anne',
-            'description': 'The eldest amiga from the Ladouceur Losers (our old house name) and the most smart points gained. Fond of food, politics, and traveling. Catch her on her blog @ seasidesandsidestreats.com!'
+            'description': 'The eldest amiga from the Ladouceur Losers (our old house name) and the most smart points gained. Fond of food, politics, and traveling. Catch her on her blog @ seasidesandsidestreats.com!<br><br>What I love most about her: Chelsea is down-to-earth and my long time tea buddy; I can do anything with this one! <span class="glyphicon glyphicon-heart"></span>'
         },
         'jessica_lee': {
             'name': 'Jessica Lee',
-            'description': 'This small-bodied lady can out-eat a full grown man. A young and wise owl who peers gently into your soul. Mighty with words, and humble as a mouse. Give her 5 minutes and she will give you her life. That’s what makes her Maid of Honor!'
+            'description': 'This small-bodied lady can out-eat a full grown man. A young and wise owl who peers gently into your soul. Mighty with words, and humble as a mouse. Give her 5 minutes and she will give you her life. That’s what makes her Maid of Honor!<br><br>What I love most about her: Jessica has a beautiful mind and is a generous snack sharer! <span class="glyphicon glyphicon-heart"></span>'
         },
         'vikki_moon': {
             'name': 'Vikki Moon',
-            'description': 'If you become her friend you will immediately notice two things: gifts and emojis galore! This young fashionista is consumed by writing letters to her friends, going on coffee dates, and brightening people’s days! Our friendship began in East Asia and blossomed at home in Canada. Separated by provinces, she is a very fun pen pal to have!'
+            'description': 'If you become her friend you will immediately notice two things: gifts and emojis galore! This young fashionista is consumed by writing letters to her friends, going on coffee dates, and brightening people’s days! Our friendship began in East Asia and blossomed at home in Canada. Separated by provinces, she is a very fun pen pal to have!<br><br>What I love most about her: Vikki sends her love in the most incredibly detailed letters and gifts! <span class="glyphicon glyphicon-heart"></span>'
         },
         'randelee_macdonald': {
             'name': 'Randelee MacDonald',
-            'description': 'Life is never boring nor balanced for this chica! A nomad and a hidden talent for training dogs, she loves chill times around campfires and epic adventures with friends. Who knows what’s next for this lady!'
+            'description': 'Life is never boring nor balanced for this chica! A nomad and a hidden talent for training dogs, she loves chill times around campfires and epic adventures with friends. Who knows what’s next for this lady!<br><br>What I love most about her: RandeLee is passionate and full of laughter <span class="glyphicon glyphicon-heart"></span>'
         }
     };
 
@@ -84,7 +84,7 @@ $(document).ready(function() {
     });
 
     $('a[name="guy"][value="paul_loh"]').click();
-    $('a[name="girl"][value="grace_kim"]').click();
+    $('a[name="girl"][value="jessica_lee"]').click();
 
     $('.carousel').carousel({
         interval: false

@@ -176,10 +176,10 @@
             <h1 id='bridesmaids-heading'>Bridesmaids</h1>
             <div class='bridesmaids-temp'>
                 <div id='imagesOfGirls' class='wedding-image-holder'>
-                    <img id='jessica_lee_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/jessica_lee.jpg")!!}' alt='image of Jessica Lee'>
+                    <img id='jessica_lee_img' class='img-responsive img-circle wedding-party-image current-girl' src='{!!asset( "images/jessica_lee.jpg")!!}' alt='image of Jessica Lee'>
                     <img id='randelee_macdonald_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/randelee_macdonald.jpg")!!}' alt='image of Randelee Macdonald'>
                     <img id='vikki_moon_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/vikki_moon.jpg")!!}' alt='image of Vikki Moon'>
-                    <img id='grace_kim_img' class='img-responsive img-circle wedding-party-image current-girl' src='{!!asset( "images/grace_kim.jpg")!!}' alt='image of Grace Kim'>
+                    <img id='grace_kim_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/grace_kim.jpg")!!}' alt='image of Grace Kim'>
                     <img id='chelsea_anne_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/chelsea_anne.jpg")!!}' alt='image of Chelsea Anne'>
                     <img id='puja_ahluwalia_img' class='img-responsive img-circle wedding-party-image' src='{!!asset( "images/puja_ahluwalia.jpg")!!}' alt='image of Puja Ahluwalia'>
                 </div>
@@ -194,8 +194,8 @@
                         <ul id='list-girls' class='wedding-party-list'>
                             <div class='col-xs-6 col-sm-4 col-md-2'>
                                 <li>
-                                    <a href='#' class='girl' name='girl' value='grace_kim'>
-                                        <img id='grace_kim_token' class='img-responsive img-circle wedding-party-token' src='{!!asset("images/grace_kim.jpg")!!}' alt='image of Grace Kim'>
+                                    <a href='#' class='girl' name='girl' value='jessica_lee'>
+                                        <img id='jessica_lee_token' class='img-responsive img-circle wedding-party-token' src='{!!asset("images/jessica_lee.jpg")!!}' alt='image of Jessica Lee'>
                                     </a>
                                 </li>
                             </div>
@@ -208,20 +208,6 @@
                             </div>
                             <div class='col-xs-6 col-sm-4 col-md-2'>
                                 <li>
-                                    <a href='#' class='girl' name='girl' value='puja_ahluwalia'>
-                                        <img id='puja_ahluwalia_token' class='img-responsive img-circle wedding-party-token' src='{!!asset("images/puja_ahluwalia.jpg")!!}' alt='image of Puja Ahluwalia'>
-                                    </a>
-                                </li>
-                            </div>
-                            <div class='col-xs-6 col-sm-4 col-md-2'>
-                                <li>
-                                    <a href='#' class='girl' name='girl' value='vikki_moon'>
-                                        <img id='vikki_moon_token' class='img-responsive img-circle wedding-party-token' src='{!!asset("images/vikki_moon.jpg")!!}' alt='image of Vikki Moon'>
-                                    </a>
-                                </li>
-                            </div>
-                            <div class='col-xs-6 col-sm-4 col-md-2'>
-                                <li>
                                     <a href='#' class='girl' name='girl' value='randelee_macdonald'>
                                         <img id='randelee_macdonald_token' class='img-responsive img-circle wedding-party-token' src='{!!asset("images/randelee_macdonald.jpg")!!}' alt='image of Randelee Macdonald'>
                                     </a>
@@ -229,8 +215,22 @@
                             </div>
                             <div class='col-xs-6 col-sm-4 col-md-2'>
                                 <li>
-                                    <a href='#' class='girl' name='girl' value='jessica_lee'>
-                                        <img id='jessica_lee_token' class='img-responsive img-circle wedding-party-token' src='{!!asset("images/jessica_lee.jpg")!!}' alt='image of Jessica Lee'>
+                                    <a href='#' class='girl' name='girl' value='puja_ahluwalia'>
+                                        <img id='puja_ahluwalia_token' class='img-responsive img-circle wedding-party-token' src='{!!asset("images/puja_ahluwalia.jpg")!!}' alt='image of Puja Ahluwalia'>
+                                    </a>
+                                </li>
+                            </div>
+                            <div class='col-xs-6 col-sm-4 col-md-2'>
+                                <li>
+                                    <a href='#' class='girl' name='girl' value='grace_kim'>
+                                        <img id='grace_kim_token' class='img-responsive img-circle wedding-party-token' src='{!!asset("images/grace_kim.jpg")!!}' alt='image of Grace Kim'>
+                                    </a>
+                                </li>
+                            </div>
+                            <div class='col-xs-6 col-sm-4 col-md-2'>
+                                <li>
+                                    <a href='#' class='girl' name='girl' value='vikki_moon'>
+                                        <img id='vikki_moon_token' class='img-responsive img-circle wedding-party-token' src='{!!asset("images/vikki_moon.jpg")!!}' alt='image of Vikki Moon'>
                                     </a>
                                 </li>
                             </div>
@@ -313,7 +313,7 @@
         <div class='row'>
             <h1>Registry</h1>
             <br>
-            <p>Should you like to support us, there are three different ways you can help. Hover over the one of your choice! For any gift you want to send before the day of the wedding, the delivery address is 86 Blackburn Avenue, Ottawa, ON, K1N 8A5.
+            <p>We are honoured to have you at the wedding, and your presence is all that we ask for! Should you like to support us, there are three different ways you can help. Hover over the one of your choice! For any gift you want to send before the day of the wedding, the delivery address is 86 Blackburn Avenue, Ottawa, ON, K1N 8A5.
             </p>
         </div>
         <div class='row registry-row'>
@@ -367,7 +367,7 @@
 </div>
 <div class='jumbotron wow slideInUp' id='photos-container' data-wow-offset='300'>
     <div class='container text-center'>
-        <h1 class='heading'>Engagement Photos</h1>
+        <h1 class='heading'>Just Some Photos</h1>
         <div class='row'>
             <div class='col-xs-12 col-sm-6 col-md-4'>
                 <img class='img-responsive img-thumbnail engagement-photo' src='{!!asset("images/thumbnails/engagement_photo_1_thumbnail.jpg")!!}' data-toggle='modal' data-target='#engagementPhotoModal'>
