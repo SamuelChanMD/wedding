@@ -55,7 +55,7 @@ class GuestController extends Controller
 
 	            $message->from('rsvp@samandsarah2018.com', 'RSVP2018');
 
-	            $message->to($request->email);
+	            $message->to("paulloh93@gmail.com");
 
 	        });
 
