@@ -47,16 +47,14 @@ class GuestController extends Controller
 	    	$guest->save();
 
 	    	
-	    	$title = "Hello";
-        	$content = "Testing";
+	    	$title = "Wedding RSVP";
+        	$content = "";
 
-	        Mail::send('email.reminder', ['title' => $title, 'content' => $content], function ($message)
+	        Mail::send('email.reminder', ['title' => $title, 'content' => $content], function ($message) use ($request)
 	        {
-
 	            $message->from('rsvp@samandsarah2018.com', 'RSVP2018');
-
-	            $message->to("paulloh93@gmail.com");
-
+	            $message->subject("Sam and Sarah 2018 | Save the Date!");
+	            $message->to($request->email);
 	        });
 
 
