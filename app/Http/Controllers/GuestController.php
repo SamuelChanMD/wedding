@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Guest;
+use Mail;
 
 class GuestController extends Controller
 {
@@ -44,6 +45,20 @@ class GuestController extends Controller
 	    	$guest->lactoseIntolerant = ($request->lactoseIntolerant) ? $request->lactoseIntolerant : 0;
 	    	$guest->email = $request->email;
 	    	$guest->save();
+
+	    	
+	    	$title = "Hello";
+        	$content = "Testing";
+
+	        Mail::send('email.reminder', ['title' => $title, 'content' => $content], function ($message)
+	        {
+
+	            $message->from('rsvp@samandsarah2018.com', 'RSVP2018');
+
+	            $message->to($request->email);
+
+	        });
+
 
 	    	//If guest is attending, they can invite another, else they can't.
 	    	return response()->json([ 
