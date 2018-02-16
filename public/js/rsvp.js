@@ -13,14 +13,22 @@ $(document).ready(function() {
         var data = $(this).serialize();
         var url = $(this).attr('action');
 
+        $("#rsvp-loading-container").fadeIn(1000);
+        $('#rsvpModal').hide();
+
         $.ajax({
             method: "get",
             url: url,
             data: data,
             error: function(jqXHR, textStatus, errorThrown) {
+                $("#rsvp-loading-container").fadeOut(1000);
+                $('#rsvpModal').fadeIn(1000);
                 errorHandler(jqXHR);
             },
             success: function(response) {
+
+                $("#rsvp-loading-container").fadeOut(1000);
+                $('#rsvpModal').fadeIn(1000);
 
                 if (response.error) {
                     displayAlert(response.error, "error", 100);
@@ -66,14 +74,22 @@ $(document).ready(function() {
         var data = $(this).serialize();
         var url = $(this).attr('action');
 
+        $("#rsvp-loading-container").fadeIn(1000);
+        $('#rsvpModal').hide();
+
         $.ajax({
             method: "get",
             url: url,
             data: data,
             error: function(jqXHR, textStatus, errorThrown) {
+                $("#rsvp-loading-container").fadeOut(1000);
+                $('#rsvpModal').fadeIn(1000);
                 errorHandler(jqXHR);
             },
             success: function(response) {
+
+                $("#rsvp-loading-container").fadeOut(1000);
+                $('#rsvpModal').fadeIn(1000);
 
                 if (response.error) {
                     displayAlert(response.error, "error", 100);

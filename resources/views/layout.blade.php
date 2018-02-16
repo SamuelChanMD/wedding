@@ -26,6 +26,9 @@
     <div id="loading-container">
         <div id="loading"></div>
     </div>
+    <div id="rsvp-loading-container">
+        <div id="rsvp-loading"></div>
+    </div>
 </body>
 
 </html>
