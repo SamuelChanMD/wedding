@@ -48,15 +48,16 @@ class GuestController extends Controller
 
 	    	
 	    	$title = "Wedding RSVP";
-        	$name = $guest->firstName . " " . $guest->lastName;
-        	$name = "";
+        $name = $request->firstName. " " . $request->lastName;
 
-	        Mail::send('email.reminder', ['title' => $title, 'name' => $name], function ($message) use ($guest)
-	        {
-	            $message->from('rsvp@samandsarah2018.com', 'RSVP2018');
-	            $message->subject("Sam and Sarah 2018 | Save the Date!");
-	            $message->to($guest->email);
-	        });
+        if ($guest->email != null){
+		        Mail::send('email.reminder', ['title' => $title, 'name' => $name], function ($message) use ($guest)
+		        {
+		            $message->from('rsvp@samandsarah2018.com', 'RSVPSamAndSarah2018');
+		            $message->subject("Sam and Sarah 2018 | Save the Date!");
+		            $message->to($guest->email);
+		        });
+		    }
 
 
 	    	//If guest is attending, they can invite another, else they can't.
@@ -113,6 +114,18 @@ class GuestController extends Controller
 	    $guest->isKid = $request->isKid;
 	    $guest->save();
 
+    	$title = "Wedding RSVP";
+    	$name = $request->firstName. " " . $request->lastName;
+
+    	if ($guest->email != null){
+	        Mail::send('email.reminder', ['title' => $title, 'name' => $name], function ($message) use ($guest)
+	        {
+	            $message->from('rsvp@samandsarah2018.com', 'RSVPSamAndSarah2018');
+	            $message->subject("Sam and Sarah 2018 | Save the Date!");
+	            $message->to($guest->email);
+	        });
+	    }
+	    
 	    $responseText = $flag ? $firstName.' '.$lastName.' has been added on the wedding list.' :
 	    						$firstName.' '.$lastName.' has been updated on the wedding list.';
 
