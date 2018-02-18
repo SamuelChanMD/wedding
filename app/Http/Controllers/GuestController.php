@@ -48,9 +48,9 @@ class GuestController extends Controller
 
 	    	
 	    	$title = "Wedding RSVP";
-        	$name = $request->firstName. " " . $request->lastName;
+        $name = $request->firstName. " " . $request->lastName;
 
-        	if ($guest->email != null){
+        if ($guest->email != null){
 		        Mail::send('email.reminder', ['title' => $title, 'name' => $name], function ($message) use ($guest)
 		        {
 		            $message->from('rsvp@samandsarah2018.com', 'RSVPSamAndSarah2018');

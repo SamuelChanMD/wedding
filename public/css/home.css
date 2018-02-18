@@ -7,7 +7,7 @@ h2 {
 }
 
 .jumbotron p {
-    font-size: .9em;
+    font-size: 1.0em;
 }
 
 #loading {
@@ -507,6 +507,11 @@ h2 {
     background-color: #b3d0b4;
 }
 
+#girl_name, #guy_name {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .guy-postcard {
     /* for reference background-color: #88A48B; */
     color: white;
@@ -631,7 +636,7 @@ h2 {
     background-color: #000;
 }
 
-.registryOptionText {
+.registry-option-text {
     font-family: 'Raleway';
 
     vertical-align: middle;
