@@ -5,6 +5,7 @@ $(document).ready(function() {
         $('.alert').hide();
         $('.hiddenUntilAttending').hide();
         $('.second-rsvp-form-div').hide();
+        $('.first-rsvp-form-div').show();
     });
 
     /* First form */
