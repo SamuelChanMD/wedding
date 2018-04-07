@@ -27,7 +27,8 @@ class GuestController extends Controller
 	        'vegatarian' => 'nullable',
 	        'glutenFree' => 'nullable',
 	        'lactoseIntolerant'=> 'nullable',
-	        'email' => 'nullable|email'
+	        'email' => 'nullable|email',
+	        'otherRestrictions' => 'nullable'
 	        ]);
 
 	    $firstName = strtolower($request->firstName);
@@ -39,18 +40,20 @@ class GuestController extends Controller
     					->first();
 
     	if($guest != null){
+
 	    	$guest->attending = $request->attending;
 	    	$guest->vegetarian = ($request->vegetarian) ? $request->vegetarian : 0;
 	    	$guest->glutenFree = ($request->glutenFree) ? $request->glutenFree : 0;
 	    	$guest->lactoseIntolerant = ($request->lactoseIntolerant) ? $request->lactoseIntolerant : 0;
 	    	$guest->email = $request->email;
+	    	$guest->otherRestrictions = $request->otherRestrictions;
 	    	$guest->save();
 
 	    	
 	    	$title = "Wedding RSVP";
-        $name = $request->firstName. " " . $request->lastName;
+	        $name = $request->firstName. " " . $request->lastName;
 
-        if ($guest->email != null){
+	        if ($guest->email != null){
 		        Mail::send('email.reminder', ['title' => $title, 'name' => $name], function ($message) use ($guest)
 		        {
 		            $message->from('rsvp@samandsarah2018.com', 'RSVPSamAndSarah2018');
@@ -58,7 +61,6 @@ class GuestController extends Controller
 		            $message->to($guest->email);
 		        });
 		    }
-
 
 	    	//If guest is attending, they can invite another, else they can't.
 	    	return response()->json([ 
@@ -84,7 +86,8 @@ class GuestController extends Controller
 	        'email' => 'nullable|email',
 	        'invitorFirstName' => 'required|max:50',
 	        'invitorLastName' => 'required|max:50',
-	        'isKid' => 'required'
+	        'isKid' => 'required',
+	        'otherRestrictions' => 'nullable'
 	        ]);
 
 	    $firstName = strtolower($request->firstName);
@@ -112,6 +115,7 @@ class GuestController extends Controller
 	    $guest->invitorFirstName = strtolower($request->invitorFirstName);
 	    $guest->invitorLastName = strtolower($request->invitorLastName);
 	    $guest->isKid = $request->isKid;
+	    $guest->otherRestrictions = $request->otherRestrictions;
 	    $guest->save();
 
     	$title = "Wedding RSVP";

@@ -15,6 +15,7 @@
 					<th>Vegetarian</th>
 					<th>Gluten Free</th>
 					<th>Lactose Intolerant</th>
+					<th>Other Restrictions</th>
 					<th>Kid</th>
 					<th>Invitor</th>
 				<thead>
@@ -26,7 +27,8 @@
 							<td>{{$guest->email}}</td>
 							<td>@if($guest->vegetarian) Yes @else No @endif</td>
 							<td>@if($guest->glutenFree) Yes @else No @endif</td>
-							<td>@if($guest->lactoseIntolerant) Yes @else No @endif</td>			
+							<td>@if($guest->lactoseIntolerant) Yes @else No @endif</td>	
+							<td>{{$guest->otherRestrictions}}</td>
 							<td>@if($guest->isKid) Yes @else No @endif</td>
 							<td>{{$guest->invitorFirstName}} {{$guest->invitorLastName}}</td>
 						</tr>

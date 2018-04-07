@@ -77,6 +77,12 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class='form-group'>
+                                        <label class='col-sm-4 control-label'>Other Restrictrions</label>
+                                        <div class='col-sm-6'>
+                                            <input type='textbox' class='form-control' name='otherRestrictions' maxlength="250">
+                                        </div>
+                                    </div>
                                     <p>Want a reminder? Fill out your electronic-mail below and we will give you an update a month beforehand!</p>
                                     <div class='form-group'>
                                         <label for='email' class='col-sm-4 control-label'>E-Mail</label>
@@ -143,6 +149,12 @@
                                             <input type='checkbox' name='lactoseIntolerant' value='1'> Lactose Intolerant
                                         </label>
                                     </div>
+                                </div>
+                            </div>
+                            <div class='form-group'>
+                                <label class='col-sm-4 control-label'>Other Restrictrions</label>
+                                <div class='col-sm-6'>
+                                    <input type='textbox' class='form-control' name='otherRestrictions' maxlength="250">
                                 </div>
                             </div>
                             <div class='form-group'>
