@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Log;
 use Illuminate\Http\Request;
 use App\Guest;
 use Mail;
+use Response;
 
 class GuestController extends Controller
 {
@@ -137,6 +139,33 @@ class GuestController extends Controller
     		'success' => $responseText, 
     		'invitorFN' => $guest->invitorFirstName,
     		'invitorLN' => $guest->invitorLastName ]);
+	}
+
+
+	public function sendReminder(Request $request){
+		$decodedEmailJSON = json_decode($request->emailList, true);
+		$title = "Wedding Reminder";
+
+		foreach($decodedEmailJSON as $key => $value){
+			
+			if ($value != null){
+				
+				Mail::send('email.date-reminder', ['title' => $title, 'name' => $key], function ($message) use ($value)
+				{
+					$message->from('rsvp@samandsarah2018.com', 'RSVPSamAndSarah2018');
+					$message->subject("Sam and Sarah 2018 | Wedding Reminder! 📅");
+					$message->to($value);
+				});
+
+				Log::info("Sent email to:".$key." at ".$value);
+			}
+		}
+
+		$response = array(
+			'success' => "Emails Sent! This is the email list: ".print_r($decodedEmailJSON, true)
+		);
+		
+		return Response::json($response);
 	}
 
 

@@ -25,6 +25,8 @@ Route::get('/guest/rsvp2', 'GuestController@rsvp2')->name('guest.rsvp2');
 
 Route::get('/guest', 'GuestController@index')->name('guest.index');
 
+Route::post('/guest/sendReminder', 'GuestController@sendReminder')->name('guest.reminder');
+
 //User routes
 Auth::routes();
 
